@@ -1,0 +1,2065 @@
+﻿<div id="sessions-output" class="panel-group text-left">
+  <div class="panel panel-default" data-title="A Behind the Scenes Insights into Building Technology for the Hearing Impaired" data-track="Mobile Ecosystem" data-youtubeid="Xt5Is4y5iOU">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse0">
+      <div>
+        <h4 class="panel-title">A Behind the Scenes Insights into Building Technology for the Hearing Impaired</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Avichal Sharma, Serhat Aydin — Accenture</span>
+
+    </a>
+    <div id="collapse0" class="panel-collapse collapse" style="height: 0px;">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/Xt5Is4y5iOU/hqdefault.jpg" alt="A Behind the Scenes Insights into Building Technology for the Hearing Impaired" src="http://img.youtube.com/vi/Xt5Is4y5iOU/hqdefault.jpg">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Avichal Sharma, Serhat Aydin — Accenture</strong>
+
+            <p>Accenture and Siemens are paving the way in medical mobile technology. The Siemens easyTek suite of apps enables the hearing impaired to connect to a variety of Bluetooth enabled devices. It also enables them to control the function and comfort of their in-ear hearing instrument. This real-world case study will show you how Accenture built the best mobile technology for the hearing impaired using Xamarin. They will cover the technical lessons learned from their experience, including connecting to multiple hearing device types, working with Android Bluetooth and MFI Accessory, and how to best incorporate continuous integration into the mobile development workflow.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="A Canon in C#" data-track="Platform" data-youtubeid="Nv-l4mArFT8">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse1">
+      <div>
+        <h4 class="panel-title">A Canon in C#</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Jon Skeet — Google</span>
+
+    </a>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/Nv-l4mArFT8/hqdefault.jpg" alt="A Canon in C#">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Jon Skeet — Google</strong>
+
+            <p>Jon Skeet is a software engineer at Google in London with a lingering passion for C# and its community. You'll often find Jon writing about C# in his blog, or his books, or even on Stack Overflow. He loves twisting the language into knots, often to the dismay of those he's presenting the code to!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Amazon Developer Ecosystem" data-track="Emerging Devices" data-youtubeid="XJtmSvjx95c">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse2">
+      <div>
+        <h4 class="panel-title">Amazon Developer Ecosystem</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Emerging Devices</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">David Isbitski — Amazon</span>
+
+    </a>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/XJtmSvjx95c/hqdefault.jpg" alt="Amazon Developer Ecosystem">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">David Isbitski — Amazon</strong>
+
+            <p>David Isbitski, Worldwide Developer Evangelist for the Amazon Appstore and Fire devices, wants to educate you on how to build native Amazon Fire phone, Fire TV, and Kindle Fire Apps with Xamarin. He'll give you a walk-through of how to quickly use Xamarin to run your apps and games on Amazon devices, as well as provide an overview of Amazon Appstore services that help developers get their app discovered and increase customer engagement and monetization.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="APIs of Enterprise mBaaS Platform" data-track="Mobile Ecosystem" data-youtubeid="2sWu2MrUiTc">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse3">
+      <div>
+        <h4 class="panel-title">APIs of Enterprise mBaaS Platform</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Gustavo Machado — Kidozen</span>
+
+    </a>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/2sWu2MrUiTc/hqdefault.jpg" alt="APIs of Enterprise mBaaS Platform">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Gustavo Machado — Kidozen</strong>
+
+            <p>Whether you have 1 user or 1 million users, you need a scalable backend for your app. As the mobile economy booms, mobile backend-as-a-service (mBaaS) solutions are experiencing rapid growth. These cloud-based services make it easier for developers to set up and operate scalable backend services for their mobile apps. In this session, two of the leading MBaaS companies will share best practices for creating engaging, scalable, cross-device experiences.</p>
+
+            <a class="action-button" href="http://components.xamarin.com">Explore Xamarin Components</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Applying C# Async in Mobile" data-track="Platform" data-youtubeid="bnj6FD2j-O4">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse4">
+      <div>
+        <h4 class="panel-title">Applying C# Async in Mobile</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Joe Mayo — Mayo Software, LLC</span>
+
+    </a>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/bnj6FD2j-O4/hqdefault.jpg" alt="Applying C# Async in Mobile">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Joe Mayo — Mayo Software, LLC</strong>
+
+            <p>Join Joe Mayo as he shows you how awesome async is and demonstrates how it completely revolutionized previous efforts to write asynchronous code. Joe will even demo working open-source software, practical applications like calling out to Web API services, and real-world scenarios like exception handling and cancellation. Let Joe show you all the dramatic improvements in code construction and maintenance that async offers in order to create a more satisfying experience for app users.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Architecting and Extending Existing Systems for Enterprise Mobile Apps" data-track="Enterprise" data-youtubeid="UEsrJhTAiwo">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse5">
+      <div>
+        <h4 class="panel-title">Architecting and Extending Existing Systems for Enterprise Mobile Apps</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Enterprise</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Steve Yi — Xamarin</span>
+
+    </a>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/UEsrJhTAiwo/hqdefault.jpg" alt="Architecting and Extending Existing Systems for Enterprise Mobile Apps">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Steve Yi — Xamarin</strong>
+
+            <p>Creating mobile apps for the enterprise offers unique challenges in integrating with existing systems, synchronizing data, security, identity, and knowing when to challenge legacy IT orthodoxy for a successful enterprise mobile strategy. Join Steve Yi as he demonstrates code and architectural techniques, as well as how to utilize promising cloud services that bridge mobile devices with existing or on-premises systems.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Awaiting for Rx: A Play in Four Acts" data-track="Xamarin Platform" data-youtubeid="5DZ8nC0ENdg">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse6">
+      <div>
+        <h4 class="panel-title">Awaiting for Rx: A Play in Four Acts</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Xamarin Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Paul Betts — GitHub</span>
+
+    </a>
+    <div id="collapse6" class="panel-collapse collapse" style="height: 0px;">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/5DZ8nC0ENdg/hqdefault.jpg" alt="Awaiting for Rx: A Play in Four Acts" src="http://img.youtube.com/vi/5DZ8nC0ENdg/hqdefault.jpg">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Paul Betts — GitHub</strong>
+
+            <p>
+              Asynchronous programming is all the rage these days, with good reason. With
+              the introduction of async/await in C# 5.0, writing truly non-blocking code has
+              gone from a giant headache, to something we should be doing all the time.
+
+              However, two technologies have emerged from Microsoft, the Task Parallel
+              Library, and the less common but emerging technology, the Reactive Extensions
+              for .NET. Which should developers be using? Does Task&lt;T&gt; and async/await
+              replace Rx?
+
+              In fact, the best answer is, "Use both!" This talk will describe how Task&lt;T&gt;
+              and Rx's IObservable can be used together to produce truly elegant,
+              functional, and far more testable code than using either technology in
+              isolation. Through plenty of code examples, we'll see how to use Rx to test
+              and mock Task&lt;T&gt; methods, how to write LINQ'y async code, and when to use Rx
+              Zen Nature and when to use Task Zen Nature.
+            </p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Become a Xamarin Studio Expert" data-track="Platform" data-youtubeid="ZQWdRQTrHTQ">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse7">
+      <div>
+        <h4 class="panel-title">Become a Xamarin Studio Expert</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Michael Hutchinson — Xamarin</span>
+
+    </a>
+    <div id="collapse7" class="panel-collapse collapse" style="height: 0px;">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/ZQWdRQTrHTQ/hqdefault.jpg" alt="Become a Xamarin Studio Expert" src="http://img.youtube.com/vi/ZQWdRQTrHTQ/hqdefault.jpg">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Michael Hutchinson — Xamarin</strong>
+
+            <p>Improve your productivity through the effective use of Xamarin Studio! Suitable for beginners and experienced users alike, come hang out with Michael Hutchinson as he divulges some tips and tricks for customizing Xamarin Studio to make it work better for you -and your apps!- so development is a simply delightful experience.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Build your Apps on the Shoulders of Giants" data-track="Mobile Ecosystem" data-youtubeid="0JwIkgd4w1g">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse8">
+      <div>
+        <h4 class="panel-title">Build your Apps on the Shoulders of Giants</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Jonathan Dick — Xamarin</span>
+
+    </a>
+    <div id="collapse8" class="panel-collapse collapse" style="height: 0px;">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/0JwIkgd4w1g/hqdefault.jpg" alt="Build your Apps on the Shoulders of Giants" src="http://img.youtube.com/vi/0JwIkgd4w1g/hqdefault.jpg">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Jonathan Dick — Xamarin</strong>
+
+            <p>Xamarin developers enjoy access to a ton of great .NET code already written to solve common, and often complex problems, so why not leverage the .NET code written by the vibrant community in your own apps? Let Jonathan Dick show you how easy it is to pull together an amazing app from the great components and libraries available in the Xamarin Component Store and in the NuGet community!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Building a Modern DevOps Solution for your App" data-track="Enterprise" data-youtubeid="kaf9YZBnKno">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse9">
+      <div>
+        <h4 class="panel-title">Building a Modern DevOps Solution for your App</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Enterprise</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Brian A. Randell — MCW Technologies LLC</span>
+
+    </a>
+    <div id="collapse9" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/kaf9YZBnKno/hqdefault.jpg" alt="Building a Modern DevOps Solution for your App">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Brian A. Randell — MCW Technologies LLC</strong>
+
+            <p>Very few apps live in a disconnected world. They are often part of a larger system that includes web sites, web services, database and more. Do you have a grip on this system? Can you find the problems before your customers do? Brian will take the time to cover just what the heck DevOps is and how you can apply it when building solutions both private and public with Xamarin’s tools.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Building an Enterprise Component Library" data-track="Enterprise" data-youtubeid="lwe8IjIGoTg">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse10">
+      <div>
+        <h4 class="panel-title">Building an Enterprise Component Library</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Enterprise</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Steve Hall — Xamarin</span>
+
+    </a>
+    <div id="collapse10" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/lwe8IjIGoTg/hqdefault.jpg" alt="Building an Enterprise Component Library">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Steve Hall — Xamarin</strong>
+
+            <p>Discover best practices in creating an enterprise library of reusable components and patterns for consistently and efficiently handling things like authentication, logging, encryption and more! Join Steve Hall as he covers several methods for creating and maintaining enterprise components, and sharing them with your organization to deliver applications faster, with consistent functionality, and less effort.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Explore Xamarin Components</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Building Cross-Platform Applications with Xamarin, Xamarin.Forms and MVVM Light" data-track="Cross-Platform" data-youtubeid="FrcVQGTXZKM">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse11">
+      <div>
+        <h4 class="panel-title">Building Cross-Platform Applications with Xamarin, Xamarin.Forms and MVVM Light</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Laurent Bugnion — IdentityMine</span>
+
+    </a>
+    <div id="collapse11" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/FrcVQGTXZKM/hqdefault.jpg" alt="Building Cross-Platform Applications with Xamarin, Xamarin.Forms and MVVM Light">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Laurent Bugnion — IdentityMine</strong>
+
+            <p>MVVM Light is a popular open source toolkit that's been used in thousands of production XAML applications since 2009. It consists of components, snippets, templates and guidance, and has a strong community of followers. Now, MVVM Light is available for Xamarin! Join Laurent Bugnion, the author of MVVM Light, as he talks about the toolkit and the MVVM architecture and demonstrates how with these tools, you can improve your development workflow.</p>
+
+            <a class="action-button" href="http://components.xamarin.com">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Building Mobile Apps That Work Online &amp; Offline with Couchbase" data-track="Mobile Ecosystem" data-youtubeid="g7WlnfvOvhI">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse12">
+      <div>
+        <h4 class="panel-title">Building Mobile Apps That Work Online &amp; Offline with Couchbase</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Wayne Carter and Zack Gramana — Couchbase</span>
+
+    </a>
+    <div id="collapse12" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/g7WlnfvOvhI/hqdefault.jpg" alt="Building Mobile Apps That Work Online &amp; Offline with Couchbase">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Wayne Carter and Zack Gramana — Couchbase</strong>
+
+            <p>Xamarin and Couchbase have jointly developed Couchbase Lite for .NET — a NoSQL database optimized for mobile. Let Wayne Carter and Zack Gramana show you how its low-friction document datastore, powerful MapReduce queries, and drop-dead simple synchronization combine to help you build awesome apps faster and easier! We'll cover common use cases and show you just how easy it is to integrate into your apps so they "just work" — anytime, anywhere.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Explore Xamarin Components</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="C# is in my Ears and in my Eyes: Google Glass and Android Wear" data-track="Emerging Devices" data-youtubeid="80H8tXByZQc">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse13">
+      <div>
+        <h4 class="panel-title">C# is in my Ears and in my Eyes: Google Glass and Android Wear</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Emerging Devices</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Chris Hardy — Xamarin</span>
+
+    </a>
+    <div id="collapse13" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/80H8tXByZQc/hqdefault.jpg" alt="C# is in my Ears and in my Eyes: Google Glass and Android Wear">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Chris Hardy — Xamarin</strong>
+
+            <p>Wearable computing might seem like something from the future (or an Inspector Gadget episode), but many people are already embracing the future today! C# developers know this and already have the tools and skills to harness the power of wearable devices. Watch Chris Hardy demonstrate how you can take advantage of .NET to develop awesome applications that connect your phone, Google Glass, and Android Wear devices together.</p>
+
+            <a class="action-button" href="http://components.xamarin.com">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Connecting Xamarin Apps with IBM Worklight" data-track="Mobile Ecosystem" data-youtubeid="Jz6Q1urJDMQ">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse14">
+      <div>
+        <h4 class="panel-title">Connecting Xamarin Apps with IBM Worklight</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Greg Truty — IBM</span>
+
+    </a>
+    <div id="collapse14" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/Jz6Q1urJDMQ/hqdefault.jpg" alt="Connecting Xamarin Apps with IBM Worklight">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Greg Truty — IBM</strong>
+
+            <p>IBM Worklight server is mobile-optimized middleware that serves as a gateway between applications, back-end systems and cloud-based services. Let Greg Truty teach you how to connect native Xamarin apps to IBM Worklight Server for easy integration into your enterprise’s environment so that you can leverage your existing resources and infrastructure for mobile, as well as channel cloud-based services to the end-user device.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#android">Get the IBM MobileFirst SDK</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Cross-Platform Business Apps with Microsoft Azure " data-track="Mobile Ecosystem" data-youtubeid="uYcM2DdZTmg">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse15">
+      <div>
+        <h4 class="panel-title">Cross-Platform Business Apps with Microsoft Azure </h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Paul Batum — Microsoft</span>
+
+    </a>
+    <div id="collapse15" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/uYcM2DdZTmg/hqdefault.jpg" alt="Cross-Platform Business Apps with Microsoft Azure ">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Paul Batum — Microsoft</strong>
+
+            <p>Join Paul Batum for a session on how you can accelerate your cross-platform business app development with Xamarin and Azure Mobile Services. Together you'll look at how easily you can enable offline support for your apps with the new offline data sync feature, how to build hybrid cloud applications that can securely access on-premise data and services, how to authenticate your app users with Azure Active Directory, and loads more!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Cross-Platform Mobile Apps with Amazon Web Services" data-track="Mobile Ecosystem" data-youtubeid="lH88Ue5poNM">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse16">
+      <div>
+        <h4 class="panel-title">Cross-Platform Mobile Apps with Amazon Web Services</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Tara E. Walker — Amazon</span>
+
+    </a>
+    <div id="collapse16" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/lH88Ue5poNM/hqdefault.jpg" alt="Cross-Platform Mobile Apps with Amazon Web Services">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Tara E. Walker — Amazon</strong>
+
+            <p>Tara Walker will demonstrate how to build great mobile apps that leverage the AWS Cloud services that provide identity management and data sync (Amazon Cognito), push notifications (Amazon SNS Mobile Push), cloud storage (Amazon S3), and a fully-managed NoSQL database (Amazon DynamoDB). She'll take you through, step-by-step, so you can learn to add services to your cross-platform mobile app using Xamarin and C#, configure AWS services, and then integrate the services into your backend architecture.</p>
+
+            <a class="action-button" href="http://components.xamarin.com">Explore Xamarin Components</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Cross-Platform Syncing with Dropbox" data-track="Mobile Ecosystem" data-youtubeid="qOhDC60ARYg">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse17">
+      <div>
+        <h4 class="panel-title">Cross-Platform Syncing with Dropbox</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Steve Marx — Dropbox</span>
+
+    </a>
+    <div id="collapse17" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/qOhDC60ARYg/hqdefault.jpg" alt="Cross-Platform Syncing with Dropbox">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Steve Marx — Dropbox</strong>
+
+            <p>You already know how to get your app running on multiple platforms and devices, but what about your users' data? Cloud storage is ubiquitous, but it's only part of the story. You also need to think about syncing, offline access, and conflict resolution. In this demo-heavy talk, Steve Marx, a developer advocate at Dropbox, will walk you through the challenges of cross-platform syncing and the tools that Dropbox provides for mobile developers.</p>
+
+            <a class="action-button" href="http://xamarin.com/ibm">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Designing Android UIs for the Ever-Changing Device Landscape: Android Fragments and Fragmentation" data-track="Android" data-youtubeid="2k2SMiH37eg">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse18">
+      <div>
+        <h4 class="panel-title">Designing Android UIs for the Ever-Changing Device Landscape: Android Fragments and Fragmentation</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Android</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Michael Stonis — EightBot</span>
+
+    </a>
+    <div id="collapse18" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/2k2SMiH37eg/hqdefault.jpg" alt="Designing Android UIs for the Ever-Changing Device Landscape: Android Fragments and Fragmentation">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Michael Stonis — EightBot</strong>
+
+            <p>Android is everywhere. Developers can now build apps that run on phones, tablets, TVs, cars, wearables, and even appliances! While this provides a breadth of opportunity, it creates a big problem when designing apps that can run across all of these different device types. In this session, join Michael Stonis to talk about how to create and manage dynamic UIs that look and feel great across different screen sizes and form factors.</p>
+
+            <a class="action-button" href="http://components.xamarin.com">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Designing Wearable User Experiences" data-track="Emerging Devices" data-youtubeid="8eDVB-0-d4o">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse19">
+      <div>
+        <h4 class="panel-title">Designing Wearable User Experiences</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Emerging Devices</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Michael Sciscenti — APX Labs</span>
+
+    </a>
+    <div id="collapse19" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/8eDVB-0-d4o/hqdefault.jpg" alt="Designing Wearable User Experiences">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Michael Sciscenti — APX Labs</strong>
+
+            <p>As mobility moves rapidly into new territory like Google Glass and other heads-up displays, it's important to know how to design for these devices. Join Michael Sciscenti as he talks about the top use cases for wearable mobility and how to design for it based on lessons hard won in developing the Xamarin-based Skylight UX, designed especially for business scenarios where hands-free, in-context, and access to real time information is crucial to the modern enterprise.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Diving into the Xamarin Designer for iOS" data-track="iOS" data-youtubeid="W4H9uLjoEjM">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse20">
+      <div>
+        <h4 class="panel-title">Diving into the Xamarin Designer for iOS</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">iOS</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Alex Corrado — Xamarin</span>
+
+    </a>
+    <div id="collapse20" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/W4H9uLjoEjM/hqdefault.jpg" alt="Diving into the Xamarin Designer for iOS">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Alex Corrado — Xamarin</strong>
+
+            <p>With the Xamarin 3 release, iOS developers have a powerful new tool for visualizing and designing native UIs: the Xamarin Designer for iOS. Let Alex Corrado introduce the Xamarin Designer for iOS and illustrate some best practices for visually designing your application’s user interface. He'll even show you how the Xamarin Designer for iOS' custom control support enables you to develop parts of your UI in code, while still visualizing them in your application’s storyboard.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#android">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Dynamic Layouts in iOS 8: Making your Apps Look Great Everywhere" data-track="iOS" data-youtubeid="f3mMGlS-lM4">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse21">
+      <div>
+        <h4 class="panel-title">Dynamic Layouts in iOS 8: Making your Apps Look Great Everywhere</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">iOS</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Adrian Stevens — Xamarin</span>
+
+    </a>
+    <div id="collapse21" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/f3mMGlS-lM4/hqdefault.jpg" alt="Dynamic Layouts in iOS 8: Making your Apps Look Great Everywhere">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Adrian Stevens — Xamarin</strong>
+
+            <p>iOS hasn’t had as many resolutions to worry about as Android, but Adrian Stevens knows that this is all changing with the introduction of the iPhone 6 and iPhone 6 Plus, adding a third and fourth screen size on the phone form factor. Come learn how to take advantage of AutoLayout with Constraints and the iOS Designer to make sure your application properly scales so it gets the most out of every pixel available!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#android">Get started with Xamarin.iOS</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Effective Navigation in Xamarin.Android" data-track="Android" data-youtubeid="Hw8tB45kse4">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse22">
+      <div>
+        <h4 class="panel-title">Effective Navigation in Xamarin.Android</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Android</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">James Montemagno — Xamarin</span>
+
+    </a>
+    <div id="collapse22" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/Hw8tB45kse4/hqdefault.jpg" alt="Effective Navigation in Xamarin.Android">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">James Montemagno — Xamarin</strong>
+
+            <p>With so many navigation styles in Android, selecting what's perfect for your app can be difficult. There are Tabs, Navigation Drawers, and Dashboards... it can be overwhelming! Join James as he covers best practices for creating elegant navigation patterns for your Xamarin.Android mobile application. Together, you'll take a look at what style of navigation is optimal for different types of apps.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Evolving From Web to Mobile App with Xamarin: Building Hybrid Apps with Xamarin" data-track="Cross-Platform" data-youtubeid="TC_mESEXoWM">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse23">
+      <div>
+        <h4 class="panel-title">Evolving From Web to Mobile App with Xamarin: Building Hybrid Apps with Xamarin</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Jesse Liberty — Falafel</span>
+
+    </a>
+    <div id="collapse23" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/TC_mESEXoWM/hqdefault.jpg" alt="Evolving From Web to Mobile App with Xamarin: Building Hybrid Apps with Xamarin">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Jesse Liberty — Falafel</strong>
+
+            <p>See how easy Xamarin makes your migration path to mobile when Jesse Liberty shows you how to turn an ASP.NET MVC mobile website into an app suitable for enterprise or app store deployment using Xamarin and the Razor templating engine. Jesse will teach you how to leverage your existing HTML, Javascript, and CSS skills to ship hybrid mobile applications, plus how to extend your app with native functionality using Xamarin.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Extending Xamarin.Forms with with Custom Controls" data-track="Cross-Platform" data-youtubeid="pIZ8G47KPIM">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse24">
+      <div>
+        <h4 class="panel-title">Extending Xamarin.Forms with with Custom Controls</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Jason Smith — Xamarin</span>
+
+    </a>
+    <div id="collapse24" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/pIZ8G47KPIM/hqdefault.jpg" alt="Extending Xamarin.Forms with with Custom Controls">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Jason Smith — Xamarin</strong>
+
+            <p>Xamarin.Forms provides a solid foundation for building cross-platform native user interfaces with a single codebase, but it also provides a number of ways to extend your app's capabilities using device-specific features. With the help of Jason Smith, learn how to write a custom renderer for native controls, how to access native APIs using the dependency service, and a bunch of other awesome and useful tips for extending Xamarin.Forms.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#ios">Try Xamarin.Forms</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Find Bugs Before Your Users Do with Xamarin Test Cloud and C#" data-track="Testing" data-youtubeid="PQMBCoVIABI">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse25">
+      <div>
+        <h4 class="panel-title">Find Bugs Before Your Users Do with Xamarin Test Cloud and C#</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Testing</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Karl Krukow and Rasmus Kromann-Larsen — Xamarin</span>
+
+    </a>
+    <div id="collapse25" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/PQMBCoVIABI/hqdefault.jpg" alt="Find Bugs Before Your Users Do with Xamarin Test Cloud and C#">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Karl Krukow and Rasmus Kromann-Larsen — Xamarin</strong>
+
+            <p>We know that creating a great mobile app can be challenging. Without automated testing, it’s impossible to ensure it acts consistently in a fragmented device market spanning Android, iOS, and Windows Phone. Let Rasmus demonstrate how to write unit tests for any mobile app in Visual Studio and C# and automate testing across hundreds of devices with Xamarin's Test Cloud so you can find the bugs before your users!</p>
+
+            <a class="action-button" href="http://xamarin.com/test-cloud">Get started with Xamarin Test Cloud</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Finish the Mac App You Didn't Know You Started" data-track="Platform" data-youtubeid="zALbjgeqy7o">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse26">
+      <div>
+        <h4 class="panel-title">Finish the Mac App You Didn't Know You Started</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Mike James — Xamarin</span>
+
+    </a>
+    <div id="collapse26" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/zALbjgeqy7o/hqdefault.jpg" alt="Finish the Mac App You Didn't Know You Started">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Mike James — Xamarin</strong>
+
+            <p>If you're writing for Xamarin.iOS, you may not realize how close you are to completing your first Mac app! With 1 to 1 mappings of the Cocoa APIs, you can unleash the power of OS X with your favorite tools and languages. Let Mike James bring you up to speed with C# development for OS X. He'll show you how to design beautiful native user interfaces that reach more than 66 million potential customers!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Games that Run Everywhere, Even the Top of the App Store" data-track="Game Development" data-youtubeid="k09e39FVi6o">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse27">
+      <div>
+        <h4 class="panel-title">Games that Run Everywhere, Even the Top of the App Store</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Game Development</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">James Clancey, Dean Ellis — Xamarin</span>
+
+    </a>
+    <div id="collapse27" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/k09e39FVi6o/hqdefault.jpg" alt="Games that Run Everywhere, Even the Top of the App Store">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">James Clancey, Dean Ellis — Xamarin</strong>
+
+            <p>MonoGame is the logical successor to the excellent XNA framework, powered by .Net and the powerful Xamarin frameworks it will let you hit more platforms using identical code than you probably think is possible. In this session we'll take a look at why you should choose MonoGame for your next project, as well as give you an update on what's been happing on the project over the last year and where its heading. We'll also take a detailed look at some published apps that used MonoGame so you can get a good idea of how things fit together and how to approach cross platform game development.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#android">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Getting FIT with Xamarin (or How I Lost Weight with C#)" data-track="Platform" data-youtubeid="03aucFbd2vY">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse28">
+      <div>
+        <h4 class="panel-title">Getting FIT with Xamarin (or How I Lost Weight with C#)</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Ben Bishop — Rendr</span>
+
+    </a>
+    <div id="collapse28" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/03aucFbd2vY/hqdefault.jpg" alt="Getting FIT with Xamarin (or How I Lost Weight with C#)">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Ben Bishop — Rendr</strong>
+
+            <p>Given 40 hours, could you make an app that was both useful and profitable? In this presentation, Ben Bishop will share his experience building a fitness app using Xamarin to answer this question. This talk will cover how an app idea forged in the fires of Pinterest led to playing five figure client projects for Rendr. Topics will include ideation, marketing, localization, and more.</p>
+
+            <a class="action-button" href="http://xamarin.com/forms">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Getting Started with iOS 8" data-track="iOS" data-youtubeid="5v-NIHjUwD0">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse29">
+      <div>
+        <h4 class="panel-title">Getting Started with iOS 8</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">iOS</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Nishanth Anil — Xamarin</span>
+
+    </a>
+    <div id="collapse29" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/5v-NIHjUwD0/hqdefault.jpg" alt="Getting Started with iOS 8">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Nishanth Anil — Xamarin</strong>
+
+            <p>Make your applications shine by taking advantage of everything iOS 8 has to offer. Join Nish as he gives you the lowdown on how to maximize your user audience by targeting new devices and screen sizes effectively and take advantage the key features of iOS 8 and the new iPhone 6 and iPhone 6+.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#ios">Get started with Xamarin.iOS</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Getting your Testing Process in Place" data-track="Testing" data-youtubeid="q1YjW-icPz8">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse30">
+      <div>
+        <h4 class="panel-title">Getting your Testing Process in Place</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Testing</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Karl Krukow, Niels Frydenholm — Xamarin and Ebay</span>
+
+    </a>
+    <div id="collapse30" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/q1YjW-icPz8/hqdefault.jpg" alt="Getting your Testing Process in Place">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Karl Krukow, Niels Frydenholm — Xamarin and Ebay</strong>
+
+            <p>Learn how one forward-thinking company used Test Cloud and gained immediate value overcoming their mobile development challenges. Listen as they share their lessons learned, describing the problems they faced and how they incorporated Test Cloud into their development processes to create user-centric apps that are faster, more responsive, free of regressions, and frequently updated with new features to please and win new customers.</p>
+
+            <a class="action-button" href="http://xamarin.com/test-cloud">Get started with Xamarin Test Cloud</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Google Play Services with Xamarin" data-track="Android" data-youtubeid="7IhNX4G_pqI">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse31">
+      <div>
+        <h4 class="panel-title">Google Play Services with Xamarin</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Android</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Peter Friese — Google</span>
+
+    </a>
+    <div id="collapse31" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/7IhNX4G_pqI/hqdefault.jpg" alt="Google Play Services with Xamarin">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Peter Friese — Google</strong>
+
+            <p>
+              Google Play Services are a unified SDK that allow you to quickly and easily integrate Google features into your Android apps. Being rolled out to millions of Android devices, they provide easy access to Google services and allow you to innovate quickly.
+
+              In this session, I will give a rundown of the core services available via Google Play Services. Attendees will get an overview of the new APIs that ship as a part of the latest version of Google Play Services. We will also have a look at some of the lesser known features that will enable you to build apps that truly rock.
+            </p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Hello CocosSharp" data-track="Game Development" data-youtubeid="hj0QJlYvObk">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse32">
+      <div>
+        <h4 class="panel-title">Hello CocosSharp</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Game Development</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Mike Bluestein — Xamarin</span>
+
+    </a>
+    <div id="collapse32" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/hj0QJlYvObk/hqdefault.jpg" alt="Hello CocosSharp">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Mike Bluestein — Xamarin</strong>
+
+            <p>CocosSharp is an exciting new platform from Xamarin that enables developers to create stunning 2D games for iOS, Android, Mac, and Windows from a shared C# or F# code base. Mike Bluestein will cover game development strategies and how CocosSharp can help you deliver cross-platform 2D games for apps on all mobile and desktop platforms. By the end, you'll have all the knowledge you need to start creating your own games!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Hey, You Got your Objective-C in my C#!" data-track="iOS" data-youtubeid="kQmB1DU8_iA">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse33">
+      <div>
+        <h4 class="panel-title">Hey, You Got your Objective-C in my C#!</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">iOS</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Brent Schooley — Twilio</span>
+
+    </a>
+    <div id="collapse33" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/kQmB1DU8_iA/hqdefault.jpg" alt="Hey, You Got your Objective-C in my C#!">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Brent Schooley — Twilio</strong>
+
+            <p>Brent Schooley can show you the steps to take to create C# bindings to native iOS libraries so that you can bring all the fun things you find on Cocoa Controls into your Xamarin applications. Together you'll cover binding simple libraries using Objective Sharpie as well as more advanced manual examples using iOS Binding Projects. You'll even create a component out of your newly bound project for submission to the Xamarin Component Store!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Get started with Xamarin.iOS</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="iBeacons and Contextual Location Awareness in iOS and Android apps" data-track="Cross-Platform" data-youtubeid="YYTa_Rv5Pz4">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse34">
+      <div>
+        <h4 class="panel-title">iBeacons and Contextual Location Awareness in iOS and Android apps</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">James Montemagno &amp; Mike Bluestein — Xamarin</span>
+
+    </a>
+    <div id="collapse34" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/YYTa_Rv5Pz4/hqdefault.jpg" alt="iBeacons and Contextual Location Awareness in iOS and Android apps">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">James Montemagno &amp; Mike Bluestein — Xamarin</strong>
+
+            <p>iBeacons are taking the world by storm, allowing developers to leverage Bluetooth Low Energy to give their apps location support that can work just about anywhere. From retail stores to sports arenas, you'll soon be finding iBeacons all over the place. Join James Clancey as he introduces the iBeacon. Get a crash course on how they work, how to use them, and how to get started making apps in both iOS and Android.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="If You Can Ship your App in China, You Can Ship it Anywhere" data-track="Mobile Best Practices" data-youtubeid="GSP-WBnJlgA">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse35">
+      <div>
+        <h4 class="panel-title">If You Can Ship your App in China, You Can Ship it Anywhere</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Best Practices</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Jonathan Peppers — Hitcents</span>
+
+    </a>
+    <div id="collapse35" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/GSP-WBnJlgA/hqdefault.jpg" alt="If You Can Ship your App in China, You Can Ship it Anywhere">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Jonathan Peppers — Hitcents</strong>
+
+            <p>Jonathan Peppers knows the painful experience of delivering a mobile game to China, and what it's like to submit to around thirty app stores. Let him share his experience with you (but only so you don't go through what he did)! Let Jonathan divulge some of his most valuable tips and tricks about things like in app purchases and even piracy prevention that will help your app easily land in the hands of users.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Intro to Scene Kit" data-track="Game Development" data-youtubeid="PTYhGoYvwRQ">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse36">
+      <div>
+        <h4 class="panel-title">Intro to Scene Kit</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Game Development</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Mike Bluestein — Xamarin</span>
+
+    </a>
+    <div id="collapse36" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/PTYhGoYvwRQ/hqdefault.jpg" alt="Intro to Scene Kit">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Mike Bluestein — Xamarin</strong>
+
+            <p>Join Mike Bluestein as he shows you just how easy it can be to make a casual and fast 3D game for iOS 8 and Mac using the powerful combination of Scene Kit and Sprite Kit. Hang with him so you can explore using 3D assets, particles, collision, physics, and more!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#ios">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="iOS Memory Management" data-track="iOS" data-youtubeid="https://i.ytimg.com/s_vi/Qn2ZqvXUuhI/2.jpg?sqp=CKSoxaIF&amp;rs=AOn4CLC6ODMkr2SDbo16V_OYYqsbYFs2NA&amp;time=1414616185982">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse37">
+      <div>
+        <h4 class="panel-title">iOS Memory Management</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">iOS</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Rodrigo Kumpera — Xamarin</span>
+
+    </a>
+    <div id="collapse37" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/https://i.ytimg.com/s_vi/Qn2ZqvXUuhI/2.jpg?sqp=CKSoxaIF&amp;rs=AOn4CLC6ODMkr2SDbo16V_OYYqsbYFs2NA&amp;time=1414616185982/hqdefault.jpg" alt="iOS Memory Management">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Rodrigo Kumpera — Xamarin</strong>
+
+            <p>Hang out with Rodrigo Kumpera as he covers the basics of how garbage collection (and the garbage collector on Xamarin.iOS in particular) works, and how you can use that knowledge to build higher performing apps. He'll explain the interaction between Mono’s garbage collector with iOS memory management take a look at common problems and scenarios relating to that. Plus, he's going to cover new features in Xamarin.iOS such as NewRefCount!</p>
+
+            <a class="action-button" href="http://youtu.be/Qn2ZqvXUuhI">Get started with Xamarin.iOS</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Keeping Apps Relevant: Deployment, Support and Management Best Practices for your Enterprise Mobile Apps" data-track="Mobile Ecosystem" data-youtubeid="HgoWi8R5WFA">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse38">
+      <div>
+        <h4 class="panel-title">Keeping Apps Relevant: Deployment, Support and Management Best Practices for your Enterprise Mobile Apps</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Greg Truty — IBM</span>
+
+    </a>
+    <div id="collapse38" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/HgoWi8R5WFA/hqdefault.jpg" alt="Keeping Apps Relevant: Deployment, Support and Management Best Practices for your Enterprise Mobile Apps">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Greg Truty — IBM</strong>
+
+            <p>Creating a successful enterprise app that employees actually adopt into their workflow requires much more than just delivering a great UI and UX on the employee’s choice of device. Greg Truty knows about the best practices for managing the last, but not least parts, of the mobile application lifecycle. Join Greg for a chat about deployment, support, and management best practices for your enterprise mobile apps.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#ios">Get the IBM MobileFirst SDK</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Lessons Learned from our First Enterprise Mobile App" data-track="Enterprise" data-youtubeid="03LzvxZq9r0">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse39">
+      <div>
+        <h4 class="panel-title">Lessons Learned from our First Enterprise Mobile App</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Enterprise</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Daniel Pardhe — Cognizant</span>
+
+    </a>
+    <div id="collapse39" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/03LzvxZq9r0/hqdefault.jpg" alt="Lessons Learned from our First Enterprise Mobile App">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Daniel Pardhe — Cognizant</strong>
+
+            <p>
+              Improving…Evolving…Continuously
+
+              In the past one year, I had the privilege to work on 3 different projects with Xamarin.
+
+              A highly demanding Secure Browser app for BYOD for a leading global bank.
+              A graphics intensive wealth management app for another global bank.
+              A most recent PoC for a leading transportation company in the world.
+              I want to share my experiences around the technical challenges, client expectations on these projects and how Xamarin as a technology and more importantly as a team of highly motivated professional individuals partnered with me in this success story..
+            </p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Let Awesome = Apps |> Seq.map F#" data-track="Cross-Platform" data-youtubeid="2-v4jdQJ5Wo">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse40">
+      <div>
+        <h4 class="panel-title">Let Awesome = Apps |&gt; Seq.map F#</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Larry O'Brien — Xamarin</span>
+
+    </a>
+    <div id="collapse40" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/2-v4jdQJ5Wo/hqdefault.jpg" alt="Let Awesome = Apps |> Seq.map F#">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Larry O'Brien — Xamarin</strong>
+
+            <p>Are you object-oriented but functionally curious? Have you wondered about the practical use, in mobile applications, of concepts such as immutability, pattern-matching, and typing? Starting with a side-by-side comparison of simple C# and F# apps, this talk will show functional F# code techniques integrated into the object-oriented world of iOS. Is the hype about F# driven by ideology or is it pragmatic? (Spoiler: a little bit of both.) See where F# code in an app succeeds and where it fails.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#ios">Get a free F# t-shirt</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Let's Talk Tech: Xamarin Profiler" data-track="Platform" data-youtubeid="GK9h71vGkpQ">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse41">
+      <div>
+        <h4 class="panel-title">Let's Talk Tech: Xamarin Profiler</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Nina Vyedin &amp; Stephen Shaw — Xamarin</span>
+
+    </a>
+    <div id="collapse41" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/GK9h71vGkpQ/hqdefault.jpg" alt="Let's Talk Tech: Xamarin Profiler">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Nina Vyedin &amp; Stephen Shaw — Xamarin</strong>
+
+            <p>
+              Always dreamed of being on a talk show, but don't want to miss out on the latest Xamarin technology? Now's your chane to combine your two passions as you join the studio audience of our brand new (completely fake) talk show, "Let's Talk Tech! with Stephen and Nina." Join your hosts Stephen Shaw (developer) and Nina Vyedin (program manager) as we dive into the world of profiling - sharing stories, consulting experts, and profiling apps!
+
+              This session will feature: Introduction to the Profiler and the feature set of the preview release; Interviews with Xamarin developers; Demos; Q+A with the team
+            </p>
+
+            <a class="action-button" href="http://xamarin.com/profiler">Try Xamarin Profiler</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Like Butter: Smooth Scrolling and Bitmap Management in Android" data-track="Android" data-youtubeid="ghQAp1KUd6k">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse42">
+      <div>
+        <h4 class="panel-title">Like Butter: Smooth Scrolling and Bitmap Management in Android</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Android</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Brett Duncavage — Rdio</span>
+
+    </a>
+    <div id="collapse42" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/ghQAp1KUd6k/hqdefault.jpg" alt="Like Butter: Smooth Scrolling and Bitmap Management in Android">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Brett Duncavage — Rdio</strong>
+
+            <p>Brett Duncavage knows that smoothly scrolling lists should be the goal of every application developer. Let him teach you about native thread profiling, memory profiling, and proper management of Bitmaps in Xamarin applications. Plus, he'll help you to identify what is causing stuttering (also known as jank) during scrolling in your app, how to fix it, and the best practices to follow to avoid it in the future.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#android">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Mastering Time &amp; Space: Using Animations to Bring your Mobile Apps to Life" data-track="Mobile Best Practices" data-youtubeid="ikSk_ILg3d0">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse43">
+      <div>
+        <h4 class="panel-title">Mastering Time &amp; Space: Using Animations to Bring your Mobile Apps to Life</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Best Practices</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Jérémie Laval — Xamarin</span>
+
+    </a>
+    <div id="collapse43" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/ikSk_ILg3d0/hqdefault.jpg" alt="Mastering Time &amp; Space: Using Animations to Bring your Mobile Apps to Life">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Jérémie Laval — Xamarin</strong>
+
+            <p>Jérémie Laval knows that mobile development brought a radical shift in how we design user interfaces. Instead of thinking in terms of static text and dialog boxes, we are now exploring rich data experiences where we strive to instill life into our content by using animations to bring motion to the user screen. Funny thing is, someone in Hollywood was trying to do the same thing back in the '30s with a certain well-known mouse...</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Material Android Design from Concept to Implementation I" data-track="Android" data-youtubeid="A1WKe08uxd4">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse44">
+      <div>
+        <h4 class="panel-title">Material Android Design from Concept to Implementation I</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Android</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Jérémie Laval, James Montemagno — Xamarin</span>
+
+    </a>
+    <div id="collapse44" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/A1WKe08uxd4/hqdefault.jpg" alt="Material Android Design from Concept to Implementation I">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Jérémie Laval, James Montemagno — Xamarin</strong>
+
+            <p>Sometimes flat design isn't enough! Material Design is the largest shift in Android design since its original release and Jeremie and James are here to show it off! This session covers everything new in Material Design and what it means for Xamarin.Android developers. By the end, you'll have an understanding of the three important principles of Material Design and the know-how to start transforming existing and new Android apps with Material Design.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#android">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Material Android Design from Concept to Implementation II" data-track="Android" data-youtubeid="_q9lorDZn0Y">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse45">
+      <div>
+        <h4 class="panel-title">Material Android Design from Concept to Implementation II</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Android</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">James/Jeremie — Xamarin</span>
+
+    </a>
+    <div id="collapse45" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/_q9lorDZn0Y/hqdefault.jpg" alt="Material Android Design from Concept to Implementation II">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">James/Jeremie — Xamarin</strong>
+
+            <p>Sometimes flat design isn't enough! Material Design is the largest shift in Android design since its original release and Jeremie and James are here to show it off! This session covers everything new in Material Design and what it means for Xamarin.Android developers. By the end, you'll have an understanding of the three important principles of Material Design and the know-how to start transforming existing and new Android apps with Material Design.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#android">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Mega Trends in Enterprise Mobility" data-track="Enterprise" data-youtubeid="dv5fqQ7FrIA">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse46">
+      <div>
+        <h4 class="panel-title">Mega Trends in Enterprise Mobility</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Enterprise</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Michael Facemire — Forrester</span>
+
+    </a>
+    <div id="collapse46" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/dv5fqQ7FrIA/hqdefault.jpg" alt="Mega Trends in Enterprise Mobility">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Michael Facemire — Forrester</strong>
+
+            <p>Enterprise development has been traditionally viewed as boring — fortunately mobile is changing that model. Bridging the leading edge of consumer technology with the demands of the business is the looming enterprise development challenge. Join Mike Facemire, Principal Analyst at Forrester Research (and life-long developer) to take a look at where businesses are with regards to mobile from a developer perspective. We’ll talk about how things are changing from both a tools and process perspective, what skills are (and will be) in demand, and what development leaders are focusing on to address the (sometimes insane) challenges around time-to-market and mobile quality!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Mobile Security Best Practices" data-track="Enterprise" data-youtubeid="oks9cASHe9w">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse47">
+      <div>
+        <h4 class="panel-title">Mobile Security Best Practices</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Enterprise</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Steve Hall, Xamarin; John Britton, Good Technologies; Anar Taori, IBM MaaS 360; Vince Arneja, Arxan; Sean Ginevan, MobileIron; Erich Stuntebeck, AirWatch</span>
+
+    </a>
+    <div id="collapse47" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/oks9cASHe9w/hqdefault.jpg" alt="Mobile Security Best Practices">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Steve Hall, Xamarin; John Britton, Good Technologies; Anar Taori, IBM MaaS 360; Vince Arneja, Arxan; Sean Ginevan, MobileIron; Erich Stuntebeck, AirWatch</strong>
+
+            <p>Nearly every employee has at least one mobile device and chances are the minute they walk through the door those devices are connected to the network. Join representatives from Airwatch, Good Technology, Mobile Iron, Arxan, IBM in a panel discussion with moderator Steve Hall on how to best secure your sensitive data in the app, on the device, and over the wire.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Sketches: A Rich and Interactive Way to Explore Xamarin" data-track="Platform" data-youtubeid="v9vEhwomUEY">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse48">
+      <div>
+        <h4 class="panel-title">Sketches: A Rich and Interactive Way to Explore Xamarin</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Aaron Bockover — Xamarin</span>
+
+    </a>
+    <div id="collapse48" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/v9vEhwomUEY/hqdefault.jpg" alt="Sketches: A Rich and Interactive Way to Explore Xamarin">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Aaron Bockover — Xamarin</strong>
+
+            <p>Discover a new way to learn iOS, Mac, and Android development as well as a fast way to explore new APIs and iterate on features without having to first build and run a project. Learn how rapidly you can interate on your next great idea with Sketches, whcih displays rich feedback abotu your code as it runs in real time, directly from your IDE. Sketches are ideal for experimenting with new language features, exploring platform APIs, developing APIs and algorithms, and much more.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Target All the Platforms with this One Awesome Trick" data-track="Cross-Platform" data-youtubeid="Cx4jg8koeHw">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse49">
+      <div>
+        <h4 class="panel-title">Target All the Platforms with this One Awesome Trick</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Daniel Plaisted — Microsoft</span>
+
+    </a>
+    <div id="collapse49" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/Cx4jg8koeHw/hqdefault.jpg" alt="Target All the Platforms with this One Awesome Trick">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Daniel Plaisted — Microsoft</strong>
+
+            <p>Supporting multiple platforms is becoming a requirement in the industry. Fortunately, Daniel Plaisted already has a grasp on how .NET enables you to write code for a wide variety of platforms! Let Daniel show you new ways to share your code with cool things like Universal apps with shared projects and Portable Class Libraries. He'll demonstrate how to use the Model-View-ViewModel pattern to create a clean separation of your user interface and business logic code.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="The Future of C#" data-track="Platform" data-youtubeid="GD5-kaPrIrs">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse50">
+      <div>
+        <h4 class="panel-title">The Future of C#</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Mads Torgensen — Microsoft</span>
+
+    </a>
+    <div id="collapse50" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/GD5-kaPrIrs/hqdefault.jpg" alt="The Future of C#">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Mads Torgensen — Microsoft</strong>
+
+            <p>Project Roslyn is a complete renewal of the C# and Visual Basic compilers, exposing the compilers as full fidelity APIs for everyone to use, and providing a great foundation for evolving the tool experience and the languages themselves. So how can you make use of Roslyn and what new language features are in store? Join Mads Torgensen and get all the answers!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="The Home Button is not the End: Backgrounding and Multitasking in iOS" data-track="iOS" data-youtubeid="gPskzEFPmqg">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse51">
+      <div>
+        <h4 class="panel-title">The Home Button is not the End: Backgrounding and Multitasking in iOS</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">iOS</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">René Ruppert — Xamarin</span>
+
+    </a>
+    <div id="collapse51" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/gPskzEFPmqg/hqdefault.jpg" alt="The Home Button is not the End: Backgrounding and Multitasking in iOS">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">René Ruppert — Xamarin</strong>
+
+            <p>Join René Ruppert as he takes a look back at the history of multitasking in iOS. Let him give you a rundown on how iOS has managed background tasks, starting with its humble beginnings in iOS4 all the way to the latest iOS where Apple made major changes in the implementation. By the end, you'll know all the cool and nifty things you can do with multitasking in iOS!</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#ios">Get started with Xamarin.iOS</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="The Salesforce 1 Platform" data-track="Mobile Ecosystem" data-youtubeid="VBlcu906XEw">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse52">
+      <div>
+        <h4 class="panel-title">The Salesforce 1 Platform</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Grant Davies, CEO — Bluetube</span>
+
+    </a>
+    <div id="collapse52" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/VBlcu906XEw/hqdefault.jpg" alt="The Salesforce 1 Platform">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Grant Davies, CEO — Bluetube</strong>
+
+            <p>Let Grant Davies, founder and CEO of Bluetube Interactive, teach you how to go faster when building cross-platform mobile apps with Salesforce and Xamarin and never worry about maintaining infrastructure again! In this session, Grant will show you how to easily connect Xamarin apps to the Salesforce1 Platform, an enterprise back-end for mobile apps with infrastructure and a variety of mobile services that make apps more contextual, user-centric, engaging, secure and scalable.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Think Like a Hacker! Common Techniques Used to Exploit Mobile Apps and How to Mitigate these Risks" data-track="Mobile Ecosystem" data-youtubeid="CJKkCKRYfKY">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse53">
+      <div>
+        <h4 class="panel-title">Think Like a Hacker! Common Techniques Used to Exploit Mobile Apps and How to Mitigate these Risks</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Darren Cathey — Arxan</span>
+
+    </a>
+    <div id="collapse53" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/CJKkCKRYfKY/hqdefault.jpg" alt="Think Like a Hacker! Common Techniques Used to Exploit Mobile Apps and How to Mitigate these Risks">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Darren Cathey — Arxan</strong>
+
+            <p>The first step in learning how to protect and defend your applications from hackers is to think like one. During this session, you’ll learn just how easy it is for hackers to leverage widely available third party tools to completely disable and compromise mobile apps. This can lead to unauthorized access to source code, tampering of apps to enable advanced malware attacks, stealing of sensitive data or intellectual property, conducting fraud etc.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Unleash your Inner Evangelist" data-track="Mobile Ecosystem" data-youtubeid="Zld-0BqBScs">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse54">
+      <div>
+        <h4 class="panel-title">Unleash your Inner Evangelist</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Terry Gault — The Henderson Group</span>
+
+    </a>
+    <div id="collapse54" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/Zld-0BqBScs/hqdefault.jpg" alt="Unleash your Inner Evangelist">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Terry Gault — The Henderson Group</strong>
+
+            <p>How you represent yourself determines how much money, time, and recognition you get in life. Terry Gault from The Henderson Group will teach you how to present yourself with much more confidence using storytelling and message structure techniques that will help you speak in a concise, high-impact, and memorable way.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Use Hypermedia in your Mobile Apps and Spend Less Time Dealing with App Stores" data-track="Mobile Ecosystem" data-youtubeid="LbSM8U21YkM">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse55">
+      <div>
+        <h4 class="panel-title">Use Hypermedia in your Mobile Apps and Spend Less Time Dealing with App Stores</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Ecosystem</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Darrel Miller — Runscope</span>
+
+    </a>
+    <div id="collapse55" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/LbSM8U21YkM/hqdefault.jpg" alt="Use Hypermedia in your Mobile Apps and Spend Less Time Dealing with App Stores">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Darrel Miller — Runscope</strong>
+
+            <p>
+              Xamarin's ability to build mobile apps with native UI across multiple platforms is awesome. But there is a downside to supporting multiple platforms. More apps stores to deal with.
+
+              It's great that you can share C# application logic between platforms. However, it does mean that changing that logic means updating all the app stores to get the changes in your users' hands.
+
+              This talk will demonstrate a way of creating view models that are driven by hypermedia to enable you to move application logic onto the server, so your highly responsive native mobile applications can evolve with far fewer updates to the app store.
+
+              Let your native applications truly embrace web architecture and get the best of both worlds.
+            </p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Using Continuous Integration with Xamarin Apps" data-track="Testing" data-youtubeid="Awl4vGo7Yj0">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse56">
+      <div>
+        <h4 class="panel-title">Using Continuous Integration with Xamarin Apps</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Testing</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Greg Shackles — Olo</span>
+
+    </a>
+    <div id="collapse56" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/Awl4vGo7Yj0/hqdefault.jpg" alt="Using Continuous Integration with Xamarin Apps">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Greg Shackles — Olo</strong>
+
+            <p>Greg Shackles knows continuous integration is a crucial tool when developing software, regardless of platform. Catching issues as quickly as possible is a big win, especially in the mobile world. Take a look at how to run tests as part of the build, covering unit tests as well as integration tests using C# and Test Cloud. Greg will get you started using continuous integration with Xamarin apps in several environments for both iOS and Android.</p>
+
+            <a class="action-button" href="http://xamarin.com/test-cloud">Get started with Xamarin Test Cloud</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="UX Patterns for Cross-Platform Mobile" data-track="Mobile Best Practices" data-youtubeid="IlydsL2ZmaI">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse57">
+      <div>
+        <h4 class="panel-title">UX Patterns for Cross-Platform Mobile</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Best Practices</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">David Ortinau — Shutterfly</span>
+
+    </a>
+    <div id="collapse57" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/IlydsL2ZmaI/hqdefault.jpg" alt="UX Patterns for Cross-Platform Mobile">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">David Ortinau — Shutterfly</strong>
+
+            <p>David Ortinau understands that building engaging and usable apps for a single platform is challenging enough, let alone for multiple platforms! Listen as he exposes Xamarin’s UX prowess in catering to platform differences, while leveraging common patterns, to create truly superior app experiences. Together you'll cover popular user interface and user experience patterns for each platform, how to use Xamarin.Forms for a faster app with a great user interface, and how to avoid pitfalls.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="What is New in Xamarin's Mac and iOS Stacks" data-track="iOS" data-youtubeid="wOJhv1JlBuk">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse58">
+      <div>
+        <h4 class="panel-title">What is New in Xamarin's Mac and iOS Stacks</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">iOS</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Miguel de Icaza — Xamarin</span>
+
+    </a>
+    <div id="collapse58" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/wOJhv1JlBuk/hqdefault.jpg" alt="What is New in Xamarin's Mac and iOS Stacks">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Miguel de Icaza — Xamarin</strong>
+
+            <p>Come learn about the latest updates to our Mac and iOS APIs. Learn about the new Unified API that makes it simpler to share code between the two platforms, and what you need to know to support this brave new dual 32 and 64 bit world. This talk will also cover many of the new runtime features on iOS and the ones coming to Mac, as well as many of the new changes introduced to help you manage your memory, create better bindings, and how to take advantage of our new incremental build capabilities.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#ios">Get started with Xamarin.iOS</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="What's New in Xamarin.Android" data-track="Android" data-youtubeid="Gpqc2XZIQfU">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse59">
+      <div>
+        <h4 class="panel-title">What's New in Xamarin.Android</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Android</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">
+        Jon Pryor,
+        Jérémie Laval,
+        Rodrigo Kumpera — Xamarin
+      </span>
+
+    </a>
+    <div id="collapse59" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/Gpqc2XZIQfU/hqdefault.jpg" alt="What's New in Xamarin.Android">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">
+              Jon Pryor,
+              Jérémie Laval,
+              Rodrigo Kumpera — Xamarin
+            </strong>
+
+            <p>Android L, Android Wear, Android TV, Android Auto, Material Design, and ART; what does this mean to you as a Xamarin developer? Learn about the newest technologies and tools that are all the rage in Android development today! Join Jon, Jérémie, and James as they take you on an adventure into all the latest bits of Xamarin.Android.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform#android">Get started with Xamarin.Android</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Wordament: X-platform, the Hard Way and the Easy Way" data-track="Game Development" data-youtubeid="ML7lf6prsF4">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse60">
+      <div>
+        <h4 class="panel-title">Wordament: X-platform, the Hard Way and the Easy Way</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Game Development</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Cheyne Mathey-Owens - Engineer and John Thornton - Creative Director — Microsoft</span>
+
+    </a>
+    <div id="collapse60" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/ML7lf6prsF4/hqdefault.jpg" alt="Wordament: X-platform, the Hard Way and the Easy Way">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Cheyne Mathey-Owens - Engineer and John Thornton - Creative Director — Microsoft</strong>
+
+            <p>Join engineers Cheyne Mathey-Owens and John Thornton of Wordament, the popular MMO word game, as they discuss taking their hit Windows Phone game to iOS, Android, and beyond! Hear how Cheyne and John made the move from writing native client code to using C# everywhere and achieved very high code sharing across all platforms. Expect plenty of real world examples to help you with your next project in this fast paced fun talk.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Writing Mobile Apps the Github Way" data-track="Mobile Best Practices" data-youtubeid="voa44OHBKME">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse61">
+      <div>
+        <h4 class="panel-title">Writing Mobile Apps the Github Way</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Mobile Best Practices</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Paul Betts — GitHub</span>
+
+    </a>
+    <div id="collapse61" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/voa44OHBKME/hqdefault.jpg" alt="Writing Mobile Apps the Github Way">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Paul Betts — GitHub</strong>
+
+            <p>Paul Betts has created a project for C# developers that includes many of the libraries and patterns GitHub uses in the Windows version of GitHub Desktop, 'Starter-Mobile'. Hang out while we learn how the project works and then create a simple app with it. We'll see how the this approach leads to testable, cross-platform code.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Xamarin Test Cloud and Games" data-track="Game Development" data-youtubeid="mnAenNaEpJk">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse62">
+      <div>
+        <h4 class="panel-title">Xamarin Test Cloud and Games</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Game Development</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">James Clancey — Xamarin</span>
+
+    </a>
+    <div id="collapse62" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/mnAenNaEpJk/hqdefault.jpg" alt="Xamarin Test Cloud and Games">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">James Clancey — Xamarin</strong>
+
+            <p>
+              Many game developers imagine that automated games testing on device is impossible, or simply not worth the time. With Xamarin Test Cloud, the reality couldn’t be further from the truth.
+
+              This session will show developers how to leverage Test Cloud and C# to fully automate game testing across hundreds of iOS and Android devices, regardless of the technology used to develop the game. We will focus on what you should test. As well as how to write useful game tests.
+            </p>
+
+            <a class="action-button" href="http://xamarin.com/test-cloud">Get started with Xamarin Test Cloud</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Xamarin.Forms is Even Cooler than You Think" data-track="Cross-Platform" data-youtubeid="79SdhVjBwh0">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse63">
+      <div>
+        <h4 class="panel-title">Xamarin.Forms is Even Cooler than You Think</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Charles Petzold — Xamarin</span>
+
+    </a>
+    <div id="collapse63" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/79SdhVjBwh0/hqdefault.jpg" alt="Xamarin.Forms is Even Cooler than You Think">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Charles Petzold — Xamarin</strong>
+
+            <p>Labels and Buttons and Sliders are essential but let's go beyond the surface and explore some of the special features of Xamarin.Forms that allow cool C# and XAML coding and awesome cross-platform apps. Join Charles Petzold as he dives into the more obscure layout mechanisms, the power of data bindings and behaviors, and flexible animation infrastructure. Can Xamarin.Forms games be far behind?</p>
+
+            <a class="action-button" href="http://xamarin.com/forms">Try Xamarin.Forms</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="XAML for Xamarin.Forms" data-track="Cross-Platform" data-youtubeid="x3JhCmH5yLo">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse64">
+      <div>
+        <h4 class="panel-title">XAML for Xamarin.Forms</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Charles Petzold — Xamarin</span>
+
+    </a>
+    <div id="collapse64" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/x3JhCmH5yLo/hqdefault.jpg" alt="XAML for Xamarin.Forms">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Charles Petzold — Xamarin</strong>
+
+            <p>Xamarin.Forms brings XAML -- the eXtensible Application Markup Language -- to cross-platform mobile development. Join Charles Petzold as he covers the basics of XAML syntax, including resources, property elements, attached properties, and markup extensions. He'll demonstrate how to integrate custom views and custom markup extensions into XAML, and discusses the relationship between XAML and the popular MVVM (Model-View-ViewModel) application architecture.</p>
+
+            <a class="action-button" href="http://xamarin.com/forms">Try Xamarin.Forms</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Your Comfort Zone is Getting a Lot Bigger: Xamarin for Visual Studio vNext" data-track="Platform" data-youtubeid="KaAuP-rl_P8">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse65">
+      <div>
+        <h4 class="panel-title">Your Comfort Zone is Getting a Lot Bigger: Xamarin for Visual Studio vNext</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Daniel Cazzulino, Victor Garcia Aprea — Xamarin</span>
+
+    </a>
+    <div id="collapse65" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/KaAuP-rl_P8/hqdefault.jpg" alt="Your Comfort Zone is Getting a Lot Bigger: Xamarin for Visual Studio vNext">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Daniel Cazzulino, Victor Garcia Aprea — Xamarin</strong>
+
+            <p>In this fast-paced session Daniel Cazzulino and Victor Garcia Aprea will walk you through the new IDE features in Visual Studio 2013 designed to help you be more productive inside the IDE. Come see how the developer experience has been improved by streamlining the common tasks, simplifying the environment, and allowing developers to focus on the code that matters.</p>
+
+            <a class="action-button" href="http://xamarin.com/platform">Try Xamarin Platform</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" data-title="Your First Xamarin.Forms App" data-track="Cross-Platform" data-youtubeid="xWyOcEpNyXQ">
+    <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#sessions-output" href="#collapse66">
+      <div>
+        <h4 class="panel-title">Your First Xamarin.Forms App</h4>
+        <h4 class="panel-track pull-right hide-on-mobile">Cross-Platform</h4>
+      </div>
+
+      <span class="panel-speaker muted hide-on-mobile">Craig Dunn — Xamarin</span>
+
+    </a>
+    <div id="collapse66" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="columns">
+          <a class="first cell width-4 video-thumbnail" href="#" data-target="#sessions-0">
+            <img class="img-thumbnail" data-src="http://img.youtube.com/vi/xWyOcEpNyXQ/hqdefault.jpg" alt="Your First Xamarin.Forms App">
+              <img class="play-button" src="/images/play-button.png" alt="Play">
+                    </a>
+          <div class="cell width-8">
+
+            <strong class="show-on-mobile">Craig Dunn — Xamarin</strong>
+
+            <p>Craig Dunn has a lot of great things to say about Xamarin.Forms, the new cross-platform API for building cross-platform mobile apps. Allow Craig to give you the lowdown on the basics of the Xamarin.Forms architecture so together you can walk through building your first iOS, Android, and Windows Phone apps using 100% shared UI and back-end code.</p>
+
+            <a class="action-button" href="http://xamarin.com/forms">Try Xamarin.Forms</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
