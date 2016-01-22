@@ -1,19 +1,32 @@
-﻿using EvolveVideos.Clients.Core.Models;
-using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.Youtube;
-using GalaSoft.MvvmLight.Command;
-using System;
+﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using EvolveVideos.Clients.Core.Models;
+using EvolveVideos.Clients.Core.Services;
+using GalaSoft.MvvmLight.Command;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
     public class SessionDetailsViewModel : EvolveBaseViewModel
     {
-        private readonly INavigationService _navigationService;
         private readonly IDialogService _dialogService;
+        private readonly INavigationService _navigationService;
+        private readonly IVideoDownloaderService _videoDownloaderService;
 
         private EvolveSession _session;
+
+        private Uri _videoUrl;
+
+        public SessionDetailsViewModel(INavigationService navigationService, IDialogService dialogService,
+            IVideoDownloaderService videoDownloaderService)
+        {
+            this._navigationService = navigationService;
+            this._dialogService = dialogService;
+            this._videoDownloaderService = videoDownloaderService;
+
+            this.CreateCommands();
+        }
 
         public EvolveSession Session
         {
@@ -21,31 +34,20 @@ namespace EvolveVideos.Clients.Core.ViewModels
             set { this.Set(() => this.Session, ref this._session, value); }
         }
 
-        private Uri _videoUrl;
-
         public Uri VideoUrl
         {
             get { return this._videoUrl; }
             set { this.Set(() => this.VideoUrl, ref this._videoUrl, value); }
         }
 
-        public ICommand PlayCommand
-        {
-            get;
-            private set;
-        }
+        public ICommand PlayCommand { get; private set; }
 
-        public SessionDetailsViewModel(INavigationService navigationService, IDialogService dialogService)
-        {
-            this._navigationService = navigationService;
-            this._dialogService = dialogService;
-
-            this.CreateCommands();
-        }
+        public ICommand DownloadCommand { get; private set; }
 
         private void CreateCommands()
         {
             this.PlayCommand = new RelayCommand(this.PlayVideo);
+            this.DownloadCommand = new RelayCommand(async () => { await this.DownloadVideoAsync(); });
         }
 
         public override async Task OnNavigateTo(object parameter)
@@ -59,12 +61,12 @@ namespace EvolveVideos.Clients.Core.ViewModels
                 {
                     this.IsBusy = true;
                     this.Session = session;
-                    this.VideoUrl = (await YouTube.GetVideoUriAsync(session.YoutubeID, YouTubeQuality.Quality720P)).Uri;
+                    this.VideoUrl = await this._videoDownloaderService.GetStreamVideoUrlAsync(session.YoutubeID);
                 }
             }
             catch (Exception ex)
             {
-                // Log error
+                // TODO: Log error
                 await this._dialogService.ShowMessageAsync("Error", "Is not possible load the item");
                 this._navigationService.GoBack();
             }
@@ -73,6 +75,33 @@ namespace EvolveVideos.Clients.Core.ViewModels
         private void PlayVideo()
         {
             // Play video
+        }
+
+        /// <summary>
+        /// TODO: Create a DownloadManager
+        /// </summary>
+        /// <returns></returns>
+        private async Task DownloadVideoAsync()
+        {
+            try
+            {
+                // Test method
+                // Replace it by a background downloader
+                var downloadUrl = await this._videoDownloaderService.GetDownloadVideoUrlAsync(this.Session.YoutubeID);
+                if (!string.IsNullOrWhiteSpace(downloadUrl.AbsoluteUri))
+                {
+                    var client = new HttpClient();
+                    var data = await client.GetByteArrayAsync(downloadUrl);
+
+                    // Save data[] in localstorage
+                    var a = 4;
+                }
+            }
+            catch (Exception ex)
+            {
+                // TODO: Log error
+                await this._dialogService.ShowMessageAsync("Error", "Is not possible download the video");
+            }
         }
     }
 }

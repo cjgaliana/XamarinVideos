@@ -46,10 +46,10 @@
     <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Services\INetworkService.cs" />
     <Compile Include="Services\IStorageService.cs" />
+    <Compile Include="Services\IVideoDownloaderService.cs" />
     <Compile Include="ViewModels\EvolveBaseViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\SessionDetailsViewModel.cs" />
-    <Compile Include="Youtube\YouTube.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

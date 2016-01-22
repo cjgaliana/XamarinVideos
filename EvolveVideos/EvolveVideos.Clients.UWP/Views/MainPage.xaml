@@ -1,4 +1,4 @@
-﻿<Page
+﻿<local:BasePage
     x:Class="EvolveVideos.Clients.UWP.Views.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,9 +6,36 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:converters="using:EvolveVideos.Clients.UWP.Converters"
     DataContext="{Binding MainViewModel, Source={StaticResource ViewModelLocator}}">
 
+    
+    <local:BasePage.Resources>
+        <converters:ItemClickConverter x:Key="ItemClickConverter"/>
+    </local:BasePage.Resources>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <GridView
+            ItemsSource="{Binding Sessions}"
+            Padding="52"
+            IsItemClickEnabled="True">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="2" BorderBrush="{StaticResource AccentBrush}">
+                        <StackPanel>
+                            <TextBlock Text="{Binding Title}" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Text="{Binding Description}" TextWrapping="WrapWholeWords" MaxWidth="500" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+            <Interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="ItemClick">
+                    <core:InvokeCommandAction Command="{Binding NavigateToSessionCommand, Mode=OneWay}" InputConverter="{StaticResource ItemClickConverter}" />
+                </core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </GridView>
     </Grid>
-</Page>
+</local:BasePage>

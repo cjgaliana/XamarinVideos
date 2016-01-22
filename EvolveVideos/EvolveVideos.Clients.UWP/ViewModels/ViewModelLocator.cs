@@ -34,7 +34,8 @@ namespace EvolveVideos.Clients.UWP.ViewModels
                 .RegisterType<INavigationService, NavigationService>()
                 .RegisterType<INetworkService, NetworkService>()
                 .RegisterType<ILauncherService, LauncherService>()
-                .RegisterType<IStorageService, StorageService>();
+                .RegisterType<IStorageService, StorageService>()
+                .RegisterType<IVideoDownloaderService, YoutubeDownloaderService>();
         }
 
         private void RegisterViewModels()
