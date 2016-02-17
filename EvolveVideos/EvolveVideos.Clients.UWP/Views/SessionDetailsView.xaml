@@ -9,8 +9,16 @@
     DataContext="{Binding SessionDetailsViewModel, Source={StaticResource ViewModelLocator}}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel>
-            <Button Content="Download" Command="{Binding DownloadCommand}" />
-        </StackPanel>
+        <ScrollViewer Padding="52">
+            <StackPanel>
+                <TextBlock Text="{Binding Session.Title}" TextWrapping="Wrap" />
+                <TextBlock Text="{Binding Session.Author}" TextWrapping="Wrap" />
+                <TextBlock Text="{Binding Session.Track}" TextWrapping="Wrap" />
+                <Image Source="{Binding Session.Thumbnail}" />
+                <TextBlock Text="{Binding Session.Description}" TextWrapping="Wrap" />
+                <Button Content="Play" Command="{Binding PlayCommand}" />
+                <Button Content="Download" Command="{Binding DownloadCommand}" />
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </local:BasePage>
