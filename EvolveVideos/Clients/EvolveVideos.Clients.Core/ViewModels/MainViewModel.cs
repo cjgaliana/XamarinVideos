@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
-    public class MainViewModel : EvolveBaseViewModel
+    public class MainViewModel : BaseViewModel
     {
         private readonly IDialogService _dialogService;
         private readonly INavigationService _navigationService;

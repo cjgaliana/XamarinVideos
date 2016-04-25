@@ -5,6 +5,8 @@ using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Cimbalino.Toolkit.Controls;
+using EvolveVideos.Clients.UWP.Controls;
 
 namespace EvolveVideos.Clients.UWP
 {
@@ -47,7 +49,15 @@ namespace EvolveVideos.Clients.UWP
             if (rootFrame == null)
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
-                rootFrame = new Frame();
+                //Use Cimbalino toolkit
+                rootFrame = new HamburgerFrame()
+                {
+                    Header = new HamburgerTitleBar()
+                    {
+                        Title = "EvolveVideos"
+                    },
+                    Pane = new HamburgerPaneControl()
+                };
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 

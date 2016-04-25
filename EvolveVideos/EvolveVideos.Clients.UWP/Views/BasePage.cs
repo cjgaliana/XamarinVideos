@@ -6,7 +6,7 @@ namespace EvolveVideos.Clients.UWP.Views
 {
     public class BasePage : Page
     {
-        private EvolveBaseViewModel BasePageViewModel => this.DataContext as EvolveBaseViewModel;
+        private BaseViewModel BasePageViewModel => this.DataContext as BaseViewModel;
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {

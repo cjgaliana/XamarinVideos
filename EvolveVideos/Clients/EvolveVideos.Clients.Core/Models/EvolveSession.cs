@@ -1,4 +1,6 @@
-﻿namespace EvolveVideos.Clients.Core.Models
+﻿using System;
+
+namespace EvolveVideos.Clients.Core.Models
 {
     public class EvolveSession
     {
@@ -8,5 +10,8 @@
         public string Author { get; set; }
         public string Description { get; set; }
         public string YoutubeID { get; set; }
+        public string VideoUrl { get; set; }
+        public DateTime DateAdded { get; set; }
+        public DateTime DateLastModification { get; set; }
     }
 }

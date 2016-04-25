@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Cimbalino.Toolkit.Controls;
 using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.UWP.Helpers;
 using EvolveVideos.Clients.UWP.Views;
 
 namespace EvolveVideos.Clients.UWP.Services
@@ -12,52 +13,61 @@ namespace EvolveVideos.Clients.UWP.Services
     {
         private readonly Dictionary<PageKey, Type> _pages;
 
+        private readonly SystemNavigationManager _systemNavManager;
+
         public NavigationService()
         {
-            this._pages = new Dictionary<PageKey, Type>
+            _pages = new Dictionary<PageKey, Type>
             {
-                {PageKey.MainPage, typeof (MainPage)},
-                {PageKey.SessionDetailsPage, typeof (SessionDetailsView)}
+                {PageKey.MainPage, typeof(MainPage)},
+                {PageKey.SessionDetailsPage, typeof(SessionDetailsView)},
+                {PageKey.SplashScreenPage, typeof(SplashScreenPage)},
+                {PageKey.VideoCollectionsPage, typeof(VideoCollectionsPage)},
+                {PageKey.VideoCollectionDetailsPage, typeof(VideoCollectionDetailsPage)}
             };
 
-            this.CurrentFrame = (Frame) Window.Current.Content;
+            CurrentFrame = (HamburgerFrame) Window.Current.Content;
+
+            _systemNavManager = SystemNavigationManager.GetForCurrentView();
+            _systemNavManager.BackRequested += SystemNavManager_BackRequested;
         }
 
         private Frame CurrentFrame { get; }
 
         public void GoBack()
         {
-            if (this.CanGoBack)
+            if (CanGoBack)
             {
-                this.CurrentFrame.GoBack();
+                CurrentFrame.GoBack();
+                UpdateBackButtonVisibility();
             }
         }
 
-        public bool CanGoBack => this.CurrentFrame.CanGoBack;
+        public bool CanGoBack => CurrentFrame.CanGoBack;
 
         public void NavigateTo(PageKey page)
         {
-            this.NavigateTo(page, null);
+            NavigateTo(page, null);
         }
 
         public void NavigateTo(PageKey page, object parameters)
         {
-            if (!this._pages.ContainsKey(page))
+            if (!_pages.ContainsKey(page))
             {
                 return;
             }
 
-            var pageType = this._pages[page];
-            this.NavigateToPage(pageType, parameters);
-            TitleBarHelper.ShowBackButton();
+            var pageType = _pages[page];
+            NavigateToPage(pageType, parameters);
+            UpdateBackButtonVisibility();
         }
 
         public void ClearNavigationStack()
         {
             try
             {
-                this.CurrentFrame.SetNavigationState("1,0");
-                TitleBarHelper.HideBackButton();
+                CurrentFrame.SetNavigationState("1,0");
+                UpdateBackButtonVisibility();
             }
             catch (Exception ex)
             {
@@ -65,9 +75,25 @@ namespace EvolveVideos.Clients.UWP.Services
             }
         }
 
+        private void SystemNavManager_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            GoBack();
+            e.Handled = true;
+        }
+
         private void NavigateToPage(Type page, object parameter = null)
         {
-            this.CurrentFrame.Navigate(page, parameter);
+            CurrentFrame.Navigate(page, parameter);
+        }
+
+        private void UpdateBackButtonVisibility()
+        {
+            if (_systemNavManager != null)
+            {
+                _systemNavManager.AppViewBackButtonVisibility = CurrentFrame.BackStackDepth > 0 
+                    ? AppViewBackButtonVisibility.Visible 
+                    : AppViewBackButtonVisibility.Collapsed;
+            }
         }
     }
 }

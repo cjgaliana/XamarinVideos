@@ -1,0 +1,25 @@
+﻿<local:BasePage
+    x:Class="EvolveVideos.Clients.UWP.Views.VideoCollectionsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EvolveVideos.Clients.UWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding VideoCollectionsViewModel, Source={StaticResource ViewModelLocator}}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<GridView ItemsSource="{Binding Collections}">
+    <GridView.ItemTemplate>
+        <DataTemplate>
+            <Border BorderThickness="2" BorderBrush="Green">
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}" />
+                    <TextBlock Text="{Binding Description}" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+    </GridView.ItemTemplate>
+</GridView>
+    </Grid>
+</local:BasePage>

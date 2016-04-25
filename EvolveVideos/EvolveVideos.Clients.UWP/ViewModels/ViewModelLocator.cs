@@ -18,19 +18,28 @@ namespace EvolveVideos.Clients.UWP.ViewModels
         /// </summary>
         public ViewModelLocator()
         {
-            this._container = new UnityContainer();
+            _container = new UnityContainer();
 
-            this.RegisterServices();
-            this.RegisterViewModels();
+            RegisterServices();
+            RegisterViewModels();
         }
 
-        public MainViewModel MainViewModel => this._container.Resolve<MainViewModel>();
+        public SettingsViewModel SettingsViewModel => _container.Resolve<SettingsViewModel>();
 
-        public SessionDetailsViewModel SessionDetailsViewModel => this._container.Resolve<SessionDetailsViewModel>();
+        public MainViewModel MainViewModel => _container.Resolve<MainViewModel>();
+
+        public SplashScreenViewModel SplashScreenViewModel => _container.Resolve<SplashScreenViewModel>();
+
+        public SessionDetailsViewModel SessionDetailsViewModel => _container.Resolve<SessionDetailsViewModel>();
+
+        public VideoCollectionsViewModel VideoCollectionsViewModel => _container.Resolve<VideoCollectionsViewModel>();
+
+        public VideoCollectionDetailsViewModel VideoCollectionDetailsViewModel
+            => _container.Resolve<VideoCollectionDetailsViewModel>();
 
         private void RegisterServices()
         {
-            this._container.RegisterType<IDialogService, DialogService>()
+            _container.RegisterType<IDialogService, DialogService>()
                 .RegisterType<INavigationService, NavigationService>()
                 .RegisterType<INetworkService, NetworkService>()
                 .RegisterType<ILauncherService, LauncherService>()
@@ -40,8 +49,13 @@ namespace EvolveVideos.Clients.UWP.ViewModels
 
         private void RegisterViewModels()
         {
-            this._container.RegisterType<MainViewModel>()
-                .RegisterType<SessionDetailsViewModel>();
+            _container
+                .RegisterType<SplashScreenViewModel>()
+                .RegisterType<SettingsViewModel>()
+                .RegisterType<MainViewModel>()
+                .RegisterType<SessionDetailsViewModel>()
+                .RegisterType<VideoCollectionsViewModel>()
+                .RegisterType<VideoCollectionDetailsViewModel>();
         }
     }
 }

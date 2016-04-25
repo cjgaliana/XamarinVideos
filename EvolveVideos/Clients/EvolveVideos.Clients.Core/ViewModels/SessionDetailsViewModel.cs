@@ -8,7 +8,7 @@ using GalaSoft.MvvmLight.Command;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
-    public class SessionDetailsViewModel : EvolveBaseViewModel
+    public class SessionDetailsViewModel : BaseViewModel
     {
         private readonly IDialogService _dialogService;
         private readonly INavigationService _navigationService;

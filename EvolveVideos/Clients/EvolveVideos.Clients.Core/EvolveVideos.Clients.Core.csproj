@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\EvolveSession.cs" />
+    <Compile Include="Models\VideoCollection.cs" />
+    <Compile Include="Models\VideoTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IDialogService.cs" />
     <Compile Include="Services\ILauncherService.cs" />
@@ -47,9 +49,13 @@
     <Compile Include="Services\INetworkService.cs" />
     <Compile Include="Services\IStorageService.cs" />
     <Compile Include="Services\IVideoDownloaderService.cs" />
-    <Compile Include="ViewModels\EvolveBaseViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\SessionDetailsViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\SplashScreenViewModel.cs" />
+    <Compile Include="ViewModels\VideoCollectionDetailsViewModel.cs" />
+    <Compile Include="ViewModels\VideoCollectionsViewModel.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

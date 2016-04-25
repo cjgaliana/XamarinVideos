@@ -1,0 +1,42 @@
+﻿<UserControl
+    x:Class="EvolveVideos.Clients.UWP.Controls.HamburgerPaneControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EvolveVideos.Clients.UWP.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Cimbalino.Toolkit.Controls"
+    xmlns:views="using:EvolveVideos.Clients.UWP.Views"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <controls:HamburgerMenuButton Content="Home" NavigationSourcePageType="views:MainPage">
+                <controls:HamburgerMenuButton.Icon>
+                    <FontIcon FontSize="16" Glyph="&#xE80F;" />
+                </controls:HamburgerMenuButton.Icon>
+            </controls:HamburgerMenuButton>
+
+            <controls:HamburgerMenuButton Content="Collections" NavigationSourcePageType="views:VideoCollectionsPage">
+                <controls:HamburgerMenuButton.Icon>
+                    <FontIcon FontSize="16" Glyph="&#xE8BC;" />
+                </controls:HamburgerMenuButton.Icon>
+            </controls:HamburgerMenuButton>
+        </StackPanel>
+
+        <controls:HamburgerMenuButton Grid.Row="1"
+                                  Content="Settings"
+                                  NavigationSourcePageType="views:SettingsPage">
+            <controls:HamburgerMenuButton.Icon>
+                <FontIcon FontSize="16" Glyph="&#xE713;" />
+            </controls:HamburgerMenuButton.Icon>
+        </controls:HamburgerMenuButton>
+    </Grid>
+</UserControl>

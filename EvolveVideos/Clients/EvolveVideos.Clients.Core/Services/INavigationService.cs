@@ -2,8 +2,11 @@
 {
     public enum PageKey
     {
+        SplashScreenPage,
         MainPage,
-        SessionDetailsPage
+        SessionDetailsPage,
+        VideoCollectionsPage,
+        VideoCollectionDetailsPage
     }
 
     public interface INavigationService
