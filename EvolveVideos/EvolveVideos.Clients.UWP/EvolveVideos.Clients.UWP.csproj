@@ -115,7 +115,6 @@
     <Compile Include="Services\StorageService.cs" />
     <Compile Include="Services\YoutubeDownloaderService.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
-    <Compile Include="Views\BasePage.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

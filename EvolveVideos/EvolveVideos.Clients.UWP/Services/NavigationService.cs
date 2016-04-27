@@ -1,11 +1,13 @@
-﻿using System;
+﻿using Cimbalino.Toolkit.Controls;
+using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Core.ViewModels;
+using EvolveVideos.Clients.UWP.Views;
+using System;
 using System.Collections.Generic;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Cimbalino.Toolkit.Controls;
-using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.UWP.Views;
+using Windows.UI.Xaml.Navigation;
 
 namespace EvolveVideos.Clients.UWP.Services
 {
@@ -14,6 +16,8 @@ namespace EvolveVideos.Clients.UWP.Services
         private readonly Dictionary<PageKey, Type> _pages;
 
         private readonly SystemNavigationManager _systemNavManager;
+
+        private Frame _currentFrame;
 
         public NavigationService()
         {
@@ -26,24 +30,22 @@ namespace EvolveVideos.Clients.UWP.Services
                 {PageKey.VideoCollectionDetailsPage, typeof(VideoCollectionDetailsPage)}
             };
 
-            CurrentFrame = (HamburgerFrame) Window.Current.Content;
+            InitializeFrame();
 
             _systemNavManager = SystemNavigationManager.GetForCurrentView();
             _systemNavManager.BackRequested += SystemNavManager_BackRequested;
         }
 
-        private Frame CurrentFrame { get; }
-
         public void GoBack()
         {
             if (CanGoBack)
             {
-                CurrentFrame.GoBack();
+                _currentFrame.GoBack();
                 UpdateBackButtonVisibility();
             }
         }
 
-        public bool CanGoBack => CurrentFrame.CanGoBack;
+        public bool CanGoBack => _currentFrame.CanGoBack;
 
         public void NavigateTo(PageKey page)
         {
@@ -66,12 +68,47 @@ namespace EvolveVideos.Clients.UWP.Services
         {
             try
             {
-                CurrentFrame.SetNavigationState("1,0");
+                //_currentFrame.SetNavigationState("1,0");
+                _currentFrame.BackStack.Clear();
                 UpdateBackButtonVisibility();
             }
             catch (Exception ex)
             {
                 // Catch the error
+            }
+        }
+
+        private void InitializeFrame()
+        {
+            _currentFrame = (HamburgerFrame)Window.Current.Content;
+            if (_currentFrame != null)
+            {
+                _currentFrame.Navigated += OnNavigatedTo;
+                _currentFrame.Navigating += OnNavigatedFrom;
+            }
+        }
+
+        private async void OnNavigatedTo(object sender, NavigationEventArgs e)
+        {
+            var page = e.Content as Page;
+            var viewModel = page?.DataContext as BaseViewModel;
+            if (viewModel != null)
+            {
+                await viewModel.OnNavigateTo(e.Parameter);
+            }
+        }
+
+        private async void OnNavigatedFrom(object sender, NavigatingCancelEventArgs e)
+        {
+            var frame = sender as Frame;
+            if (frame != null)
+            {
+                var page = frame.Content as Page;
+                var viewModel = page?.DataContext as BaseViewModel;
+                if (viewModel != null)
+                {
+                    await viewModel.OnNavigateFrom(e.Parameter);
+                }
             }
         }
 
@@ -83,15 +120,15 @@ namespace EvolveVideos.Clients.UWP.Services
 
         private void NavigateToPage(Type page, object parameter = null)
         {
-            CurrentFrame.Navigate(page, parameter);
+            _currentFrame.Navigate(page, parameter);
         }
 
         private void UpdateBackButtonVisibility()
         {
             if (_systemNavManager != null)
             {
-                _systemNavManager.AppViewBackButtonVisibility = CurrentFrame.BackStackDepth > 0 
-                    ? AppViewBackButtonVisibility.Visible 
+                _systemNavManager.AppViewBackButtonVisibility = _currentFrame.BackStackDepth > 0
+                    ? AppViewBackButtonVisibility.Visible
                     : AppViewBackButtonVisibility.Collapsed;
             }
         }
