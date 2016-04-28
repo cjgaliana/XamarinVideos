@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
-    public class EvolveBaseViewModel : ViewModelBase
+    public class BaseViewModel : ViewModelBase
     {
         private bool _isBusy = false;
 

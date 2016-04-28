@@ -51,9 +51,17 @@ namespace EvolveVideos.Clients.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                //  Display an extended splash screen if app was not previously running.
+                if (e.PreviousExecutionState != ApplicationExecutionState.Running)
                 {
-                    //TODO: Load state from previously suspended application
+                    if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                    {
+                        //TODO: Load state from previously suspended application
+                    }
+
+                    var extendedSplash = new ExtendedSplashScreen(e.SplashScreen);
+                    rootFrame.Content = extendedSplash;
+                    Window.Current.Content = rootFrame;
                 }
 
                 // Place the frame in the current Window
@@ -65,7 +73,7 @@ namespace EvolveVideos.Clients.UWP
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                rootFrame.Navigate(typeof(ExtendedSplashScreen), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();
