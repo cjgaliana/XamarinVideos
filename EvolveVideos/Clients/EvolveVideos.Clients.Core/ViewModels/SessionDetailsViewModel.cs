@@ -1,29 +1,27 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using EvolveVideos.Clients.Core.Services;
+﻿using EvolveVideos.Clients.Core.Services;
 using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
+using System;
+using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
     public class SessionDetailsViewModel : BaseViewModel
     {
         private readonly IDialogService _dialogService;
+        private readonly IDownloadManager _downloadManager;
         private readonly INavigationService _navigationService;
-        private readonly IVideoDownloaderService _videoDownloaderService;
 
         private EvolveSession _session;
 
         private Uri _videoUrl;
 
-        public SessionDetailsViewModel(INavigationService navigationService, IDialogService dialogService,
-            IVideoDownloaderService videoDownloaderService)
+        public SessionDetailsViewModel(INavigationService navigationService, IDialogService dialogService, IDownloadManager downloadManager)
         {
             this._navigationService = navigationService;
             this._dialogService = dialogService;
-            this._videoDownloaderService = videoDownloaderService;
+            _downloadManager = downloadManager;
 
             this.CreateCommands();
         }
@@ -61,7 +59,6 @@ namespace EvolveVideos.Clients.Core.ViewModels
                 {
                     this.IsBusy = true;
                     this.Session = session;
-                    this.VideoUrl = await this._videoDownloaderService.GetStreamVideoUrlAsync(session.YoutubeID);
                 }
             }
             catch (Exception ex)
@@ -77,25 +74,12 @@ namespace EvolveVideos.Clients.Core.ViewModels
             // Play video
         }
 
-        /// <summary>
-        /// TODO: Create a DownloadManager
-        /// </summary>
-        /// <returns></returns>
+
         private async Task DownloadVideoAsync()
         {
             try
             {
-                // Test method
-                // Replace it by a background downloader
-                var downloadUrl = await this._videoDownloaderService.GetDownloadVideoUrlAsync(this.Session.YoutubeID);
-                if (!string.IsNullOrWhiteSpace(downloadUrl.AbsoluteUri))
-                {
-                    var client = new HttpClient();
-                    var data = await client.GetByteArrayAsync(downloadUrl);
-
-                    // Save data[] in localstorage
-                    var a = 4;
-                }
+                await this._downloadManager.QueueDownloadAsync(this.Session);
             }
             catch (Exception ex)
             {

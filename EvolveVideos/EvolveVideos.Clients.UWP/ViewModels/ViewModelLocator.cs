@@ -29,6 +29,7 @@ namespace EvolveVideos.Clients.UWP.ViewModels
         }
 
         public SettingsViewModel SettingsViewModel => _container.Resolve<SettingsViewModel>();
+        public DownloadsViewModel DownloadsViewModel => _container.Resolve<DownloadsViewModel>();
 
         public MainViewModel MainViewModel => _container.Resolve<MainViewModel>();
 
@@ -46,10 +47,12 @@ namespace EvolveVideos.Clients.UWP.ViewModels
             _container.RegisterType<IDialogService, DialogService>()
                 .RegisterType<INavigationService, NavigationService>(new ContainerControlledLifetimeManager())
                 .RegisterType<INetworkService, NetworkService>(new ContainerControlledLifetimeManager())
+                .RegisterType<ISettingsService, RoamingSettingsService>()
                 .RegisterType<ILauncherService, LauncherService>()
                 .RegisterType<IStorageService, StorageService>()
+                .RegisterType<IDataService, LocalResourcesDataService>()
                 .RegisterType<IVideoDownloaderService, YoutubeDownloaderService>()
-                .RegisterType<IDataService, LocalResourcesDataService>();
+                .RegisterType<IDownloadManager, DownloadManager>(new ContainerControlledLifetimeManager());
         }
 
         private void RegisterViewModels()
@@ -60,7 +63,8 @@ namespace EvolveVideos.Clients.UWP.ViewModels
                 .RegisterType<MainViewModel>()
                 .RegisterType<SessionDetailsViewModel>()
                 .RegisterType<VideoCollectionsViewModel>()
-                .RegisterType<VideoCollectionDetailsViewModel>();
+                .RegisterType<VideoCollectionDetailsViewModel>()
+                .RegisterType<DownloadsViewModel>();
         }
     }
 }
