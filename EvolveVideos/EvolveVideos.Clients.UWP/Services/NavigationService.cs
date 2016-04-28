@@ -1,5 +1,4 @@
-﻿using Cimbalino.Toolkit.Controls;
-using EvolveVideos.Clients.Core.Services;
+﻿using EvolveVideos.Clients.Core.Services;
 using EvolveVideos.Clients.Core.ViewModels;
 using EvolveVideos.Clients.UWP.Views;
 using System;
@@ -25,12 +24,12 @@ namespace EvolveVideos.Clients.UWP.Services
             {
                 {PageKey.MainPage, typeof(MainPage)},
                 {PageKey.SessionDetailsPage, typeof(SessionDetailsView)},
-                {PageKey.SplashScreenPage, typeof(SplashScreenPage)},
+                {PageKey.SplashScreenPage, typeof(ExtendedSplashScreen)},
                 {PageKey.VideoCollectionsPage, typeof(VideoCollectionsPage)},
                 {PageKey.VideoCollectionDetailsPage, typeof(VideoCollectionDetailsPage)}
             };
 
-            InitializeFrame();
+            SetFrame((Frame)Window.Current.Content);
 
             _systemNavManager = SystemNavigationManager.GetForCurrentView();
             _systemNavManager.BackRequested += SystemNavManager_BackRequested;
@@ -69,7 +68,7 @@ namespace EvolveVideos.Clients.UWP.Services
             try
             {
                 //_currentFrame.SetNavigationState("1,0");
-                _currentFrame.BackStack.Clear();
+                _currentFrame?.BackStack.Clear();
                 UpdateBackButtonVisibility();
             }
             catch (Exception ex)
@@ -78,11 +77,12 @@ namespace EvolveVideos.Clients.UWP.Services
             }
         }
 
-        private void InitializeFrame()
+        public void SetFrame(Frame newFrame)
         {
-            _currentFrame = (HamburgerFrame)Window.Current.Content;
+            _currentFrame = newFrame;
             if (_currentFrame != null)
             {
+                Window.Current.Content = _currentFrame;
                 _currentFrame.Navigated += OnNavigatedTo;
                 _currentFrame.Navigating += OnNavigatedFrom;
             }

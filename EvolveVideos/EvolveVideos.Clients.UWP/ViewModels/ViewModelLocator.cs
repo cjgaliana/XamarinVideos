@@ -1,6 +1,7 @@
 ﻿using EvolveVideos.Clients.Core.Services;
 using EvolveVideos.Clients.Core.ViewModels;
 using EvolveVideos.Clients.UWP.Services;
+using Microsoft.Practices.ServiceLocation;
 using Microsoft.Practices.Unity;
 
 namespace EvolveVideos.Clients.UWP.ViewModels
@@ -19,6 +20,8 @@ namespace EvolveVideos.Clients.UWP.ViewModels
         public ViewModelLocator()
         {
             _container = new UnityContainer();
+
+            ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(this._container));
 
             RegisterServices();
             RegisterViewModels();
@@ -40,8 +43,8 @@ namespace EvolveVideos.Clients.UWP.ViewModels
         private void RegisterServices()
         {
             _container.RegisterType<IDialogService, DialogService>()
-                .RegisterType<INavigationService, NavigationService>()
-                .RegisterType<INetworkService, NetworkService>()
+                .RegisterType<INavigationService, NavigationService>(new ContainerControlledLifetimeManager())
+                .RegisterType<INetworkService, NetworkService>(new ContainerControlledLifetimeManager())
                 .RegisterType<ILauncherService, LauncherService>()
                 .RegisterType<IStorageService, StorageService>()
                 .RegisterType<IVideoDownloaderService, YoutubeDownloaderService>();

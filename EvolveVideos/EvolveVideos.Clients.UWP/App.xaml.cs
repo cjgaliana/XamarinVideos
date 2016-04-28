@@ -5,8 +5,6 @@ using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using Cimbalino.Toolkit.Controls;
-using EvolveVideos.Clients.UWP.Controls;
 
 namespace EvolveVideos.Clients.UWP
 {
@@ -49,21 +47,21 @@ namespace EvolveVideos.Clients.UWP
             if (rootFrame == null)
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
-                //Use Cimbalino toolkit
-                rootFrame = new HamburgerFrame()
-                {
-                    Header = new HamburgerTitleBar()
-                    {
-                        Title = "EvolveVideos"
-                    },
-                    Pane = new HamburgerPaneControl()
-                };
+                rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                //  Display an extended splash screen if app was not previously running.
+                if (e.PreviousExecutionState != ApplicationExecutionState.Running)
                 {
-                    //TODO: Load state from previously suspended application
+                    if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                    {
+                        //TODO: Load state from previously suspended application
+                    }
+
+                    var extendedSplash = new ExtendedSplashScreen(e.SplashScreen);
+                    rootFrame.Content = extendedSplash;
+                    Window.Current.Content = rootFrame;
                 }
 
                 // Place the frame in the current Window
@@ -75,7 +73,7 @@ namespace EvolveVideos.Clients.UWP
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                rootFrame.Navigate(typeof(ExtendedSplashScreen), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();
