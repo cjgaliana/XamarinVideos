@@ -99,6 +99,7 @@
     <Compile Include="Controls\HamburgerPaneControl.xaml.cs">
       <DependentUpon>HamburgerPaneControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\NetworkImage.cs" />
     <Compile Include="Converters\ItemClickConverter.cs" />
     <Compile Include="DesignData\DesignData.cs" />
     <Compile Include="Helpers\TitleBarHelper.cs" />
@@ -145,6 +146,7 @@
     <None Include="EvolveVideos.Clients.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\DefaultImage.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -184,6 +186,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\DownloadsPage.xaml">
       <SubType>Designer</SubType>

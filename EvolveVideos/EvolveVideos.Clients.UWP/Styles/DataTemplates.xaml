@@ -1,12 +1,19 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:EvolveVideos.Clients.UWP.Styles">
+    xmlns:local="using:EvolveVideos.Clients.UWP.Styles"
+    xmlns:controls="using:EvolveVideos.Clients.UWP.Controls">
 
     <DataTemplate x:Name="SessionDataTemplate">
         <Border BorderThickness="2" BorderBrush="{StaticResource AccentBrush}">
             <Grid>
-                <Image Source="{Binding Thumbnail}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <!--<Image Source="{Binding Thumbnail}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" />-->
+                <controls:NetworkImage 
+                    Source="{Binding Thumbnail}" 
+                    FallbackSource="ms-appx:///Assets/Images/DefaultImage.png"
+                    Stretch="UniformToFill" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" />
                 <StackPanel Background="{StaticResource ComplimentaryBrush}" VerticalAlignment="Bottom">
                     <TextBlock Text="{Binding Title}" TextWrapping="WrapWholeWords" Foreground="{StaticResource InvertedTextForeground}" />
                     <TextBlock Text="{Binding }" TextWrapping="WrapWholeWords" Foreground="{StaticResource InvertedTextForeground}" />
