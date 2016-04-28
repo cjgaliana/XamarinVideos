@@ -1,10 +1,10 @@
 ﻿using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Data;
+using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using EvolveVideos.Data;
-using EvolveVideos.Data.Models;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
@@ -63,7 +63,6 @@ namespace EvolveVideos.Clients.Core.ViewModels
 
         private async Task LoadEvolveSessions()
         {
-            //this.Sessions = await this._storageService.LoadSessions();
             var latestVideos = await this._dataService.GetLatestAsync();
             this.Sessions = latestVideos;
         }

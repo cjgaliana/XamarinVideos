@@ -9,6 +9,8 @@
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
     xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     xmlns:converters="using:EvolveVideos.Clients.UWP.Converters"
+    xmlns:controls="using:EvolveVideos.Clients.UWP.Controls"
+    xmlns:helpers="using:EvolveVideos.Clients.UWP.Helpers"
     DataContext="{Binding MainViewModel, Source={StaticResource ViewModelLocator}}">
 
     <Page.Resources>
@@ -16,26 +18,29 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <GridView
+        <controls:AdaptiveGridView
             ItemsSource="{Binding Sessions}"
             Padding="52"
             IsItemClickEnabled="True"
-            SelectionMode="None">
-            <GridView.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderThickness="2" BorderBrush="{StaticResource AccentBrush}">
-                        <StackPanel>
-                            <TextBlock Text="{Binding Title}" TextWrapping="WrapWholeWords" />
-                            <TextBlock Text="{Binding Description}" TextWrapping="WrapWholeWords" MaxWidth="500" />
-                        </StackPanel>
-                    </Border>
-                </DataTemplate>
-            </GridView.ItemTemplate>
+            SelectionMode="None"
+            MinItemHeight="150"
+            MinItemWidth="350"
+            ItemTemplate="{StaticResource SessionDataTemplate}"
+            ItemContainerStyle="{StaticResource AdaptiveItemContainerStyle}">
             <Interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="ItemClick">
-                    <core:InvokeCommandAction Command="{Binding NavigateToSessionCommand, Mode=OneWay}" InputConverter="{StaticResource ItemClickConverter}" />
+                    <core:InvokeCommandAction Command="{Binding NavigateToSessionCommand, Mode=OneWay}"
+                                              InputConverter="{StaticResource ItemClickConverter}" />
                 </core:EventTriggerBehavior>
             </Interactivity:Interaction.Behaviors>
-        </GridView>
+        </controls:AdaptiveGridView>
+
+        <StackPanel
+            helpers:XamlExtensions.IsVisible="{Binding IsBusy}"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <ProgressRing IsActive="{Binding IsBusy}" />
+            <TextBlock Text="Loading..." />
+        </StackPanel>
     </Grid>
 </Page>

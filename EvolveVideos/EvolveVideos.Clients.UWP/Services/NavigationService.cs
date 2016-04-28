@@ -22,9 +22,9 @@ namespace EvolveVideos.Clients.UWP.Services
         {
             _pages = new Dictionary<PageKey, Type>
             {
+                {PageKey.SplashScreenPage, typeof(ExtendedSplashScreen)},
                 {PageKey.MainPage, typeof(MainPage)},
                 {PageKey.SessionDetailsPage, typeof(SessionDetailsView)},
-                {PageKey.SplashScreenPage, typeof(ExtendedSplashScreen)},
                 {PageKey.VideoCollectionsPage, typeof(VideoCollectionsPage)},
                 {PageKey.VideoCollectionDetailsPage, typeof(VideoCollectionDetailsPage)}
             };

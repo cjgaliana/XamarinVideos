@@ -8,6 +8,7 @@
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
     xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     xmlns:converters="using:EvolveVideos.Clients.UWP.Converters"
+    xmlns:controls="using:EvolveVideos.Clients.UWP.Controls"
     mc:Ignorable="d"
     DataContext="{Binding VideoCollectionsViewModel, Source={StaticResource ViewModelLocator}}">
 
@@ -16,23 +17,21 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <GridView ItemsSource="{Binding Collections}" IsItemClickEnabled="True" SelectionMode="None">
-            <GridView.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderThickness="2" BorderBrush="Green">
-                        <StackPanel>
-                            <TextBlock Text="{Binding Name}" />
-                            <TextBlock Text="{Binding Description}" />
-                        </StackPanel>
-                    </Border>
-                </DataTemplate>
-            </GridView.ItemTemplate>
+        <controls:AdaptiveGridView
+            ItemsSource="{Binding Collections}"
+            Padding="52"
+            IsItemClickEnabled="True"
+            SelectionMode="None"
+            MinItemHeight="150"
+            MinItemWidth="350"
+            ItemTemplate="{StaticResource CollectionDataTemplate}"
+            ItemContainerStyle="{StaticResource AdaptiveItemContainerStyle}">
             <Interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="ItemClick">
                     <core:InvokeCommandAction Command="{Binding NavigateToCollectionCommand, Mode=OneWay}"
                                               InputConverter="{StaticResource ItemClickConverter}" />
                 </core:EventTriggerBehavior>
             </Interactivity:Interaction.Behaviors>
-        </GridView>
+        </controls:AdaptiveGridView>
     </Grid>
 </Page>

@@ -36,7 +36,7 @@ namespace EvolveVideos.Data
 
         public async Task<List<EvolveSession>> GetVideosAsync(VideoCollection collection)
         {
-            var json = await LoadFileContentAsync(collection.Name);
+            var json = await LoadFileContentAsync(collection.FileName);
             var data = JsonConvert.DeserializeObject<List<EvolveSession>>(json);
             return data;
         }
@@ -56,7 +56,7 @@ namespace EvolveVideos.Data
             var fullname = resources.FirstOrDefault(x => x.Contains(filename));
             if (string.IsNullOrWhiteSpace(fullname))
             {
-                throw new FileNotFoundException($"Resource not found in the PCL library", filename);
+                throw new FileNotFoundException("Resource not found in the PCL library", filename);
             }
             // Once you figure out the name, pass it in as the argument here.
             var stream = assembly.GetManifestResourceStream(fullname);

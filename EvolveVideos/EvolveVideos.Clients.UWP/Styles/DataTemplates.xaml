@@ -1,0 +1,36 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EvolveVideos.Clients.UWP.Styles">
+
+    <DataTemplate x:Name="SessionDataTemplate">
+        <Border BorderThickness="2" BorderBrush="{StaticResource AccentBrush}">
+            <Grid>
+                <Image Source="{Binding Thumbnail}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <StackPanel Background="{StaticResource ComplimentaryBrush}" VerticalAlignment="Bottom">
+                    <TextBlock Text="{Binding Title}" TextWrapping="WrapWholeWords" Foreground="{StaticResource InvertedTextForeground}" />
+                    <TextBlock Text="{Binding }" TextWrapping="WrapWholeWords" Foreground="{StaticResource InvertedTextForeground}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Name="CollectionDataTemplate">
+        <Border BorderThickness="2" BorderBrush="{StaticResource AccentBrush}">
+            <Grid Background="{StaticResource ComplimentaryBrush2}">
+                <!--<Image Source="{Binding Thumbnail}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" />-->
+                <StackPanel  VerticalAlignment="Center">
+                    <TextBlock Text="{Binding Name}" TextWrapping="WrapWholeWords" Foreground="{StaticResource InvertedTextForeground}" />
+                    <TextBlock Text="{Binding Description}" TextWrapping="WrapWholeWords" Foreground="{StaticResource InvertedTextForeground}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <Style x:Key="AdaptiveItemContainerStyle" TargetType="GridViewItem">
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+    </Style>
+</ResourceDictionary>

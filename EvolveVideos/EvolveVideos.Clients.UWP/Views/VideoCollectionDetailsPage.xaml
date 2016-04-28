@@ -5,10 +5,41 @@
     xmlns:local="using:EvolveVideos.Clients.UWP.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:EvolveVideos.Clients.UWP.Controls"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:helpers="using:EvolveVideos.Clients.UWP.Helpers"
+    xmlns:converters="using:EvolveVideos.Clients.UWP.Converters"
     mc:Ignorable="d"
     DataContext="{Binding VideoCollectionDetailsViewModel,Source={StaticResource ViewModelLocator}}">
 
+    <Page.Resources>
+        <converters:ItemClickConverter x:Key="ItemClickConverter" />
+    </Page.Resources>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="CollectionDetails"></TextBlock>
+        <controls:AdaptiveGridView
+            ItemsSource="{Binding Sessions}"
+            Padding="52"
+            IsItemClickEnabled="True"
+            SelectionMode="None"
+            MinItemHeight="150"
+            MinItemWidth="350"
+            ItemTemplate="{StaticResource SessionDataTemplate}"
+            ItemContainerStyle="{StaticResource AdaptiveItemContainerStyle}">
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="ItemClick">
+                    <core:InvokeCommandAction Command="{Binding NavigateToSessionCommand, Mode=OneWay}"
+                                              InputConverter="{StaticResource ItemClickConverter}" />
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
+        </controls:AdaptiveGridView>
+        <StackPanel
+            helpers:XamlExtensions.IsVisible="{Binding IsBusy}"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <ProgressRing IsActive="{Binding IsBusy}" />
+            <TextBlock Text="Loading..." />
+        </StackPanel>
     </Grid>
 </Page>
