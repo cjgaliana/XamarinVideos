@@ -44,7 +44,7 @@ namespace EvolveVideos.Clients.UWP.Views
             // Create a Frame to act as the navigation context
             _rootFrame = new Frame();
 
-            this.Loaded += (sender, args) => { this.AppBootstrapper(); };
+            this.Loaded += async (sender, args) => { await this.AppBootstrapper(); };
         }
 
         private async Task AppBootstrapper()

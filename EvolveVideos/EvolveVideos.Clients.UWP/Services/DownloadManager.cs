@@ -35,14 +35,14 @@ namespace EvolveVideos.Clients.UWP.Services
             return Task.CompletedTask;
         }
 
-        public async Task DeleteAllDownloadsAsync()
+        public Task DeleteAllDownloadsAsync()
         {
-            throw new System.NotImplementedException();
+            return Task.CompletedTask;
         }
 
         public async Task QueueDownloadAsync(EvolveSession session)
         {
-            var url = this._downloaderService.GetDownloadVideoUrlAsync(session.YoutubeID);
+            var url = await this._downloaderService.GetDownloadVideoUrlAsync(session.YoutubeID);
         }
 
         private async void OnNetworkStatusChanged(object sender, NetworkStatusChangedEvents e)
