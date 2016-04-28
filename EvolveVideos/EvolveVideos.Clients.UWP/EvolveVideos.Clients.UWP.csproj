@@ -96,6 +96,7 @@
     <Content Include="Resources\EvolveVideos.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Collections.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -163,6 +164,10 @@
     <ProjectReference Include="..\Clients\EvolveVideos.Clients.Core\EvolveVideos.Clients.Core.csproj">
       <Project>{03ce1774-b61f-4611-bf03-407c00d6b568}</Project>
       <Name>EvolveVideos.Clients.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EvolveVideos.Data\EvolveVideos.Data.csproj">
+      <Project>{02efd406-1f5f-4152-8766-28276132ecaf}</Project>
+      <Name>EvolveVideos.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

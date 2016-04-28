@@ -11,21 +11,21 @@
     xmlns:converters="using:EvolveVideos.Clients.UWP.Converters"
     DataContext="{Binding MainViewModel, Source={StaticResource ViewModelLocator}}">
 
-    
     <Page.Resources>
-        <converters:ItemClickConverter x:Key="ItemClickConverter"/>
+        <converters:ItemClickConverter x:Key="ItemClickConverter" />
     </Page.Resources>
-    
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <GridView
             ItemsSource="{Binding Sessions}"
             Padding="52"
-            IsItemClickEnabled="True">
+            IsItemClickEnabled="True"
+            SelectionMode="None">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <Border BorderThickness="2" BorderBrush="{StaticResource AccentBrush}">
                         <StackPanel>
-                            <TextBlock Text="{Binding Title}" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Text="{Binding Title}" TextWrapping="WrapWholeWords" />
                             <TextBlock Text="{Binding Description}" TextWrapping="WrapWholeWords" MaxWidth="500" />
                         </StackPanel>
                     </Border>

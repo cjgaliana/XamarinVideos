@@ -1,0 +1,538 @@
+﻿[
+  {
+    "Title": "A Behind the Scenes Insights into Building Technology for the Hearing Impaired",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/Xt5Is4y5iOU/hqdefault.jpg",
+    "Author": "Avichal Sharma, Serhat Aydin — Accenture",
+    "Description": "Accenture and Siemens are paving the way in medical mobile technology. The Siemens easyTek suite of apps enables the hearing impaired to connect to a variety of Bluetooth enabled devices. It also enables them to control the function and comfort of their in-ear hearing instrument. This real-world case study will show you how Accenture built the best mobile technology for the hearing impaired using Xamarin. They will cover the technical lessons learned from their experience, including connecting to multiple hearing device types, working with Android Bluetooth and MFI Accessory, and how to best incorporate continuous integration into the mobile development workflow.",
+    "YoutubeID": "Xt5Is4y5iOU"
+  },
+  {
+    "Title": "A Canon in C#",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/Nv-l4mArFT8/hqdefault.jpg",
+    "Author": "Jon Skeet — Google",
+    "Description": "Jon Skeet is a software engineer at Google in London with a lingering passion for C# and its community. You'll often find Jon writing about C# in his blog, or his books, or even on Stack Overflow. He loves twisting the language into knots, often to the dismay of those he's presenting the code to!",
+    "YoutubeID": "Nv-l4mArFT8"
+  },
+  {
+    "Title": "Amazon Developer Ecosystem",
+    "Track": "Emerging Devices",
+    "Thumbnail": "http://img.youtube.com/vi/XJtmSvjx95c/hqdefault.jpg",
+    "Author": "David Isbitski — Amazon",
+    "Description": "David Isbitski, Worldwide Developer Evangelist for the Amazon Appstore and Fire devices, wants to educate you on how to build native Amazon Fire phone, Fire TV, and Kindle Fire Apps with Xamarin. He'll give you a walk-through of how to quickly use Xamarin to run your apps and games on Amazon devices, as well as provide an overview of Amazon Appstore services that help developers get their app discovered and increase customer engagement and monetization.",
+    "YoutubeID": "XJtmSvjx95c"
+  },
+  {
+    "Title": "APIs of Enterprise mBaaS Platform",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/2sWu2MrUiTc/hqdefault.jpg",
+    "Author": "Gustavo Machado — Kidozen",
+    "Description": "Whether you have 1 user or 1 million users, you need a scalable backend for your app. As the mobile economy booms, mobile backend-as-a-service (mBaaS) solutions are experiencing rapid growth. These cloud-based services make it easier for developers to set up and operate scalable backend services for their mobile apps. In this session, two of the leading MBaaS companies will share best practices for creating engaging, scalable, cross-device experiences.",
+    "YoutubeID": "2sWu2MrUiTc"
+  },
+  {
+    "Title": "Applying C# Async in Mobile",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/bnj6FD2j-O4/hqdefault.jpg",
+    "Author": "Joe Mayo — Mayo Software, LLC",
+    "Description": "Join Joe Mayo as he shows you how awesome async is and demonstrates how it completely revolutionized previous efforts to write asynchronous code. Joe will even demo working open-source software, practical applications like calling out to Web API services, and real-world scenarios like exception handling and cancellation. Let Joe show you all the dramatic improvements in code construction and maintenance that async offers in order to create a more satisfying experience for app users.",
+    "YoutubeID": "bnj6FD2j-O4"
+  },
+  {
+    "Title": "Architecting and Extending Existing Systems for Enterprise Mobile Apps",
+    "Track": "Enterprise",
+    "Thumbnail": "http://img.youtube.com/vi/UEsrJhTAiwo/hqdefault.jpg",
+    "Author": "Steve Yi — Xamarin",
+    "Description": "Creating mobile apps for the enterprise offers unique challenges in integrating with existing systems, synchronizing data, security, identity, and knowing when to challenge legacy IT orthodoxy for a successful enterprise mobile strategy. Join Steve Yi as he demonstrates code and architectural techniques, as well as how to utilize promising cloud services that bridge mobile devices with existing or on-premises systems.",
+    "YoutubeID": "UEsrJhTAiwo"
+  },
+  {
+    "Title": "Awaiting for Rx: A Play in Four Acts",
+    "Track": "Xamarin Platform",
+    "Thumbnail": "http://img.youtube.com/vi/5DZ8nC0ENdg/hqdefault.jpg",
+    "Author": "Paul Betts — GitHub",
+    "Description": "\r\n              Asynchronous programming is all the rage these days, with good reason. With\r\n              the introduction of async/await in C# 5.0, writing truly non-blocking code has\r\n              gone from a giant headache, to something we should be doing all the time.\r\n\r\n              However, two technologies have emerged from Microsoft, the Task Parallel\r\n              Library, and the less common but emerging technology, the Reactive Extensions\r\n              for .NET. Which should developers be using? Does Task&lt;T&gt; and async/await\r\n              replace Rx?\r\n\r\n              In fact, the best answer is, \"Use both!\" This talk will describe how Task&lt;T&gt;\r\n              and Rx's IObservable can be used together to produce truly elegant,\r\n              functional, and far more testable code than using either technology in\r\n              isolation. Through plenty of code examples, we'll see how to use Rx to test\r\n              and mock Task&lt;T&gt; methods, how to write LINQ'y async code, and when to use Rx\r\n              Zen Nature and when to use Task Zen Nature.\r\n            ",
+    "YoutubeID": "5DZ8nC0ENdg"
+  },
+  {
+    "Title": "Become a Xamarin Studio Expert",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/ZQWdRQTrHTQ/hqdefault.jpg",
+    "Author": "Michael Hutchinson — Xamarin",
+    "Description": "Improve your productivity through the effective use of Xamarin Studio! Suitable for beginners and experienced users alike, come hang out with Michael Hutchinson as he divulges some tips and tricks for customizing Xamarin Studio to make it work better for you -and your apps!- so development is a simply delightful experience.",
+    "YoutubeID": "ZQWdRQTrHTQ"
+  },
+  {
+    "Title": "Build your Apps on the Shoulders of Giants",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/0JwIkgd4w1g/hqdefault.jpg",
+    "Author": "Jonathan Dick — Xamarin",
+    "Description": "Xamarin developers enjoy access to a ton of great .NET code already written to solve common, and often complex problems, so why not leverage the .NET code written by the vibrant community in your own apps? Let Jonathan Dick show you how easy it is to pull together an amazing app from the great components and libraries available in the Xamarin Component Store and in the NuGet community!",
+    "YoutubeID": "0JwIkgd4w1g"
+  },
+  {
+    "Title": "Building a Modern DevOps Solution for your App",
+    "Track": "Enterprise",
+    "Thumbnail": "http://img.youtube.com/vi/kaf9YZBnKno/hqdefault.jpg",
+    "Author": "Brian A. Randell — MCW Technologies LLC",
+    "Description": "Very few apps live in a disconnected world. They are often part of a larger system that includes web sites, web services, database and more. Do you have a grip on this system? Can you find the problems before your customers do? Brian will take the time to cover just what the heck DevOps is and how you can apply it when building solutions both private and public with Xamarin’s tools.",
+    "YoutubeID": "kaf9YZBnKno"
+  },
+  {
+    "Title": "Building an Enterprise Component Library",
+    "Track": "Enterprise",
+    "Thumbnail": "http://img.youtube.com/vi/lwe8IjIGoTg/hqdefault.jpg",
+    "Author": "Steve Hall — Xamarin",
+    "Description": "Discover best practices in creating an enterprise library of reusable components and patterns for consistently and efficiently handling things like authentication, logging, encryption and more! Join Steve Hall as he covers several methods for creating and maintaining enterprise components, and sharing them with your organization to deliver applications faster, with consistent functionality, and less effort.",
+    "YoutubeID": "lwe8IjIGoTg"
+  },
+  {
+    "Title": "Building Cross-Platform Applications with Xamarin, Xamarin.Forms and MVVM Light",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/FrcVQGTXZKM/hqdefault.jpg",
+    "Author": "Laurent Bugnion — IdentityMine",
+    "Description": "MVVM Light is a popular open source toolkit that's been used in thousands of production XAML applications since 2009. It consists of components, snippets, templates and guidance, and has a strong community of followers. Now, MVVM Light is available for Xamarin! Join Laurent Bugnion, the author of MVVM Light, as he talks about the toolkit and the MVVM architecture and demonstrates how with these tools, you can improve your development workflow.",
+    "YoutubeID": "FrcVQGTXZKM"
+  },
+  {
+    "Title": "Building Mobile Apps That Work Online &amp; Offline with Couchbase",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/g7WlnfvOvhI/hqdefault.jpg",
+    "Author": "Wayne Carter and Zack Gramana — Couchbase",
+    "Description": "Xamarin and Couchbase have jointly developed Couchbase Lite for .NET — a NoSQL database optimized for mobile. Let Wayne Carter and Zack Gramana show you how its low-friction document datastore, powerful MapReduce queries, and drop-dead simple synchronization combine to help you build awesome apps faster and easier! We'll cover common use cases and show you just how easy it is to integrate into your apps so they \"just work\" — anytime, anywhere.",
+    "YoutubeID": "g7WlnfvOvhI"
+  },
+  {
+    "Title": "C# is in my Ears and in my Eyes: Google Glass and Android Wear",
+    "Track": "Emerging Devices",
+    "Thumbnail": "http://img.youtube.com/vi/80H8tXByZQc/hqdefault.jpg",
+    "Author": "Chris Hardy — Xamarin",
+    "Description": "Wearable computing might seem like something from the future (or an Inspector Gadget episode), but many people are already embracing the future today! C# developers know this and already have the tools and skills to harness the power of wearable devices. Watch Chris Hardy demonstrate how you can take advantage of .NET to develop awesome applications that connect your phone, Google Glass, and Android Wear devices together.",
+    "YoutubeID": "80H8tXByZQc"
+  },
+  {
+    "Title": "Connecting Xamarin Apps with IBM Worklight",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/Jz6Q1urJDMQ/hqdefault.jpg",
+    "Author": "Greg Truty — IBM",
+    "Description": "IBM Worklight server is mobile-optimized middleware that serves as a gateway between applications, back-end systems and cloud-based services. Let Greg Truty teach you how to connect native Xamarin apps to IBM Worklight Server for easy integration into your enterprise’s environment so that you can leverage your existing resources and infrastructure for mobile, as well as channel cloud-based services to the end-user device.",
+    "YoutubeID": "Jz6Q1urJDMQ"
+  },
+  {
+    "Title": "Cross-Platform Business Apps with Microsoft Azure ",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/uYcM2DdZTmg/hqdefault.jpg",
+    "Author": "Paul Batum — Microsoft",
+    "Description": "Join Paul Batum for a session on how you can accelerate your cross-platform business app development with Xamarin and Azure Mobile Services. Together you'll look at how easily you can enable offline support for your apps with the new offline data sync feature, how to build hybrid cloud applications that can securely access on-premise data and services, how to authenticate your app users with Azure Active Directory, and loads more!",
+    "YoutubeID": "uYcM2DdZTmg"
+  },
+  {
+    "Title": "Cross-Platform Mobile Apps with Amazon Web Services",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/lH88Ue5poNM/hqdefault.jpg",
+    "Author": "Tara E. Walker — Amazon",
+    "Description": "Tara Walker will demonstrate how to build great mobile apps that leverage the AWS Cloud services that provide identity management and data sync (Amazon Cognito), push notifications (Amazon SNS Mobile Push), cloud storage (Amazon S3), and a fully-managed NoSQL database (Amazon DynamoDB). She'll take you through, step-by-step, so you can learn to add services to your cross-platform mobile app using Xamarin and C#, configure AWS services, and then integrate the services into your backend architecture.",
+    "YoutubeID": "lH88Ue5poNM"
+  },
+  {
+    "Title": "Cross-Platform Syncing with Dropbox",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/qOhDC60ARYg/hqdefault.jpg",
+    "Author": "Steve Marx — Dropbox",
+    "Description": "You already know how to get your app running on multiple platforms and devices, but what about your users' data? Cloud storage is ubiquitous, but it's only part of the story. You also need to think about syncing, offline access, and conflict resolution. In this demo-heavy talk, Steve Marx, a developer advocate at Dropbox, will walk you through the challenges of cross-platform syncing and the tools that Dropbox provides for mobile developers.",
+    "YoutubeID": "qOhDC60ARYg"
+  },
+  {
+    "Title": "Designing Android UIs for the Ever-Changing Device Landscape: Android Fragments and Fragmentation",
+    "Track": "Android",
+    "Thumbnail": "http://img.youtube.com/vi/2k2SMiH37eg/hqdefault.jpg",
+    "Author": "Michael Stonis — EightBot",
+    "Description": "Android is everywhere. Developers can now build apps that run on phones, tablets, TVs, cars, wearables, and even appliances! While this provides a breadth of opportunity, it creates a big problem when designing apps that can run across all of these different device types. In this session, join Michael Stonis to talk about how to create and manage dynamic UIs that look and feel great across different screen sizes and form factors.",
+    "YoutubeID": "2k2SMiH37eg"
+  },
+  {
+    "Title": "Designing Wearable User Experiences",
+    "Track": "Emerging Devices",
+    "Thumbnail": "http://img.youtube.com/vi/8eDVB-0-d4o/hqdefault.jpg",
+    "Author": "Michael Sciscenti — APX Labs",
+    "Description": "As mobility moves rapidly into new territory like Google Glass and other heads-up displays, it's important to know how to design for these devices. Join Michael Sciscenti as he talks about the top use cases for wearable mobility and how to design for it based on lessons hard won in developing the Xamarin-based Skylight UX, designed especially for business scenarios where hands-free, in-context, and access to real time information is crucial to the modern enterprise.",
+    "YoutubeID": "8eDVB-0-d4o"
+  },
+  {
+    "Title": "Diving into the Xamarin Designer for iOS",
+    "Track": "iOS",
+    "Thumbnail": "http://img.youtube.com/vi/W4H9uLjoEjM/hqdefault.jpg",
+    "Author": "Alex Corrado — Xamarin",
+    "Description": "With the Xamarin 3 release, iOS developers have a powerful new tool for visualizing and designing native UIs: the Xamarin Designer for iOS. Let Alex Corrado introduce the Xamarin Designer for iOS and illustrate some best practices for visually designing your application’s user interface. He'll even show you how the Xamarin Designer for iOS' custom control support enables you to develop parts of your UI in code, while still visualizing them in your application’s storyboard.",
+    "YoutubeID": "W4H9uLjoEjM"
+  },
+  {
+    "Title": "Dynamic Layouts in iOS 8: Making your Apps Look Great Everywhere",
+    "Track": "iOS",
+    "Thumbnail": "http://img.youtube.com/vi/f3mMGlS-lM4/hqdefault.jpg",
+    "Author": "Adrian Stevens — Xamarin",
+    "Description": "iOS hasn’t had as many resolutions to worry about as Android, but Adrian Stevens knows that this is all changing with the introduction of the iPhone 6 and iPhone 6 Plus, adding a third and fourth screen size on the phone form factor. Come learn how to take advantage of AutoLayout with Constraints and the iOS Designer to make sure your application properly scales so it gets the most out of every pixel available!",
+    "YoutubeID": "f3mMGlS-lM4"
+  },
+  {
+    "Title": "Effective Navigation in Xamarin.Android",
+    "Track": "Android",
+    "Thumbnail": "http://img.youtube.com/vi/Hw8tB45kse4/hqdefault.jpg",
+    "Author": "James Montemagno — Xamarin",
+    "Description": "With so many navigation styles in Android, selecting what's perfect for your app can be difficult. There are Tabs, Navigation Drawers, and Dashboards... it can be overwhelming! Join James as he covers best practices for creating elegant navigation patterns for your Xamarin.Android mobile application. Together, you'll take a look at what style of navigation is optimal for different types of apps.",
+    "YoutubeID": "Hw8tB45kse4"
+  },
+  {
+    "Title": "Evolving From Web to Mobile App with Xamarin: Building Hybrid Apps with Xamarin",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/TC_mESEXoWM/hqdefault.jpg",
+    "Author": "Jesse Liberty — Falafel",
+    "Description": "See how easy Xamarin makes your migration path to mobile when Jesse Liberty shows you how to turn an ASP.NET MVC mobile website into an app suitable for enterprise or app store deployment using Xamarin and the Razor templating engine. Jesse will teach you how to leverage your existing HTML, Javascript, and CSS skills to ship hybrid mobile applications, plus how to extend your app with native functionality using Xamarin.",
+    "YoutubeID": "TC_mESEXoWM"
+  },
+  {
+    "Title": "Extending Xamarin.Forms with with Custom Controls",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/pIZ8G47KPIM/hqdefault.jpg",
+    "Author": "Jason Smith — Xamarin",
+    "Description": "Xamarin.Forms provides a solid foundation for building cross-platform native user interfaces with a single codebase, but it also provides a number of ways to extend your app's capabilities using device-specific features. With the help of Jason Smith, learn how to write a custom renderer for native controls, how to access native APIs using the dependency service, and a bunch of other awesome and useful tips for extending Xamarin.Forms.",
+    "YoutubeID": "pIZ8G47KPIM"
+  },
+  {
+    "Title": "Find Bugs Before Your Users Do with Xamarin Test Cloud and C#",
+    "Track": "Testing",
+    "Thumbnail": "http://img.youtube.com/vi/PQMBCoVIABI/hqdefault.jpg",
+    "Author": "Karl Krukow and Rasmus Kromann-Larsen — Xamarin",
+    "Description": "We know that creating a great mobile app can be challenging. Without automated testing, it’s impossible to ensure it acts consistently in a fragmented device market spanning Android, iOS, and Windows Phone. Let Rasmus demonstrate how to write unit tests for any mobile app in Visual Studio and C# and automate testing across hundreds of devices with Xamarin's Test Cloud so you can find the bugs before your users!",
+    "YoutubeID": "PQMBCoVIABI"
+  },
+  {
+    "Title": "Finish the Mac App You Didn't Know You Started",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/zALbjgeqy7o/hqdefault.jpg",
+    "Author": "Mike James — Xamarin",
+    "Description": "If you're writing for Xamarin.iOS, you may not realize how close you are to completing your first Mac app! With 1 to 1 mappings of the Cocoa APIs, you can unleash the power of OS X with your favorite tools and languages. Let Mike James bring you up to speed with C# development for OS X. He'll show you how to design beautiful native user interfaces that reach more than 66 million potential customers!",
+    "YoutubeID": "zALbjgeqy7o"
+  },
+  {
+    "Title": "Games that Run Everywhere, Even the Top of the App Store",
+    "Track": "Game Development",
+    "Thumbnail": "http://img.youtube.com/vi/k09e39FVi6o/hqdefault.jpg",
+    "Author": "James Clancey, Dean Ellis — Xamarin",
+    "Description": "MonoGame is the logical successor to the excellent XNA framework, powered by .Net and the powerful Xamarin frameworks it will let you hit more platforms using identical code than you probably think is possible. In this session we'll take a look at why you should choose MonoGame for your next project, as well as give you an update on what's been happing on the project over the last year and where its heading. We'll also take a detailed look at some published apps that used MonoGame so you can get a good idea of how things fit together and how to approach cross platform game development.",
+    "YoutubeID": "k09e39FVi6o"
+  },
+  {
+    "Title": "Getting FIT with Xamarin (or How I Lost Weight with C#)",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/03aucFbd2vY/hqdefault.jpg",
+    "Author": "Ben Bishop — Rendr",
+    "Description": "Given 40 hours, could you make an app that was both useful and profitable? In this presentation, Ben Bishop will share his experience building a fitness app using Xamarin to answer this question. This talk will cover how an app idea forged in the fires of Pinterest led to playing five figure client projects for Rendr. Topics will include ideation, marketing, localization, and more.",
+    "YoutubeID": "03aucFbd2vY"
+  },
+  {
+    "Title": "Getting Started with iOS 8",
+    "Track": "iOS",
+    "Thumbnail": "http://img.youtube.com/vi/5v-NIHjUwD0/hqdefault.jpg",
+    "Author": "Nishanth Anil — Xamarin",
+    "Description": "Make your applications shine by taking advantage of everything iOS 8 has to offer. Join Nish as he gives you the lowdown on how to maximize your user audience by targeting new devices and screen sizes effectively and take advantage the key features of iOS 8 and the new iPhone 6 and iPhone 6+.",
+    "YoutubeID": "5v-NIHjUwD0"
+  },
+  {
+    "Title": "Getting your Testing Process in Place",
+    "Track": "Testing",
+    "Thumbnail": "http://img.youtube.com/vi/q1YjW-icPz8/hqdefault.jpg",
+    "Author": "Karl Krukow, Niels Frydenholm — Xamarin and Ebay",
+    "Description": "Learn how one forward-thinking company used Test Cloud and gained immediate value overcoming their mobile development challenges. Listen as they share their lessons learned, describing the problems they faced and how they incorporated Test Cloud into their development processes to create user-centric apps that are faster, more responsive, free of regressions, and frequently updated with new features to please and win new customers.",
+    "YoutubeID": "q1YjW-icPz8"
+  },
+  {
+    "Title": "Google Play Services with Xamarin",
+    "Track": "Android",
+    "Thumbnail": "http://img.youtube.com/vi/7IhNX4G_pqI/hqdefault.jpg",
+    "Author": "Peter Friese — Google",
+    "Description": "\r\n              Google Play Services are a unified SDK that allow you to quickly and easily integrate Google features into your Android apps. Being rolled out to millions of Android devices, they provide easy access to Google services and allow you to innovate quickly.\r\n\r\n              In this session, I will give a rundown of the core services available via Google Play Services. Attendees will get an overview of the new APIs that ship as a part of the latest version of Google Play Services. We will also have a look at some of the lesser known features that will enable you to build apps that truly rock.\r\n            ",
+    "YoutubeID": "7IhNX4G_pqI"
+  },
+  {
+    "Title": "Hello CocosSharp",
+    "Track": "Game Development",
+    "Thumbnail": "http://img.youtube.com/vi/hj0QJlYvObk/hqdefault.jpg",
+    "Author": "Mike Bluestein — Xamarin",
+    "Description": "CocosSharp is an exciting new platform from Xamarin that enables developers to create stunning 2D games for iOS, Android, Mac, and Windows from a shared C# or F# code base. Mike Bluestein will cover game development strategies and how CocosSharp can help you deliver cross-platform 2D games for apps on all mobile and desktop platforms. By the end, you'll have all the knowledge you need to start creating your own games!",
+    "YoutubeID": "hj0QJlYvObk"
+  },
+  {
+    "Title": "Hey, You Got your Objective-C in my C#!",
+    "Track": "iOS",
+    "Thumbnail": "http://img.youtube.com/vi/kQmB1DU8_iA/hqdefault.jpg",
+    "Author": "Brent Schooley — Twilio",
+    "Description": "Brent Schooley can show you the steps to take to create C# bindings to native iOS libraries so that you can bring all the fun things you find on Cocoa Controls into your Xamarin applications. Together you'll cover binding simple libraries using Objective Sharpie as well as more advanced manual examples using iOS Binding Projects. You'll even create a component out of your newly bound project for submission to the Xamarin Component Store!",
+    "YoutubeID": "kQmB1DU8_iA"
+  },
+  {
+    "Title": "iBeacons and Contextual Location Awareness in iOS and Android apps",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/YYTa_Rv5Pz4/hqdefault.jpg",
+    "Author": "James Montemagno &amp; Mike Bluestein — Xamarin",
+    "Description": "iBeacons are taking the world by storm, allowing developers to leverage Bluetooth Low Energy to give their apps location support that can work just about anywhere. From retail stores to sports arenas, you'll soon be finding iBeacons all over the place. Join James Clancey as he introduces the iBeacon. Get a crash course on how they work, how to use them, and how to get started making apps in both iOS and Android.",
+    "YoutubeID": "YYTa_Rv5Pz4"
+  },
+  {
+    "Title": "If You Can Ship your App in China, You Can Ship it Anywhere",
+    "Track": "Mobile Best Practices",
+    "Thumbnail": "http://img.youtube.com/vi/GSP-WBnJlgA/hqdefault.jpg",
+    "Author": "Jonathan Peppers — Hitcents",
+    "Description": "Jonathan Peppers knows the painful experience of delivering a mobile game to China, and what it's like to submit to around thirty app stores. Let him share his experience with you (but only so you don't go through what he did)! Let Jonathan divulge some of his most valuable tips and tricks about things like in app purchases and even piracy prevention that will help your app easily land in the hands of users.",
+    "YoutubeID": "GSP-WBnJlgA"
+  },
+  {
+    "Title": "Intro to Scene Kit",
+    "Track": "Game Development",
+    "Thumbnail": "http://img.youtube.com/vi/PTYhGoYvwRQ/hqdefault.jpg",
+    "Author": "Mike Bluestein — Xamarin",
+    "Description": "Join Mike Bluestein as he shows you just how easy it can be to make a casual and fast 3D game for iOS 8 and Mac using the powerful combination of Scene Kit and Sprite Kit. Hang with him so you can explore using 3D assets, particles, collision, physics, and more!",
+    "YoutubeID": "PTYhGoYvwRQ"
+  },
+  {
+    "Title": "iOS Memory Management",
+    "Track": "iOS",
+    "Thumbnail": "http://img.youtube.com/vi/https://i.ytimg.com/s_vi/Qn2ZqvXUuhI/2.jpg?sqp=CKSoxaIF&amp;rs=AOn4CLC6ODMkr2SDbo16V_OYYqsbYFs2NA&amp;time=1414616185982/hqdefault.jpg",
+    "Author": "Rodrigo Kumpera — Xamarin",
+    "Description": "Hang out with Rodrigo Kumpera as he covers the basics of how garbage collection (and the garbage collector on Xamarin.iOS in particular) works, and how you can use that knowledge to build higher performing apps. He'll explain the interaction between Mono’s garbage collector with iOS memory management take a look at common problems and scenarios relating to that. Plus, he's going to cover new features in Xamarin.iOS such as NewRefCount!",
+    "YoutubeID": "https://i.ytimg.com/s_vi/Qn2ZqvXUuhI/2.jpg?sqp=CKSoxaIF&amp;rs=AOn4CLC6ODMkr2SDbo16V_OYYqsbYFs2NA&amp;time=1414616185982"
+  },
+  {
+    "Title": "Keeping Apps Relevant: Deployment, Support and Management Best Practices for your Enterprise Mobile Apps",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/HgoWi8R5WFA/hqdefault.jpg",
+    "Author": "Greg Truty — IBM",
+    "Description": "Creating a successful enterprise app that employees actually adopt into their workflow requires much more than just delivering a great UI and UX on the employee’s choice of device. Greg Truty knows about the best practices for managing the last, but not least parts, of the mobile application lifecycle. Join Greg for a chat about deployment, support, and management best practices for your enterprise mobile apps.",
+    "YoutubeID": "HgoWi8R5WFA"
+  },
+  {
+    "Title": "Lessons Learned from our First Enterprise Mobile App",
+    "Track": "Enterprise",
+    "Thumbnail": "http://img.youtube.com/vi/03LzvxZq9r0/hqdefault.jpg",
+    "Author": "Daniel Pardhe — Cognizant",
+    "Description": "\r\n              Improving…Evolving…Continuously\r\n\r\n              In the past one year, I had the privilege to work on 3 different projects with Xamarin.\r\n\r\n              A highly demanding Secure Browser app for BYOD for a leading global bank.\r\n              A graphics intensive wealth management app for another global bank.\r\n              A most recent PoC for a leading transportation company in the world.\r\n              I want to share my experiences around the technical challenges, client expectations on these projects and how Xamarin as a technology and more importantly as a team of highly motivated professional individuals partnered with me in this success story..\r\n            ",
+    "YoutubeID": "03LzvxZq9r0"
+  },
+  {
+    "Title": "Let Awesome = Apps |> Seq.map F#",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/2-v4jdQJ5Wo/hqdefault.jpg",
+    "Author": "Larry O'Brien — Xamarin",
+    "Description": "Are you object-oriented but functionally curious? Have you wondered about the practical use, in mobile applications, of concepts such as immutability, pattern-matching, and typing? Starting with a side-by-side comparison of simple C# and F# apps, this talk will show functional F# code techniques integrated into the object-oriented world of iOS. Is the hype about F# driven by ideology or is it pragmatic? (Spoiler: a little bit of both.) See where F# code in an app succeeds and where it fails.",
+    "YoutubeID": "2-v4jdQJ5Wo"
+  },
+  {
+    "Title": "Let's Talk Tech: Xamarin Profiler",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/GK9h71vGkpQ/hqdefault.jpg",
+    "Author": "Nina Vyedin &amp; Stephen Shaw — Xamarin",
+    "Description": "\r\n              Always dreamed of being on a talk show, but don't want to miss out on the latest Xamarin technology? Now's your chane to combine your two passions as you join the studio audience of our brand new (completely fake) talk show, \"Let's Talk Tech! with Stephen and Nina.\" Join your hosts Stephen Shaw (developer) and Nina Vyedin (program manager) as we dive into the world of profiling - sharing stories, consulting experts, and profiling apps!\r\n\r\n              This session will feature: Introduction to the Profiler and the feature set of the preview release; Interviews with Xamarin developers; Demos; Q+A with the team\r\n            ",
+    "YoutubeID": "GK9h71vGkpQ"
+  },
+  {
+    "Title": "Like Butter: Smooth Scrolling and Bitmap Management in Android",
+    "Track": "Android",
+    "Thumbnail": "http://img.youtube.com/vi/ghQAp1KUd6k/hqdefault.jpg",
+    "Author": "Brett Duncavage — Rdio",
+    "Description": "Brett Duncavage knows that smoothly scrolling lists should be the goal of every application developer. Let him teach you about native thread profiling, memory profiling, and proper management of Bitmaps in Xamarin applications. Plus, he'll help you to identify what is causing stuttering (also known as jank) during scrolling in your app, how to fix it, and the best practices to follow to avoid it in the future.",
+    "YoutubeID": "ghQAp1KUd6k"
+  },
+  {
+    "Title": "Mastering Time &amp; Space: Using Animations to Bring your Mobile Apps to Life",
+    "Track": "Mobile Best Practices",
+    "Thumbnail": "http://img.youtube.com/vi/ikSk_ILg3d0/hqdefault.jpg",
+    "Author": "Jérémie Laval — Xamarin",
+    "Description": "Jérémie Laval knows that mobile development brought a radical shift in how we design user interfaces. Instead of thinking in terms of static text and dialog boxes, we are now exploring rich data experiences where we strive to instill life into our content by using animations to bring motion to the user screen. Funny thing is, someone in Hollywood was trying to do the same thing back in the '30s with a certain well-known mouse...",
+    "YoutubeID": "ikSk_ILg3d0"
+  },
+  {
+    "Title": "Material Android Design from Concept to Implementation I",
+    "Track": "Android",
+    "Thumbnail": "http://img.youtube.com/vi/A1WKe08uxd4/hqdefault.jpg",
+    "Author": "Jérémie Laval, James Montemagno — Xamarin",
+    "Description": "Sometimes flat design isn't enough! Material Design is the largest shift in Android design since its original release and Jeremie and James are here to show it off! This session covers everything new in Material Design and what it means for Xamarin.Android developers. By the end, you'll have an understanding of the three important principles of Material Design and the know-how to start transforming existing and new Android apps with Material Design.",
+    "YoutubeID": "A1WKe08uxd4"
+  },
+  {
+    "Title": "Material Android Design from Concept to Implementation II",
+    "Track": "Android",
+    "Thumbnail": "http://img.youtube.com/vi/_q9lorDZn0Y/hqdefault.jpg",
+    "Author": "James/Jeremie — Xamarin",
+    "Description": "Sometimes flat design isn't enough! Material Design is the largest shift in Android design since its original release and Jeremie and James are here to show it off! This session covers everything new in Material Design and what it means for Xamarin.Android developers. By the end, you'll have an understanding of the three important principles of Material Design and the know-how to start transforming existing and new Android apps with Material Design.",
+    "YoutubeID": "_q9lorDZn0Y"
+  },
+  {
+    "Title": "Mega Trends in Enterprise Mobility",
+    "Track": "Enterprise",
+    "Thumbnail": "http://img.youtube.com/vi/dv5fqQ7FrIA/hqdefault.jpg",
+    "Author": "Michael Facemire — Forrester",
+    "Description": "Enterprise development has been traditionally viewed as boring — fortunately mobile is changing that model. Bridging the leading edge of consumer technology with the demands of the business is the looming enterprise development challenge. Join Mike Facemire, Principal Analyst at Forrester Research (and life-long developer) to take a look at where businesses are with regards to mobile from a developer perspective. We’ll talk about how things are changing from both a tools and process perspective, what skills are (and will be) in demand, and what development leaders are focusing on to address the (sometimes insane) challenges around time-to-market and mobile quality!",
+    "YoutubeID": "dv5fqQ7FrIA"
+  },
+  {
+    "Title": "Mobile Security Best Practices",
+    "Track": "Enterprise",
+    "Thumbnail": "http://img.youtube.com/vi/oks9cASHe9w/hqdefault.jpg",
+    "Author": "Steve Hall, Xamarin; John Britton, Good Technologies; Anar Taori, IBM MaaS 360; Vince Arneja, Arxan; Sean Ginevan, MobileIron; Erich Stuntebeck, AirWatch",
+    "Description": "Nearly every employee has at least one mobile device and chances are the minute they walk through the door those devices are connected to the network. Join representatives from Airwatch, Good Technology, Mobile Iron, Arxan, IBM in a panel discussion with moderator Steve Hall on how to best secure your sensitive data in the app, on the device, and over the wire.",
+    "YoutubeID": "oks9cASHe9w"
+  },
+  {
+    "Title": "Sketches: A Rich and Interactive Way to Explore Xamarin",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/v9vEhwomUEY/hqdefault.jpg",
+    "Author": "Aaron Bockover — Xamarin",
+    "Description": "Discover a new way to learn iOS, Mac, and Android development as well as a fast way to explore new APIs and iterate on features without having to first build and run a project. Learn how rapidly you can interate on your next great idea with Sketches, whcih displays rich feedback abotu your code as it runs in real time, directly from your IDE. Sketches are ideal for experimenting with new language features, exploring platform APIs, developing APIs and algorithms, and much more.",
+    "YoutubeID": "v9vEhwomUEY"
+  },
+  {
+    "Title": "Target All the Platforms with this One Awesome Trick",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/Cx4jg8koeHw/hqdefault.jpg",
+    "Author": "Daniel Plaisted — Microsoft",
+    "Description": "Supporting multiple platforms is becoming a requirement in the industry. Fortunately, Daniel Plaisted already has a grasp on how .NET enables you to write code for a wide variety of platforms! Let Daniel show you new ways to share your code with cool things like Universal apps with shared projects and Portable Class Libraries. He'll demonstrate how to use the Model-View-ViewModel pattern to create a clean separation of your user interface and business logic code.",
+    "YoutubeID": "Cx4jg8koeHw"
+  },
+  {
+    "Title": "The Future of C#",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/GD5-kaPrIrs/hqdefault.jpg",
+    "Author": "Mads Torgensen — Microsoft",
+    "Description": "Project Roslyn is a complete renewal of the C# and Visual Basic compilers, exposing the compilers as full fidelity APIs for everyone to use, and providing a great foundation for evolving the tool experience and the languages themselves. So how can you make use of Roslyn and what new language features are in store? Join Mads Torgensen and get all the answers!",
+    "YoutubeID": "GD5-kaPrIrs"
+  },
+  {
+    "Title": "The Home Button is not the End: Backgrounding and Multitasking in iOS",
+    "Track": "iOS",
+    "Thumbnail": "http://img.youtube.com/vi/gPskzEFPmqg/hqdefault.jpg",
+    "Author": "René Ruppert — Xamarin",
+    "Description": "Join René Ruppert as he takes a look back at the history of multitasking in iOS. Let him give you a rundown on how iOS has managed background tasks, starting with its humble beginnings in iOS4 all the way to the latest iOS where Apple made major changes in the implementation. By the end, you'll know all the cool and nifty things you can do with multitasking in iOS!",
+    "YoutubeID": "gPskzEFPmqg"
+  },
+  {
+    "Title": "The Salesforce 1 Platform",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/VBlcu906XEw/hqdefault.jpg",
+    "Author": "Grant Davies, CEO — Bluetube",
+    "Description": "Let Grant Davies, founder and CEO of Bluetube Interactive, teach you how to go faster when building cross-platform mobile apps with Salesforce and Xamarin and never worry about maintaining infrastructure again! In this session, Grant will show you how to easily connect Xamarin apps to the Salesforce1 Platform, an enterprise back-end for mobile apps with infrastructure and a variety of mobile services that make apps more contextual, user-centric, engaging, secure and scalable.",
+    "YoutubeID": "VBlcu906XEw"
+  },
+  {
+    "Title": "Think Like a Hacker! Common Techniques Used to Exploit Mobile Apps and How to Mitigate these Risks",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/CJKkCKRYfKY/hqdefault.jpg",
+    "Author": "Darren Cathey — Arxan",
+    "Description": "The first step in learning how to protect and defend your applications from hackers is to think like one. During this session, you’ll learn just how easy it is for hackers to leverage widely available third party tools to completely disable and compromise mobile apps. This can lead to unauthorized access to source code, tampering of apps to enable advanced malware attacks, stealing of sensitive data or intellectual property, conducting fraud etc.",
+    "YoutubeID": "CJKkCKRYfKY"
+  },
+  {
+    "Title": "Unleash your Inner Evangelist",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/Zld-0BqBScs/hqdefault.jpg",
+    "Author": "Terry Gault — The Henderson Group",
+    "Description": "How you represent yourself determines how much money, time, and recognition you get in life. Terry Gault from The Henderson Group will teach you how to present yourself with much more confidence using storytelling and message structure techniques that will help you speak in a concise, high-impact, and memorable way.",
+    "YoutubeID": "Zld-0BqBScs"
+  },
+  {
+    "Title": "Use Hypermedia in your Mobile Apps and Spend Less Time Dealing with App Stores",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/LbSM8U21YkM/hqdefault.jpg",
+    "Author": "Darrel Miller — Runscope",
+    "Description": "\r\n              Xamarin's ability to build mobile apps with native UI across multiple platforms is awesome. But there is a downside to supporting multiple platforms. More apps stores to deal with.\r\n\r\n              It's great that you can share C# application logic between platforms. However, it does mean that changing that logic means updating all the app stores to get the changes in your users' hands.\r\n\r\n              This talk will demonstrate a way of creating view models that are driven by hypermedia to enable you to move application logic onto the server, so your highly responsive native mobile applications can evolve with far fewer updates to the app store.\r\n\r\n              Let your native applications truly embrace web architecture and get the best of both worlds.\r\n            ",
+    "YoutubeID": "LbSM8U21YkM"
+  },
+  {
+    "Title": "Using Continuous Integration with Xamarin Apps",
+    "Track": "Testing",
+    "Thumbnail": "http://img.youtube.com/vi/Awl4vGo7Yj0/hqdefault.jpg",
+    "Author": "Greg Shackles — Olo",
+    "Description": "Greg Shackles knows continuous integration is a crucial tool when developing software, regardless of platform. Catching issues as quickly as possible is a big win, especially in the mobile world. Take a look at how to run tests as part of the build, covering unit tests as well as integration tests using C# and Test Cloud. Greg will get you started using continuous integration with Xamarin apps in several environments for both iOS and Android.",
+    "YoutubeID": "Awl4vGo7Yj0"
+  },
+  {
+    "Title": "UX Patterns for Cross-Platform Mobile",
+    "Track": "Mobile Best Practices",
+    "Thumbnail": "http://img.youtube.com/vi/IlydsL2ZmaI/hqdefault.jpg",
+    "Author": "David Ortinau — Shutterfly",
+    "Description": "David Ortinau understands that building engaging and usable apps for a single platform is challenging enough, let alone for multiple platforms! Listen as he exposes Xamarin’s UX prowess in catering to platform differences, while leveraging common patterns, to create truly superior app experiences. Together you'll cover popular user interface and user experience patterns for each platform, how to use Xamarin.Forms for a faster app with a great user interface, and how to avoid pitfalls.",
+    "YoutubeID": "IlydsL2ZmaI"
+  },
+  {
+    "Title": "What is New in Xamarin's Mac and iOS Stacks",
+    "Track": "iOS",
+    "Thumbnail": "http://img.youtube.com/vi/wOJhv1JlBuk/hqdefault.jpg",
+    "Author": "Miguel de Icaza — Xamarin",
+    "Description": "Come learn about the latest updates to our Mac and iOS APIs. Learn about the new Unified API that makes it simpler to share code between the two platforms, and what you need to know to support this brave new dual 32 and 64 bit world. This talk will also cover many of the new runtime features on iOS and the ones coming to Mac, as well as many of the new changes introduced to help you manage your memory, create better bindings, and how to take advantage of our new incremental build capabilities.",
+    "YoutubeID": "wOJhv1JlBuk"
+  },
+  {
+    "Title": "What's New in Xamarin.Android",
+    "Track": "Android",
+    "Thumbnail": "http://img.youtube.com/vi/Gpqc2XZIQfU/hqdefault.jpg",
+    "Author": "\r\n              Jon Pryor,\r\n              Jérémie Laval,\r\n              Rodrigo Kumpera — Xamarin\r\n            ",
+    "Description": "Android L, Android Wear, Android TV, Android Auto, Material Design, and ART; what does this mean to you as a Xamarin developer? Learn about the newest technologies and tools that are all the rage in Android development today! Join Jon, Jérémie, and James as they take you on an adventure into all the latest bits of Xamarin.Android.",
+    "YoutubeID": "Gpqc2XZIQfU"
+  },
+  {
+    "Title": "Wordament: X-platform, the Hard Way and the Easy Way",
+    "Track": "Game Development",
+    "Thumbnail": "http://img.youtube.com/vi/ML7lf6prsF4/hqdefault.jpg",
+    "Author": "Cheyne Mathey-Owens - Engineer and John Thornton - Creative Director — Microsoft",
+    "Description": "Join engineers Cheyne Mathey-Owens and John Thornton of Wordament, the popular MMO word game, as they discuss taking their hit Windows Phone game to iOS, Android, and beyond! Hear how Cheyne and John made the move from writing native client code to using C# everywhere and achieved very high code sharing across all platforms. Expect plenty of real world examples to help you with your next project in this fast paced fun talk.",
+    "YoutubeID": "ML7lf6prsF4"
+  },
+  {
+    "Title": "Writing Mobile Apps the Github Way",
+    "Track": "Mobile Best Practices",
+    "Thumbnail": "http://img.youtube.com/vi/voa44OHBKME/hqdefault.jpg",
+    "Author": "Paul Betts — GitHub",
+    "Description": "Paul Betts has created a project for C# developers that includes many of the libraries and patterns GitHub uses in the Windows version of GitHub Desktop, 'Starter-Mobile'. Hang out while we learn how the project works and then create a simple app with it. We'll see how the this approach leads to testable, cross-platform code.",
+    "YoutubeID": "voa44OHBKME"
+  },
+  {
+    "Title": "Xamarin Test Cloud and Games",
+    "Track": "Game Development",
+    "Thumbnail": "http://img.youtube.com/vi/mnAenNaEpJk/hqdefault.jpg",
+    "Author": "James Clancey — Xamarin",
+    "Description": "\r\n              Many game developers imagine that automated games testing on device is impossible, or simply not worth the time. With Xamarin Test Cloud, the reality couldn’t be further from the truth.\r\n\r\n              This session will show developers how to leverage Test Cloud and C# to fully automate game testing across hundreds of iOS and Android devices, regardless of the technology used to develop the game. We will focus on what you should test. As well as how to write useful game tests.\r\n            ",
+    "YoutubeID": "mnAenNaEpJk"
+  },
+  {
+    "Title": "Xamarin.Forms is Even Cooler than You Think",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/79SdhVjBwh0/hqdefault.jpg",
+    "Author": "Charles Petzold — Xamarin",
+    "Description": "Labels and Buttons and Sliders are essential but let's go beyond the surface and explore some of the special features of Xamarin.Forms that allow cool C# and XAML coding and awesome cross-platform apps. Join Charles Petzold as he dives into the more obscure layout mechanisms, the power of data bindings and behaviors, and flexible animation infrastructure. Can Xamarin.Forms games be far behind?",
+    "YoutubeID": "79SdhVjBwh0"
+  },
+  {
+    "Title": "XAML for Xamarin.Forms",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/x3JhCmH5yLo/hqdefault.jpg",
+    "Author": "Charles Petzold — Xamarin",
+    "Description": "Xamarin.Forms brings XAML -- the eXtensible Application Markup Language -- to cross-platform mobile development. Join Charles Petzold as he covers the basics of XAML syntax, including resources, property elements, attached properties, and markup extensions. He'll demonstrate how to integrate custom views and custom markup extensions into XAML, and discusses the relationship between XAML and the popular MVVM (Model-View-ViewModel) application architecture.",
+    "YoutubeID": "x3JhCmH5yLo"
+  },
+  {
+    "Title": "Your Comfort Zone is Getting a Lot Bigger: Xamarin for Visual Studio vNext",
+    "Track": "Platform",
+    "Thumbnail": "http://img.youtube.com/vi/KaAuP-rl_P8/hqdefault.jpg",
+    "Author": "Daniel Cazzulino, Victor Garcia Aprea — Xamarin",
+    "Description": "In this fast-paced session Daniel Cazzulino and Victor Garcia Aprea will walk you through the new IDE features in Visual Studio 2013 designed to help you be more productive inside the IDE. Come see how the developer experience has been improved by streamlining the common tasks, simplifying the environment, and allowing developers to focus on the code that matters.",
+    "YoutubeID": "KaAuP-rl_P8"
+  },
+  {
+    "Title": "Your First Xamarin.Forms App",
+    "Track": "Cross-Platform",
+    "Thumbnail": "http://img.youtube.com/vi/xWyOcEpNyXQ/hqdefault.jpg",
+    "Author": "Craig Dunn — Xamarin",
+    "Description": "Craig Dunn has a lot of great things to say about Xamarin.Forms, the new cross-platform API for building cross-platform mobile apps. Allow Craig to give you the lowdown on the basics of the Xamarin.Forms architecture so together you can walk through building your first iOS, Android, and Windows Phone apps using 100% shared UI and back-end code.",
+    "YoutubeID": "xWyOcEpNyXQ"
+  }
+]

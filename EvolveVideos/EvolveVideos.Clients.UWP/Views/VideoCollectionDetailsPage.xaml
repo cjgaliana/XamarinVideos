@@ -8,5 +8,7 @@
     mc:Ignorable="d"
     DataContext="{Binding VideoCollectionDetailsViewModel,Source={StaticResource ViewModelLocator}}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" />
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="CollectionDetails"></TextBlock>
+    </Grid>
 </Page>

@@ -2,8 +2,8 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using EvolveVideos.Clients.Core.Models;
 using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
 
 namespace EvolveVideos.Clients.Core.ViewModels

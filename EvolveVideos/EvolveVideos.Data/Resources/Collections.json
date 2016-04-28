@@ -1,0 +1,18 @@
+﻿[
+  {
+    "FileName": "Evolve2015.json",
+    "Name": "Evolve 2015",
+    "Description": "Description for evolve 2015",
+    "Website": "http://www.xamarin.com",
+    "DateAdded": "2016-01-15T00:00:00Z",
+    "DateLastModification": "2016-01-15T00:00:00Z"
+  },
+  {
+    "FileName": "Evolve2016.json",
+    "Name": "Evolve 2016",
+    "Description": "Description for evolve 2016",
+    "Website": "http://www.xamarin.com",
+    "DateAdded": "2016-04-30T00:00:00Z",
+    "DateLastModification": "2016-04-30T00:00:00Z"
+  }
+]

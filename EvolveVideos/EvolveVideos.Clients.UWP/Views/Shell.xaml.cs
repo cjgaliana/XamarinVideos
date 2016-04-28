@@ -1,9 +1,9 @@
-﻿using Windows.UI.Xaml.Controls;
-using Cimbalino.Toolkit.Controls;
+﻿using Cimbalino.Toolkit.Controls;
 using EvolveVideos.Clients.Core.Services;
 using EvolveVideos.Clients.UWP.Controls;
 using EvolveVideos.Clients.UWP.Services;
 using Microsoft.Practices.ServiceLocation;
+using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -38,7 +38,7 @@ namespace EvolveVideos.Clients.UWP.Views
                     navService.SetFrame(hamburguerFrame);
 
                     // And go to main page
-                    //navService.NavigateTo(PageKey.MainPage); //Handle by cimbalino toolkit Hamburger menu
+                    navService.NavigateTo(PageKey.MainPage);
                 }
             };
         }

@@ -1,9 +1,10 @@
-﻿using EvolveVideos.Clients.Core.Models;
-using EvolveVideos.Clients.Core.Services;
+﻿using EvolveVideos.Clients.Core.Services;
 using GalaSoft.MvvmLight.Command;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using EvolveVideos.Data;
+using EvolveVideos.Data.Models;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
@@ -12,6 +13,7 @@ namespace EvolveVideos.Clients.Core.ViewModels
         private readonly IDialogService _dialogService;
         private readonly INavigationService _navigationService;
         private readonly IStorageService _storageService;
+        private readonly IDataService _dataService;
 
         private List<EvolveSession> _sessions = new List<EvolveSession>();
 
@@ -36,11 +38,13 @@ namespace EvolveVideos.Clients.Core.ViewModels
         public MainViewModel(
             INavigationService navigationService,
             IDialogService dialogService,
-            IStorageService storageService)
+            IStorageService storageService,
+            IDataService dataService)
         {
             this._navigationService = navigationService;
             this._dialogService = dialogService;
             this._storageService = storageService;
+            _dataService = dataService;
 
             this.CreateCommands();
         }
@@ -59,7 +63,9 @@ namespace EvolveVideos.Clients.Core.ViewModels
 
         private async Task LoadEvolveSessions()
         {
-            this.Sessions = await this._storageService.LoadSessions();
+            //this.Sessions = await this._storageService.LoadSessions();
+            var latestVideos = await this._dataService.GetLatestAsync();
+            this.Sessions = latestVideos;
         }
 
         private void NavigateToSession(EvolveSession session)

@@ -1,0 +1,10 @@
+﻿[
+  {
+    "Title": "A Behind the Scenes Insights into Building Technology for the Hearing Impaired",
+    "Track": "Mobile Ecosystem",
+    "Thumbnail": "http://img.youtube.com/vi/Xt5Is4y5iOU/hqdefault.jpg",
+    "Author": "Avichal Sharma, Serhat Aydin — Accenture",
+    "Description": "Accenture and Siemens are paving the way in medical mobile technology. The Siemens easyTek suite of apps enables the hearing impaired to connect to a variety of Bluetooth enabled devices. It also enables them to control the function and comfort of their in-ear hearing instrument. This real-world case study will show you how Accenture built the best mobile technology for the hearing impaired using Xamarin. They will cover the technical lessons learned from their experience, including connecting to multiple hearing device types, working with Android Bluetooth and MFI Accessory, and how to best incorporate continuous integration into the mobile development workflow.",
+    "YoutubeID": "Xt5Is4y5iOU"
+  }
+]

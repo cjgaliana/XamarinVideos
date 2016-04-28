@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{C2B0BDE0-B708-4867-8096-7881252A7F1F}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolveVideos.Clients.Core", "Clients\EvolveVideos.Clients.Core\EvolveVideos.Clients.Core.csproj", "{03CE1774-B61F-4611-BF03-407C00D6B568}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolveVideos.Clients.UWP", "EvolveVideos.Clients.UWP\EvolveVideos.Clients.UWP.csproj", "{76013538-30EF-4F7F-B789-4758812B340D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolveVideos.Data", "EvolveVideos.Data\EvolveVideos.Data.csproj", "{02EFD406-1F5F-4152-8766-28276132ECAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,22 @@ Global
 		{76013538-30EF-4F7F-B789-4758812B340D}.Release|x86.ActiveCfg = Release|x86
 		{76013538-30EF-4F7F-B789-4758812B340D}.Release|x86.Build.0 = Release|x86
 		{76013538-30EF-4F7F-B789-4758812B340D}.Release|x86.Deploy.0 = Release|x86
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Debug|ARM.Build.0 = Debug|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Debug|x64.Build.0 = Debug|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Debug|x86.Build.0 = Debug|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Release|ARM.ActiveCfg = Release|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Release|ARM.Build.0 = Release|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Release|x64.ActiveCfg = Release|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Release|x64.Build.0 = Release|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Release|x86.ActiveCfg = Release|Any CPU
+		{02EFD406-1F5F-4152-8766-28276132ECAF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,5 +108,6 @@ Global
 		{677574EF-1CEC-42EF-B193-FF8AFD9AFD1A} = {CC58D4F1-9E6F-4682-A584-AC8125E5A710}
 		{03CE1774-B61F-4611-BF03-407C00D6B568} = {4B21284A-74C7-44F1-AFF1-2BA13993211C}
 		{76013538-30EF-4F7F-B789-4758812B340D} = {4B21284A-74C7-44F1-AFF1-2BA13993211C}
+		{02EFD406-1F5F-4152-8766-28276132ECAF} = {4B21284A-74C7-44F1-AFF1-2BA13993211C}
 	EndGlobalSection
 EndGlobal

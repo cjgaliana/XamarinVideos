@@ -6,8 +6,8 @@
   "dependencies": {
     "Microsoft.NETCore": "5.0.0",
     "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-    "MvvmLightLibs": "5.2.0",
-    "Newtonsoft.Json": "7.0.1"
+    "MvvmLightLibs": "5.3.0",
+    "Newtonsoft.Json": "8.0.3"
   },
   "frameworks": {
     "dotnet": {

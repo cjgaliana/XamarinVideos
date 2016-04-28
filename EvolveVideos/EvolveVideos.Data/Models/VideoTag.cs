@@ -1,4 +1,4 @@
-﻿namespace EvolveVideos.Clients.Core.Models
+﻿namespace EvolveVideos.Data.Models
 {
     public class VideoTag
     {

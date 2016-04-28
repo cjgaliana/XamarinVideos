@@ -1,5 +1,5 @@
-﻿using EvolveVideos.Clients.Core.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using EvolveVideos.Data.Models;
 
 namespace EvolveVideos.Clients.UWP.DesignData
 {

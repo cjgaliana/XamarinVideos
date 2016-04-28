@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EvolveVideos.Clients.Core.Models
+namespace EvolveVideos.Data.Models
 {
     public class VideoCollection
     {
@@ -16,5 +16,7 @@ namespace EvolveVideos.Clients.Core.Models
         public DateTime DateAdded { get; set; }
 
         public DateTime DateLastModification { get; set; }
+
+        public string FileName { get; set; }
     }
 }

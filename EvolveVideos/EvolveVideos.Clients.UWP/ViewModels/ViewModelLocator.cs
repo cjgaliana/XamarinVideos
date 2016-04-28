@@ -1,6 +1,7 @@
 ﻿using EvolveVideos.Clients.Core.Services;
 using EvolveVideos.Clients.Core.ViewModels;
 using EvolveVideos.Clients.UWP.Services;
+using EvolveVideos.Data;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Practices.Unity;
 
@@ -47,7 +48,8 @@ namespace EvolveVideos.Clients.UWP.ViewModels
                 .RegisterType<INetworkService, NetworkService>(new ContainerControlledLifetimeManager())
                 .RegisterType<ILauncherService, LauncherService>()
                 .RegisterType<IStorageService, StorageService>()
-                .RegisterType<IVideoDownloaderService, YoutubeDownloaderService>();
+                .RegisterType<IVideoDownloaderService, YoutubeDownloaderService>()
+                .RegisterType<IDataService, LocalResourcesDataService>();
         }
 
         private void RegisterViewModels()

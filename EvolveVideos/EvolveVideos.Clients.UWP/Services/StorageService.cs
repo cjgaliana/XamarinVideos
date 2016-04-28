@@ -1,5 +1,4 @@
-﻿using EvolveVideos.Clients.Core.Models;
-using EvolveVideos.Clients.Core.Services;
+﻿using EvolveVideos.Clients.Core.Services;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,6 +7,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Storage;
+using EvolveVideos.Data.Models;
 
 namespace EvolveVideos.Clients.UWP.Services
 {
