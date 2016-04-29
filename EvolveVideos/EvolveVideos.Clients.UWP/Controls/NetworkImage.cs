@@ -31,6 +31,36 @@ namespace EvolveVideos.Clients.UWP.Controls
         public static readonly DependencyProperty SourceProperty = DependencyProperty.Register(
             "Source", typeof(Uri), typeof(NetworkImage), new PropertyMetadata(default(Uri), SourceChanged));
 
+
+        public static readonly DependencyProperty FallbackImageHorizontalAlignmentProperty = DependencyProperty.Register(
+            "FallbackImageHorizontalAlignment", typeof(HorizontalAlignment), typeof(NetworkImage), new PropertyMetadata(default(HorizontalAlignment)));
+
+        public HorizontalAlignment FallbackImageHorizontalAlignment
+        {
+            get { return (HorizontalAlignment) GetValue(FallbackImageHorizontalAlignmentProperty); }
+            set { SetValue(FallbackImageHorizontalAlignmentProperty, value); }
+        }
+
+
+
+        public static readonly DependencyProperty FallbackImageVerticalAlignmentProperty = DependencyProperty.Register(
+            "FallbackImageVerticalAlignment", typeof(VerticalAlignment), typeof(NetworkImage), new PropertyMetadata(default(VerticalAlignment)));
+
+        public VerticalAlignment FallbackImageVerticalAlignment
+        {
+            get { return (VerticalAlignment) GetValue(FallbackImageVerticalAlignmentProperty); }
+            set { SetValue(FallbackImageVerticalAlignmentProperty, value); }
+        }
+
+        public static readonly DependencyProperty FallbackImageStretchProperty = DependencyProperty.Register(
+            "FallbackImageStretch", typeof(Stretch), typeof(NetworkImage), new PropertyMetadata(default(Stretch)));
+
+        public Stretch FallbackImageStretch
+        {
+            get { return (Stretch) GetValue(FallbackImageStretchProperty); }
+            set { SetValue(FallbackImageStretchProperty, value); }
+        }
+
         private Image _fallbackImageElement;
         private Image _imageElement;
         private ProgressRing _loadingElement;
@@ -87,6 +117,7 @@ namespace EvolveVideos.Clients.UWP.Controls
                             return;
                         }
                     }
+
                     control.ShowFallbackImage();
                 }
             }

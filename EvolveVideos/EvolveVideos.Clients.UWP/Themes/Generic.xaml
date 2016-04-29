@@ -12,9 +12,14 @@
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}">
                         <Grid>
-                            <Image x:Name="PART_FallbackImage" Source="{TemplateBinding FallbackSource}" Stretch="{TemplateBinding Stretch}" />
+                            <Image x:Name="PART_FallbackImage"
+                                   Source="{Binding FallbackSource ,RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=OneWay}"
+                                   Stretch="{TemplateBinding FallbackImageStretch}"
+                                   VerticalAlignment="{TemplateBinding FallbackImageVerticalAlignment}"
+                                   HorizontalAlignment="{TemplateBinding FallbackImageHorizontalAlignment}" />
+
                             <Image x:Name="PART_Image" Source="{TemplateBinding Source}" Stretch="{TemplateBinding Stretch}" Visibility="Collapsed" />
-                            <ProgressRing x:Name="PART_ProgressRing" IsActive="True" Visibility="Collapsed"/>
+                            <ProgressRing x:Name="PART_ProgressRing" IsActive="True" Visibility="Collapsed" />
                         </Grid>
                     </Border>
                 </ControlTemplate>

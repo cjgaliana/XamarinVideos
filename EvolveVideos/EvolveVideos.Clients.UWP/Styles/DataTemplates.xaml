@@ -13,7 +13,11 @@
                     FallbackSource="ms-appx:///Assets/Images/DefaultImage.png"
                     Stretch="UniformToFill" 
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center" />
+                    VerticalAlignment="Center" 
+                    FallbackImageStretch="Fill"
+                    FallbackImageHorizontalAlignment="Center"
+                    VerticalContentAlignment="Top"
+                    />
                 <StackPanel Background="{StaticResource ComplimentaryBrush}" VerticalAlignment="Bottom">
                     <TextBlock Text="{Binding Title}" TextWrapping="WrapWholeWords" Foreground="{StaticResource InvertedTextForeground}" />
                     <TextBlock Text="{Binding }" TextWrapping="WrapWholeWords" Foreground="{StaticResource InvertedTextForeground}" />
