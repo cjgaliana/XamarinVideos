@@ -18,7 +18,7 @@
       <uap:VisualElements DisplayName="Evolve Videos" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Watch and download the Xamarin Evolve Videos" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="Evolve Videos">
         </uap:DefaultTile>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#3498db" />
       </uap:VisualElements>
     </Application>
   </Applications>
