@@ -10,13 +10,7 @@
                 <!--<Image Source="{Binding Thumbnail}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" />-->
                 <controls:NetworkImage 
                     Source="{Binding Thumbnail}" 
-                    FallbackSource="ms-appx:///Assets/Images/DefaultImage.png"
-                    Stretch="UniformToFill" 
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Top" 
-                    FallbackImageStretch="Uniform"
-                    FallbackImageHorizontalAlignment="Center"
-                    VerticalContentAlignment="Top"
+                    Style="{StaticResource XamarinNetworkImageStyle}"
                     />
                 <StackPanel Background="{StaticResource ComplimentaryBrush}" VerticalAlignment="Bottom">
                     <TextBlock Text="{Binding Title}" Style="{StaticResource HeaderItemTemplateStyle}" />
@@ -38,24 +32,5 @@
         </Border>
     </DataTemplate>
 
-    <Style x:Key="HeaderItemTemplateStyle" TargetType="TextBlock">
-        <Setter Property="Foreground" Value="{StaticResource InvertedTextForeground}" />
-        <Setter Property="TextWrapping" Value="WrapWholeWords" />
-        <Setter Property="FontSize" Value="16" />
-        <Setter Property="FontWeight" Value="Bold" />
-        <Setter Property="Margin" Value="5,5,5,0" />
-    </Style>
-    <Style x:Key="SubHeaderItemTemplateStyle" TargetType="TextBlock" BasedOn="{StaticResource HeaderItemTemplateStyle}">
-        <Setter Property="FontSize" Value="14" />
-        <Setter Property="FontWeight" Value="Normal" />
-        <Setter Property="Margin" Value="5,0,5,5" />
-    </Style>
 
-
-    <Style x:Key="AdaptiveItemContainerStyle" TargetType="GridViewItem">
-        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="VerticalContentAlignment" Value="Stretch" />
-        <Setter Property="VerticalAlignment" Value="Stretch" />
-    </Style>
 </ResourceDictionary>

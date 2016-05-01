@@ -29,7 +29,7 @@ namespace EvolveVideos.Clients.UWP.Views
                     {
                         Header = new HamburgerTitleBar
                         {
-                            Title = "This is Sparta!"
+                            Title = "Evolve Videos"
                         },
                         Pane = new HamburgerPaneControl()
                     };

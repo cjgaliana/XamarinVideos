@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cimbalino.Toolkit.Extensions;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Windows.Storage;
@@ -6,7 +7,6 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
-using Cimbalino.Toolkit.Extensions;
 
 // The Templated Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234235
 
@@ -31,24 +31,21 @@ namespace EvolveVideos.Clients.UWP.Controls
         public static readonly DependencyProperty SourceProperty = DependencyProperty.Register(
             "Source", typeof(Uri), typeof(NetworkImage), new PropertyMetadata(default(Uri), SourceChanged));
 
-
         public static readonly DependencyProperty FallbackImageHorizontalAlignmentProperty = DependencyProperty.Register(
             "FallbackImageHorizontalAlignment", typeof(HorizontalAlignment), typeof(NetworkImage), new PropertyMetadata(default(HorizontalAlignment)));
 
         public HorizontalAlignment FallbackImageHorizontalAlignment
         {
-            get { return (HorizontalAlignment) GetValue(FallbackImageHorizontalAlignmentProperty); }
+            get { return (HorizontalAlignment)GetValue(FallbackImageHorizontalAlignmentProperty); }
             set { SetValue(FallbackImageHorizontalAlignmentProperty, value); }
         }
-
-
 
         public static readonly DependencyProperty FallbackImageVerticalAlignmentProperty = DependencyProperty.Register(
             "FallbackImageVerticalAlignment", typeof(VerticalAlignment), typeof(NetworkImage), new PropertyMetadata(default(VerticalAlignment)));
 
         public VerticalAlignment FallbackImageVerticalAlignment
         {
-            get { return (VerticalAlignment) GetValue(FallbackImageVerticalAlignmentProperty); }
+            get { return (VerticalAlignment)GetValue(FallbackImageVerticalAlignmentProperty); }
             set { SetValue(FallbackImageVerticalAlignmentProperty, value); }
         }
 
@@ -57,7 +54,7 @@ namespace EvolveVideos.Clients.UWP.Controls
 
         public Stretch FallbackImageStretch
         {
-            get { return (Stretch) GetValue(FallbackImageStretchProperty); }
+            get { return (Stretch)GetValue(FallbackImageStretchProperty); }
             set { SetValue(FallbackImageStretchProperty, value); }
         }
 
@@ -72,23 +69,22 @@ namespace EvolveVideos.Clients.UWP.Controls
 
         public Uri FallbackSource
         {
-            get { return (Uri) GetValue(FallbackSourceProperty); }
+            get { return (Uri)GetValue(FallbackSourceProperty); }
             set { SetValue(FallbackSourceProperty, value); }
         }
 
         public Uri Source
         {
-            get { return (Uri) GetValue(SourceProperty); }
+            get { return (Uri)GetValue(SourceProperty); }
             set { SetValue(SourceProperty, value); }
         }
 
         public Stretch Stretch
         {
-            get { return (Stretch) GetValue(StretchProperty); }
+            get { return (Stretch)GetValue(StretchProperty); }
             set { SetValue(StretchProperty, value); }
         }
 
-       
         private static async void SourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             var control = d as NetworkImage;
@@ -97,7 +93,7 @@ namespace EvolveVideos.Clients.UWP.Controls
                 var newSource = e.NewValue as Uri;
                 if (newSource != null)
                 {
-                    control._loadingElement.Visibility = Visibility.Visible;
+                    control.ShowLoadingProgress();
 
                     var file = await control.GetImageFromCache(newSource);
 
@@ -215,6 +211,14 @@ namespace EvolveVideos.Clients.UWP.Controls
             if (_loadingElement != null)
             {
                 _loadingElement.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void ShowLoadingProgress()
+        {
+            if (_loadingElement != null)
+            {
+                _loadingElement.Visibility = Visibility.Visible;
             }
         }
     }

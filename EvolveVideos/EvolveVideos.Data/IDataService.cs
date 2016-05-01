@@ -22,7 +22,7 @@ namespace EvolveVideos.Data
     {
         public async Task<List<EvolveSession>> GetLatestAsync()
         {
-            var json = await LoadFileContentAsync("Evolve2015.json");
+            var json = await LoadFileContentAsync("Evolve2016.json");
             var data = JsonConvert.DeserializeObject<List<EvolveSession>>(json);
             return data;
         }

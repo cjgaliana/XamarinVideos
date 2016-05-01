@@ -5,19 +5,25 @@
     xmlns:local="using:EvolveVideos.Clients.UWP.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:EvolveVideos.Clients.UWP.Controls"
     mc:Ignorable="d"
     DataContext="{Binding SessionDetailsViewModel, Source={StaticResource ViewModelLocator}}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ScrollViewer Padding="52">
+        <ScrollViewer Padding="10">
             <StackPanel>
-                <TextBlock Text="{Binding Session.Title}" TextWrapping="Wrap" />
-                <TextBlock Text="{Binding Session.Author}" TextWrapping="Wrap" />
-                <TextBlock Text="{Binding Session.Track}" TextWrapping="Wrap" />
-                <Image Source="{Binding Session.Thumbnail}" />
-                <TextBlock Text="{Binding Session.Description}" TextWrapping="Wrap" />
-                <Button Content="Play" Command="{Binding PlayCommand}" />
-                <Button Content="Download" Command="{Binding DownloadCommand}" />
+                <TextBlock Text="{Binding Session.Title}" Style="{StaticResource TitleStyle}"  />
+                <TextBlock Text="{Binding Session.Author}" Style="{StaticResource AuthorStyle}"/>
+                <TextBlock Text="{Binding Session.Track}" Style="{StaticResource SubtitleStyle}" />
+                <controls:NetworkImage
+                    Source="{Binding Session.Thumbnail}"
+                    Style="{StaticResource XamarinNetworkImageStyle}" Margin="0,5" />
+                <TextBlock Text="{Binding Session.Description}" 
+                           Style="{StaticResource DescriptionStyle}" Margin="0,0,0,10"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Button Content="Play" Command="{Binding PlayCommand}" Style="{StaticResource XamarinButton}" Margin="0,0,5,0" />
+                    <Button Content="Download" Command="{Binding DownloadCommand}" Style="{StaticResource XamarinButton}" />
+                </StackPanel>
             </StackPanel>
         </ScrollViewer>
     </Grid>

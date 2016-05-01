@@ -1,4 +1,5 @@
 ﻿using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.UWP.DesignData;
 using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
 using System;
@@ -24,6 +25,11 @@ namespace EvolveVideos.Clients.Core.ViewModels
             _downloadManager = downloadManager;
 
             this.CreateCommands();
+
+            if (this.IsInDesignMode)
+            {
+                this.Session = DesignData.GetSession();
+            }
         }
 
         public EvolveSession Session

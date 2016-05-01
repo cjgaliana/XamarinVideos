@@ -19,7 +19,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <controls:AdaptiveGridView
             ItemsSource="{Binding Collections}"
-            Padding="52"
+            Padding="10"
             IsItemClickEnabled="True"
             SelectionMode="None"
             MinItemHeight="150"

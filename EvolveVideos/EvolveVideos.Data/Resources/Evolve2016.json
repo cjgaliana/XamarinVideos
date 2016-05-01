@@ -1,10 +1,58 @@
 ﻿[
   {
-    "Title": "A Behind the Scenes Insights into Building Technology for the Hearing Impaired",
-    "Track": "Mobile Ecosystem",
-    "Thumbnail": "http://img.youtube.com/vi/Xt5Is4y5iOU/hqdefault.jpg",
-    "Author": "Avichal Sharma, Serhat Aydin — Accenture",
-    "Description": "Accenture and Siemens are paving the way in medical mobile technology. The Siemens easyTek suite of apps enables the hearing impaired to connect to a variety of Bluetooth enabled devices. It also enables them to control the function and comfort of their in-ear hearing instrument. This real-world case study will show you how Accenture built the best mobile technology for the hearing impaired using Xamarin. They will cover the technical lessons learned from their experience, including connecting to multiple hearing device types, working with Android Bluetooth and MFI Accessory, and how to best incorporate continuous integration into the mobile development workflow.",
-    "YoutubeID": "Xt5Is4y5iOU"
+    "Title": "Continuous Delivery for Mobile Apps: Yes We Can!",
+    "Track": "Test",
+    "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/Continuous_Delivery_Karl_Krakow_Thumbnail.jpg",
+    "Author": "Karl Krukow",
+    "Description": "",
+    "YoutubeID": "wXgnh2Q7Uv8"
+  },
+  {
+    "Title": "Grant Imahara at Evolve 2016",
+    "Track": "Build",
+    "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/8_Mythbusters_Grant_Imahara_Thumbnail_1.jpg",
+    "Author": "Grant Imahara",
+    "Description": "",
+    "YoutubeID": "qiui_ki1OPc"
+  },
+  {
+    "Title": "The Future of C#",
+    "Track": "Build",
+    "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/6_Future_of_C%23_Mads_Dustin_Thumbnail_2.jpg",
+    "Author": "Mads Torgersen, Dustin Campbell",
+    "Description": "",
+    "YoutubeID": "5k0fML72_OI"
+  },
+  {
+    "Title": "Optimizing App Performance with Xamarin.Forms",
+    "Track": "Build",
+    "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/Optimizing_Performance_Jason_Smith_Thumbnail.jpg",
+    "Author": "Jason Smith",
+    "Description": "",
+    "YoutubeID": "RZvdql3Ev0E"
+  },
+  {
+    "Title": "Developing Connected Apps Using Azure and Xamarin",
+    "Track": "Build",
+    "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/Developing_Azure_Adrian_Hall_Mike_James_Thumbnail.jpg",
+    "Author": "Mike James, Adrian Hall",
+    "Description": "",
+    "YoutubeID": "cvVuREnVZk8"
+  },
+  {
+    "Title": "Everyone Can Create Beautiful Apps with Material Design",
+    "Track": "Design",
+    "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/7_Everyone_Beautiful_James_Jereme_Template_1.jpg",
+    "Author": "James Montemagno, Jérémie Laval",
+    "Description": "",
+    "YoutubeID": "E3_ZjIOzVzY"
+  },
+  {
+    "Title": "Building a Universal Windows App in Visual Studio",
+    "Track": "Build",
+    "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/5_Build_Universal_Unni_Ravindra_Thumbnail_1.jpg",
+    "Author": "Unni Ravindranathan",
+    "Description": "",
+    "YoutubeID": "5k0fML72_OI"
   }
 ]
