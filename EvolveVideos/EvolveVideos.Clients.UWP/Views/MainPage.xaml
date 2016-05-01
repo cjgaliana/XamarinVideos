@@ -24,7 +24,7 @@
             IsItemClickEnabled="True"
             SelectionMode="None"
             MinItemHeight="150"
-            MinItemWidth="350"
+            MinItemWidth="300"
             ItemTemplate="{StaticResource SessionDataTemplate}"
             ItemContainerStyle="{StaticResource AdaptiveItemContainerStyle}">
             <Interactivity:Interaction.Behaviors>
