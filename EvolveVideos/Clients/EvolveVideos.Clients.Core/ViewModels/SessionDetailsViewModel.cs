@@ -78,8 +78,8 @@ namespace EvolveVideos.Clients.Core.ViewModels
         private void PlayVideo()
         {
             // Play video
+            this._navigationService.NavigateTo(PageKey.PlayerPage, this.Session);
         }
-
 
         private async Task DownloadVideoAsync()
         {

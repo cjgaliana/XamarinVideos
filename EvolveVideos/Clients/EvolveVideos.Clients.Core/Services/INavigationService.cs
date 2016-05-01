@@ -6,7 +6,8 @@
         MainPage,
         SessionDetailsPage,
         VideoCollectionsPage,
-        VideoCollectionDetailsPage
+        VideoCollectionDetailsPage,
+        PlayerPage
     }
 
     public interface INavigationService

@@ -20,31 +20,34 @@ namespace EvolveVideos.Clients.UWP.ViewModels
         /// </summary>
         public ViewModelLocator()
         {
-            _container = new UnityContainer();
+            this._container = new UnityContainer();
 
             ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(this._container));
 
-            RegisterServices();
-            RegisterViewModels();
+            this.RegisterServices();
+            this.RegisterViewModels();
         }
 
-        public SettingsViewModel SettingsViewModel => _container.Resolve<SettingsViewModel>();
-        public DownloadsViewModel DownloadsViewModel => _container.Resolve<DownloadsViewModel>();
+        public SettingsViewModel SettingsViewModel => this._container.Resolve<SettingsViewModel>();
+        public DownloadsViewModel DownloadsViewModel => this._container.Resolve<DownloadsViewModel>();
 
-        public MainViewModel MainViewModel => _container.Resolve<MainViewModel>();
+        public MainViewModel MainViewModel => this._container.Resolve<MainViewModel>();
 
-        public SplashScreenViewModel SplashScreenViewModel => _container.Resolve<SplashScreenViewModel>();
+        public SplashScreenViewModel SplashScreenViewModel => this._container.Resolve<SplashScreenViewModel>();
 
-        public SessionDetailsViewModel SessionDetailsViewModel => _container.Resolve<SessionDetailsViewModel>();
+        public SessionDetailsViewModel SessionDetailsViewModel => this._container.Resolve<SessionDetailsViewModel>();
 
-        public VideoCollectionsViewModel VideoCollectionsViewModel => _container.Resolve<VideoCollectionsViewModel>();
+        public PlayerViewModel PlayerViewModel => this._container.Resolve<PlayerViewModel>();
+
+        public VideoCollectionsViewModel VideoCollectionsViewModel
+            => this._container.Resolve<VideoCollectionsViewModel>();
 
         public VideoCollectionDetailsViewModel VideoCollectionDetailsViewModel
-            => _container.Resolve<VideoCollectionDetailsViewModel>();
+            => this._container.Resolve<VideoCollectionDetailsViewModel>();
 
         private void RegisterServices()
         {
-            _container.RegisterType<IDialogService, DialogService>()
+            this._container.RegisterType<IDialogService, DialogService>()
                 .RegisterType<INavigationService, NavigationService>(new ContainerControlledLifetimeManager())
                 .RegisterType<INetworkService, NetworkService>(new ContainerControlledLifetimeManager())
                 .RegisterType<ISettingsService, RoamingSettingsService>()
@@ -57,14 +60,15 @@ namespace EvolveVideos.Clients.UWP.ViewModels
 
         private void RegisterViewModels()
         {
-            _container
+            this._container
                 .RegisterType<SplashScreenViewModel>()
                 .RegisterType<SettingsViewModel>()
                 .RegisterType<MainViewModel>()
                 .RegisterType<SessionDetailsViewModel>()
                 .RegisterType<VideoCollectionsViewModel>()
                 .RegisterType<VideoCollectionDetailsViewModel>()
-                .RegisterType<DownloadsViewModel>();
+                .RegisterType<DownloadsViewModel>()
+                .RegisterType<PlayerViewModel>();
         }
     }
 }

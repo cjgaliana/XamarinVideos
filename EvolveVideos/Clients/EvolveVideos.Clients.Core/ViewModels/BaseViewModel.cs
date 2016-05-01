@@ -1,11 +1,11 @@
-﻿using GalaSoft.MvvmLight;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using GalaSoft.MvvmLight;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
     public class BaseViewModel : ViewModelBase
     {
-        private bool _isBusy = false;
+        private bool _isBusy;
 
         public bool IsBusy
         {

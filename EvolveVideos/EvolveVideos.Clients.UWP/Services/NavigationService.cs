@@ -26,7 +26,8 @@ namespace EvolveVideos.Clients.UWP.Services
                 {PageKey.MainPage, typeof(MainPage)},
                 {PageKey.SessionDetailsPage, typeof(SessionDetailsView)},
                 {PageKey.VideoCollectionsPage, typeof(VideoCollectionsPage)},
-                {PageKey.VideoCollectionDetailsPage, typeof(VideoCollectionDetailsPage)}
+                {PageKey.VideoCollectionDetailsPage, typeof(VideoCollectionDetailsPage)},
+                {PageKey.PlayerPage, typeof(PlayerView)}
             };
 
             SetFrame((Frame)Window.Current.Content);
