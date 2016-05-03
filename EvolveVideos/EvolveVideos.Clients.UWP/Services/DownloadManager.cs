@@ -34,8 +34,7 @@ namespace EvolveVideos.Clients.UWP.Services
             _videoDownloaderFactory = videoDownloaderFactory;
 
             _networkService.NetworkStatusChanged += OnNetworkStatusChanged;
-
-            InitilizeAsync();
+            
         }
 
         public IList<IVideoDownload> Downloads { get; private set; }
@@ -135,12 +134,12 @@ namespace EvolveVideos.Clients.UWP.Services
 
             var newDownload = this._videoDownloaderFactory.Create();
 
-            newDownload.Id = Guid.NewGuid();
+            newDownload.Id = session.Id;
             newDownload.SessionId = session.Id;
             newDownload.DownloadUrl = url;
             newDownload.Status = DownloadStatus.Queue;
 
-            await newDownload.StartDownlodAsync();
+            newDownload.StartDownlodAsync();
 
             Downloads.Add(newDownload);
 
@@ -196,7 +195,7 @@ namespace EvolveVideos.Clients.UWP.Services
             return Task.FromResult(download);
         }
 
-        public async Task InitilizeAsync()
+        public async Task InitializeAsync()
         {
             await LoadDownloadQueueAsync();
 

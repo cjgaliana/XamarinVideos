@@ -6,6 +6,8 @@ namespace EvolveVideos.Clients.Core.Services.Download
 {
     public interface IDownloadManager
     {
+        Task InitializeAsync();
+
         IList<IVideoDownload> Downloads { get; }
 
         Task PauseAllDownloadsAsync();
@@ -21,6 +23,7 @@ namespace EvolveVideos.Clients.Core.Services.Download
         Task PauseDownload(IVideoDownload download);
 
         Task ResumeDownload(IVideoDownload download);
+
         Task<IVideoDownload> GetDownloadForSessionAsync(EvolveSession session);
     }
 }

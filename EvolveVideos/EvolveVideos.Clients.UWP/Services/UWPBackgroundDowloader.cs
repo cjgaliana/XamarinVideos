@@ -1,11 +1,12 @@
-﻿using EvolveVideos.Clients.Core.Services.Download;
-using EvolveVideos.Clients.Core.ViewModels;
-using System;
+﻿using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using Windows.Networking.BackgroundTransfer;
 using Windows.Storage;
+using EvolveVideos.Clients.Core.Services.Download;
+using EvolveVideos.Clients.Core.ViewModels;
+using Newtonsoft.Json;
 
 namespace EvolveVideos.Clients.UWP.Services
 {
@@ -13,21 +14,28 @@ namespace EvolveVideos.Clients.UWP.Services
     {
         private readonly string VideosFolderName = "Videos";
 
-        private CancellationTokenSource _cts;
-        private DownloadOperation _download;
+      
+
         private Uri _downloadUrl;
         private Guid _id;
         private Uri _localFileUrl;
         private double _percentage;
-        private StorageFolder _rootFolder;
         private Guid _sessionId;
 
         private DownloadStatus _status;
 
+     
+        private StorageFolder _rootFolder;
+      
+        private CancellationTokenSource _cts;
+
+        
+        private DownloadOperation _download;
+        
+
         public UWPBackgroundDowloader()
         {
             _cts = new CancellationTokenSource();
-            CreateRootFolderAsync().Wait(TimeSpan.FromSeconds(1));
         }
 
         public double Percentage
@@ -60,6 +68,7 @@ namespace EvolveVideos.Clients.UWP.Services
             set { Set(() => SessionId, ref _sessionId, value); }
         }
 
+        [JsonIgnore]
         public Uri LocalFileUrl
         {
             get { return _localFileUrl; }
@@ -76,6 +85,7 @@ namespace EvolveVideos.Clients.UWP.Services
                 var fileExtension = Path.GetExtension(DownloadUrl.AbsolutePath);
                 var destination = Path.Combine(Id.ToString(), fileExtension);
 
+                await CreateRootFolderAsync();
                 var destinationFile =
                     await _rootFolder.CreateFileAsync(
                         destination,
@@ -83,6 +93,8 @@ namespace EvolveVideos.Clients.UWP.Services
                 LocalFileUrl = new Uri(destinationFile.Path);
 
                 var downloader = new BackgroundDownloader();
+                //downloader.SuccessToastNotification =this.GetSuccessToastTemplate();
+                //downloader.FailureToastNotification = new ToastNotification(new XmlDocument());
                 _download = downloader.CreateDownload(source, destinationFile);
 
                 // Attach progress and completion handlers.
@@ -97,12 +109,14 @@ namespace EvolveVideos.Clients.UWP.Services
         public Task PauseAsync()
         {
             _download.Pause();
+            this.Status = DownloadStatus.Paused;
             return Task.CompletedTask;
         }
 
         public Task ResumeAsync()
         {
             _download.Resume();
+            this.Status = DownloadStatus.Downloading;
             return Task.CompletedTask;
         }
 
@@ -155,10 +169,13 @@ namespace EvolveVideos.Clients.UWP.Services
             double percent = 100;
             if (download.Progress.TotalBytesToReceive > 0)
             {
-                percent = download.Progress.BytesReceived * 100 / download.Progress.TotalBytesToReceive;
+                percent = download.Progress.BytesReceived*100/download.Progress.TotalBytesToReceive;
             }
 
             Percentage = percent;
+            Status = Math.Abs(Percentage - 100) < 0.01 
+                ? DownloadStatus.Completed 
+                : DownloadStatus.Downloading;
         }
     }
 }
