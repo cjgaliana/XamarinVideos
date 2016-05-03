@@ -10,6 +10,7 @@ namespace EvolveVideos.Clients.Core.Services.Download
         Uri DownloadUrl { get; set; }
         Guid SessionId { get; set; }
         Uri LocalFileUrl { get; set; }
+        double Percentage { get; set; }
 
         Task StartDownlodAsync();
 

@@ -100,6 +100,7 @@
       <DependentUpon>HamburgerPaneControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\NetworkImage.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\ItemClickConverter.cs" />
     <Compile Include="Helpers\TitleBarHelper.cs" />
     <Compile Include="Helpers\XamlExtensions .cs" />

@@ -108,7 +108,7 @@ namespace EvolveVideos.Clients.Core.ViewModels
             // Play video
             if (HasDownload)
             {
-                if (VideoDownload.Status == DownloadStatus.Downloaded)
+                if (VideoDownload.Status == DownloadStatus.Completed)
                 {
                     parameters.Url = VideoDownload.LocalFileUrl;
                 }

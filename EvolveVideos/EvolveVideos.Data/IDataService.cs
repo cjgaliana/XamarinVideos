@@ -16,6 +16,7 @@ namespace EvolveVideos.Data
         Task<List<VideoCollection>> GetVideoCollectionsAsync();
 
         Task<List<EvolveSession>> GetVideosAsync(VideoCollection collection);
+        Task<EvolveSession> GetSessionAsync(Guid sessionId);
     }
 
     public class LocalResourcesDataService : IDataService
@@ -39,6 +40,23 @@ namespace EvolveVideos.Data
             var json = await LoadFileContentAsync(collection.FileName);
             var data = JsonConvert.DeserializeObject<List<EvolveSession>>(json);
             return data;
+        }
+
+        public async Task<EvolveSession> GetSessionAsync(Guid sessionId)
+        {
+            var collections = await this.GetVideoCollectionsAsync();
+            foreach (var collection in collections)
+            {
+                var videos = await this.GetVideosAsync(collection);
+                var session = videos.FirstOrDefault(x => x.Id == sessionId);
+                if (session!=null)
+                {
+                    return session;
+                }
+            }
+
+            return null;
+            // TODO: Throw Not Found exception
         }
 
         public async Task<string> LoadFileContentAsync(string filename)
