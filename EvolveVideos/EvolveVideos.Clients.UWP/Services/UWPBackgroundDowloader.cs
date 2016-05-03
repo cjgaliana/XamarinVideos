@@ -14,24 +14,19 @@ namespace EvolveVideos.Clients.UWP.Services
     {
         private readonly string VideosFolderName = "Videos";
 
-      
+        private CancellationTokenSource _cts;
+
+        private DownloadOperation _download;
 
         private Uri _downloadUrl;
         private Guid _id;
         private Uri _localFileUrl;
         private double _percentage;
+
+        private StorageFolder _rootFolder;
         private Guid _sessionId;
 
         private DownloadStatus _status;
-
-     
-        private StorageFolder _rootFolder;
-      
-        private CancellationTokenSource _cts;
-
-        
-        private DownloadOperation _download;
-        
 
         public UWPBackgroundDowloader()
         {
@@ -82,13 +77,12 @@ namespace EvolveVideos.Clients.UWP.Services
                 _cts = new CancellationTokenSource();
 
                 var source = DownloadUrl;
-                var fileExtension = Path.GetExtension(DownloadUrl.AbsolutePath);
-                var destination = Path.Combine(Id.ToString(), fileExtension);
 
-                await CreateRootFolderAsync();
+                var fileName = GetFileName();
+                await EnsureRootFolderExistsAsync();
                 var destinationFile =
                     await _rootFolder.CreateFileAsync(
-                        destination,
+                        fileName,
                         CreationCollisionOption.OpenIfExists);
                 LocalFileUrl = new Uri(destinationFile.Path);
 
@@ -109,29 +103,50 @@ namespace EvolveVideos.Clients.UWP.Services
         public Task PauseAsync()
         {
             _download.Pause();
-            this.Status = DownloadStatus.Paused;
+            Status = DownloadStatus.Paused;
             return Task.CompletedTask;
         }
 
         public Task ResumeAsync()
         {
             _download.Resume();
-            this.Status = DownloadStatus.Downloading;
+            Status = DownloadStatus.Downloading;
             return Task.CompletedTask;
         }
 
-        public Task DeleteAsync()
+        public async Task DeleteAsync()
         {
-            // Cancel download
-            _cts.Cancel();
-            _cts.Dispose();
+            try
+            {
+                // Cancel download
+                _cts.Cancel();
+                _cts.Dispose();
 
-            // TODO: Delete file?
-
-            return Task.CompletedTask;
+                // TODO: Delete file?
+                await EnsureRootFolderExistsAsync();
+                var fileName = GetFileName();
+                var file = await _rootFolder.CreateFileAsync(fileName, CreationCollisionOption.OpenIfExists);
+                if (file != null)
+                {
+                    await file.DeleteAsync(StorageDeleteOption.Default);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
-        private async Task CreateRootFolderAsync()
+        public event EventHandler<DownloadCompetedArgs> DownloadCompleted;
+
+        private string GetFileName()
+        {
+            //var fileExtension = Path.GetExtension(DownloadUrl.AbsolutePath);
+            var destination = Path.Combine(Id.ToString() /*, fileExtension*/);
+            return destination;
+        }
+
+        private async Task EnsureRootFolderExistsAsync()
         {
             var localFolder = ApplicationData.Current.LocalFolder;
             _rootFolder = await localFolder.CreateFolderAsync(VideosFolderName, CreationCollisionOption.OpenIfExists);
@@ -173,9 +188,23 @@ namespace EvolveVideos.Clients.UWP.Services
             }
 
             Percentage = percent;
-            Status = Math.Abs(Percentage - 100) < 0.01 
-                ? DownloadStatus.Completed 
+            Status = Math.Abs(Percentage - 100) < 0.01
+                ? DownloadStatus.Completed
                 : DownloadStatus.Downloading;
+
+            if (Status == DownloadStatus.Completed)
+            {
+                OnDownloadCOmpleted();
+            }
+        }
+
+        private void OnDownloadCOmpleted()
+        {
+            var handle = DownloadCompleted;
+            handle?.Invoke(this, new DownloadCompetedArgs
+            {
+                Download = this
+            });
         }
     }
 }

@@ -3,6 +3,11 @@ using System.Threading.Tasks;
 
 namespace EvolveVideos.Clients.Core.Services.Download
 {
+    public class DownloadCompetedArgs
+    {
+        public IVideoDownload Download;
+    }
+
     public interface IVideoDownload
     {
         DownloadStatus Status { get; set; }
@@ -19,5 +24,8 @@ namespace EvolveVideos.Clients.Core.Services.Download
         Task ResumeAsync();
 
         Task DeleteAsync();
+
+
+        event EventHandler<DownloadCompetedArgs> DownloadCompleted;
     }
 }

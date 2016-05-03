@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using Windows.Storage;
 
@@ -20,7 +21,8 @@ namespace EvolveVideos.Clients.UWP.Services
 
         public async Task<IList<IVideoDownload>> LoadDownloadsAsync()
         {
-            var data = await this.LoadFile<IList<IVideoDownload>>(StorageFileKey.DownloadsFile);
+            var uwPdata = await this.LoadFile<IList<UWPBackgroundDowloader>>(StorageFileKey.DownloadsFile);
+            var data = uwPdata.Cast<IVideoDownload>().ToList();
             return data;
         }
 
@@ -31,7 +33,7 @@ namespace EvolveVideos.Clients.UWP.Services
 
         public StorageService()
         {
-            this._rootFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            this._rootFolder = ApplicationData.Current.LocalFolder;
         }
 
         private async Task SaveFile(string filePath, object data)
@@ -46,14 +48,20 @@ namespace EvolveVideos.Clients.UWP.Services
 
         private async Task<T> LoadFile<T>(string filePath)
         {
-            var file = await this._rootFolder.CreateFileAsync(filePath, CreationCollisionOption.OpenIfExists);
-            if (file != null)
+            try
             {
-                var json = await FileIO.ReadTextAsync(file);
-                var data = JsonConvert.DeserializeObject<T>(json);
-                return data;
+                var file = await this._rootFolder.CreateFileAsync(filePath, CreationCollisionOption.OpenIfExists);
+                if (file != null)
+                {
+                    var json = await FileIO.ReadTextAsync(file);
+                    var data = JsonConvert.DeserializeObject<T>(json);
+                    return data;
+                }
             }
-
+            catch (Exception ex)
+            {
+                throw;
+            }
             throw new FileNotFoundException($"File nor found in {this._rootFolder.Path} directoy", filePath);
         }
     }

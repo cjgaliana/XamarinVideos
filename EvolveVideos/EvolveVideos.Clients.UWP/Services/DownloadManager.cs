@@ -34,7 +34,6 @@ namespace EvolveVideos.Clients.UWP.Services
             _videoDownloaderFactory = videoDownloaderFactory;
 
             _networkService.NetworkStatusChanged += OnNetworkStatusChanged;
-            
         }
 
         public IList<IVideoDownload> Downloads { get; private set; }
@@ -138,6 +137,7 @@ namespace EvolveVideos.Clients.UWP.Services
             newDownload.SessionId = session.Id;
             newDownload.DownloadUrl = url;
             newDownload.Status = DownloadStatus.Queue;
+            newDownload.DownloadCompleted += OnDownloadCompleted;
 
             newDownload.StartDownlodAsync();
 
@@ -146,6 +146,22 @@ namespace EvolveVideos.Clients.UWP.Services
             using (await _fileMutex.LockAsync())
             {
                 await _storageService.SaveDownloadsAsync(Downloads);
+            }
+        }
+
+        private async void OnDownloadCompleted(object sender, DownloadCompetedArgs e)
+        {
+            var localDownload = this.Downloads.FirstOrDefault(x => x.Id == e.Download.Id);
+            if (localDownload != null)
+            {
+                localDownload.Status = e.Download.Status;
+                localDownload.LocalFileUrl = e.Download.LocalFileUrl;
+                localDownload.Percentage = e.Download.Percentage;
+
+                using (await _fileMutex.LockAsync())
+                {
+                    await _storageService.SaveDownloadsAsync(Downloads);
+                }
             }
         }
 

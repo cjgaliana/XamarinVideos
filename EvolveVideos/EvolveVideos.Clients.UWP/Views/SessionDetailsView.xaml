@@ -34,13 +34,10 @@
                         Style="{StaticResource XamarinButton}"
                         Visibility="{Binding HasDownload, Converter={StaticResource BooleanToVisibilityConverter}, ConverterParameter=Invert}" />
                 </StackPanel>
-                <Grid  Margin="0,0,0,10" Visibility="{Binding HasDownload, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <Grid  Margin="0,0,10,10" HorizontalAlignment="Stretch" Visibility="{Binding HasDownload, Converter={StaticResource BooleanToVisibilityConverter}}">
                     <Grid.ColumnDefinitions>
-                        <!--<ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="75" />-->
-
-                        <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
                     
                     <Grid.RowDefinitions>
@@ -48,14 +45,14 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <ProgressBar Grid.Row="0" IsIndeterminate="False" Value="{Binding VideoDownload.Percentage}" />
+                    <ProgressBar Grid.Row="0" IsIndeterminate="False" Value="{Binding VideoDownload.Percentage}" Background="{StaticResource ComplimentaryBrush}" />
 
                     <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
                         <TextBlock Text="{Binding VideoDownload.Percentage}" />
                         <TextBlock Text="%" />
                     </StackPanel>
 
-                    <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Delete" Style="{StaticResource XamarinButton}"/>
+                    <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Delete" Style="{StaticResource XamarinButton}" Command="{Binding DeleteCommand}" />
                 </Grid>
             </StackPanel>
         </ScrollViewer>

@@ -55,6 +55,7 @@ namespace EvolveVideos.Clients.Core.ViewModels
         public ICommand PlayCommand { get; private set; }
 
         public ICommand DownloadCommand { get; private set; }
+        public ICommand DeleteCommand { get; private set; }
 
         public IVideoDownload VideoDownload
         {
@@ -72,6 +73,7 @@ namespace EvolveVideos.Clients.Core.ViewModels
         {
             PlayCommand = new RelayCommand(async () => { await this.PlayVideoAsync(); });
             DownloadCommand = new RelayCommand(async () => { await DownloadVideoAsync(); });
+            DeleteCommand = new RelayCommand(async () => { await DeleteDownloadAsync(); });
         }
 
         public override async Task OnNavigateTo(object parameter)
@@ -128,6 +130,15 @@ namespace EvolveVideos.Clients.Core.ViewModels
             {
                 // TODO: Log error
                 await _dialogService.ShowMessageAsync("Error", "Is not possible download the video");
+            }
+        }
+
+        private async Task DeleteDownloadAsync()
+        {
+            if (HasDownload)
+            {
+                await this._downloadManager.DeleteDownloadAsync(this.VideoDownload);
+                this.VideoDownload = null;
             }
         }
     }
