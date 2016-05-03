@@ -1,5 +1,6 @@
 ﻿[
   {
+    "Id": "7F32794F-31ED-4D55-B6AE-BBEC1D062861", 
     "Title": "A Behind the Scenes Insights into Building Technology for the Hearing Impaired",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/Xt5Is4y5iOU/hqdefault.jpg",
@@ -8,6 +9,7 @@
     "YoutubeID": "Xt5Is4y5iOU"
   },
   {
+    "Id": "7736BECA-23E1-4554-9161-41E8917D756E",
     "Title": "A Canon in C#",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/Nv-l4mArFT8/hqdefault.jpg",
@@ -16,6 +18,7 @@
     "YoutubeID": "Nv-l4mArFT8"
   },
   {
+    "Id": "1D34B6AC-3A93-483C-8B3B-4C824CB11A5C",
     "Title": "Amazon Developer Ecosystem",
     "Track": "Emerging Devices",
     "Thumbnail": "http://img.youtube.com/vi/XJtmSvjx95c/hqdefault.jpg",
@@ -24,6 +27,7 @@
     "YoutubeID": "XJtmSvjx95c"
   },
   {
+    "Id": "18CC8A4F-7E7D-4EA1-9295-CAAF0A94DCAA",
     "Title": "APIs of Enterprise mBaaS Platform",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/2sWu2MrUiTc/hqdefault.jpg",
@@ -32,6 +36,7 @@
     "YoutubeID": "2sWu2MrUiTc"
   },
   {
+    "Id": "3D7E5275-8A46-43F6-B337-9AC5B92715DE",
     "Title": "Applying C# Async in Mobile",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/bnj6FD2j-O4/hqdefault.jpg",
@@ -40,6 +45,7 @@
     "YoutubeID": "bnj6FD2j-O4"
   },
   {
+    "Id": "49428DC8-B96A-42B6-B18D-80F58B851406",
     "Title": "Architecting and Extending Existing Systems for Enterprise Mobile Apps",
     "Track": "Enterprise",
     "Thumbnail": "http://img.youtube.com/vi/UEsrJhTAiwo/hqdefault.jpg",
@@ -48,6 +54,7 @@
     "YoutubeID": "UEsrJhTAiwo"
   },
   {
+    "Id": "AC5B20C4-414D-45E5-A494-9508DA0A465F",
     "Title": "Awaiting for Rx: A Play in Four Acts",
     "Track": "Xamarin Platform",
     "Thumbnail": "http://img.youtube.com/vi/5DZ8nC0ENdg/hqdefault.jpg",
@@ -56,6 +63,7 @@
     "YoutubeID": "5DZ8nC0ENdg"
   },
   {
+    "Id": "4BD26DA7-86D3-43A3-BD89-142FF5BD8CC0",
     "Title": "Become a Xamarin Studio Expert",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/ZQWdRQTrHTQ/hqdefault.jpg",
@@ -64,6 +72,7 @@
     "YoutubeID": "ZQWdRQTrHTQ"
   },
   {
+    "Id": "073B82A7-EFF4-4E6E-AA9A-0823A8062828",
     "Title": "Build your Apps on the Shoulders of Giants",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/0JwIkgd4w1g/hqdefault.jpg",
@@ -72,6 +81,7 @@
     "YoutubeID": "0JwIkgd4w1g"
   },
   {
+    "Id": "622448DF-FB51-497A-97D9-67194DEE0CF9",
     "Title": "Building a Modern DevOps Solution for your App",
     "Track": "Enterprise",
     "Thumbnail": "http://img.youtube.com/vi/kaf9YZBnKno/hqdefault.jpg",
@@ -80,6 +90,7 @@
     "YoutubeID": "kaf9YZBnKno"
   },
   {
+    "Id": "ADA3A409-68F3-474E-B098-C57A2CC0D910",
     "Title": "Building an Enterprise Component Library",
     "Track": "Enterprise",
     "Thumbnail": "http://img.youtube.com/vi/lwe8IjIGoTg/hqdefault.jpg",
@@ -88,6 +99,7 @@
     "YoutubeID": "lwe8IjIGoTg"
   },
   {
+    "Id": "F3A85632-DFDD-4BDD-8E61-B0A805D7AD3F",
     "Title": "Building Cross-Platform Applications with Xamarin, Xamarin.Forms and MVVM Light",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/FrcVQGTXZKM/hqdefault.jpg",
@@ -96,6 +108,7 @@
     "YoutubeID": "FrcVQGTXZKM"
   },
   {
+    "Id": "63D2DF1C-5010-44F9-AAF9-8DAF8DA798D5",
     "Title": "Building Mobile Apps That Work Online &amp; Offline with Couchbase",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/g7WlnfvOvhI/hqdefault.jpg",
@@ -104,6 +117,7 @@
     "YoutubeID": "g7WlnfvOvhI"
   },
   {
+    "Id": "934218D1-E187-43ED-9DB5-99F57831BA32",
     "Title": "C# is in my Ears and in my Eyes: Google Glass and Android Wear",
     "Track": "Emerging Devices",
     "Thumbnail": "http://img.youtube.com/vi/80H8tXByZQc/hqdefault.jpg",
@@ -112,6 +126,7 @@
     "YoutubeID": "80H8tXByZQc"
   },
   {
+    "Id": "76646601-BAA0-4A8C-B13E-9AD10B864133",
     "Title": "Connecting Xamarin Apps with IBM Worklight",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/Jz6Q1urJDMQ/hqdefault.jpg",
@@ -120,6 +135,7 @@
     "YoutubeID": "Jz6Q1urJDMQ"
   },
   {
+    "Id": "27515899-15CF-4241-9440-14D94B4A1C4C",
     "Title": "Cross-Platform Business Apps with Microsoft Azure ",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/uYcM2DdZTmg/hqdefault.jpg",
@@ -128,6 +144,7 @@
     "YoutubeID": "uYcM2DdZTmg"
   },
   {
+    "Id": "061DFA96-52AE-45BC-8DA3-D432A8450A92",
     "Title": "Cross-Platform Mobile Apps with Amazon Web Services",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/lH88Ue5poNM/hqdefault.jpg",
@@ -136,6 +153,7 @@
     "YoutubeID": "lH88Ue5poNM"
   },
   {
+    "Id": "B1A8931C-0CA6-455B-9D42-5A86670BA476",
     "Title": "Cross-Platform Syncing with Dropbox",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/qOhDC60ARYg/hqdefault.jpg",
@@ -144,6 +162,7 @@
     "YoutubeID": "qOhDC60ARYg"
   },
   {
+    "Id": "BFB64C8B-0C66-4448-B1B8-1CA2570C7057",
     "Title": "Designing Android UIs for the Ever-Changing Device Landscape: Android Fragments and Fragmentation",
     "Track": "Android",
     "Thumbnail": "http://img.youtube.com/vi/2k2SMiH37eg/hqdefault.jpg",
@@ -152,6 +171,7 @@
     "YoutubeID": "2k2SMiH37eg"
   },
   {
+    "Id": "ADE40C53-4611-4E08-99C4-B24789784BA1",
     "Title": "Designing Wearable User Experiences",
     "Track": "Emerging Devices",
     "Thumbnail": "http://img.youtube.com/vi/8eDVB-0-d4o/hqdefault.jpg",
@@ -160,6 +180,7 @@
     "YoutubeID": "8eDVB-0-d4o"
   },
   {
+    "Id": "A00A7961-EFE7-42B8-B11A-A9085F89DC52",
     "Title": "Diving into the Xamarin Designer for iOS",
     "Track": "iOS",
     "Thumbnail": "http://img.youtube.com/vi/W4H9uLjoEjM/hqdefault.jpg",
@@ -168,6 +189,7 @@
     "YoutubeID": "W4H9uLjoEjM"
   },
   {
+    "Id": "A6A0F993-C15F-45A6-B742-0EF3EB3EB825",
     "Title": "Dynamic Layouts in iOS 8: Making your Apps Look Great Everywhere",
     "Track": "iOS",
     "Thumbnail": "http://img.youtube.com/vi/f3mMGlS-lM4/hqdefault.jpg",
@@ -176,6 +198,7 @@
     "YoutubeID": "f3mMGlS-lM4"
   },
   {
+    "Id": "402917B6-9933-4FF7-A015-2770F461E54B",
     "Title": "Effective Navigation in Xamarin.Android",
     "Track": "Android",
     "Thumbnail": "http://img.youtube.com/vi/Hw8tB45kse4/hqdefault.jpg",
@@ -184,6 +207,7 @@
     "YoutubeID": "Hw8tB45kse4"
   },
   {
+    "Id": "A96D527C-F12B-4051-897C-D1E1AC6E8178",
     "Title": "Evolving From Web to Mobile App with Xamarin: Building Hybrid Apps with Xamarin",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/TC_mESEXoWM/hqdefault.jpg",
@@ -192,6 +216,7 @@
     "YoutubeID": "TC_mESEXoWM"
   },
   {
+    "Id": "32038625-AA6F-45D7-8683-151FF6DE76CD",
     "Title": "Extending Xamarin.Forms with with Custom Controls",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/pIZ8G47KPIM/hqdefault.jpg",
@@ -200,6 +225,7 @@
     "YoutubeID": "pIZ8G47KPIM"
   },
   {
+    "Id": "920BA48E-7886-42A1-896E-0A724A0FD470",
     "Title": "Find Bugs Before Your Users Do with Xamarin Test Cloud and C#",
     "Track": "Testing",
     "Thumbnail": "http://img.youtube.com/vi/PQMBCoVIABI/hqdefault.jpg",
@@ -208,6 +234,7 @@
     "YoutubeID": "PQMBCoVIABI"
   },
   {
+    "Id": "20F47E70-CE8E-466D-820D-6E5A59269B57",
     "Title": "Finish the Mac App You Didn't Know You Started",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/zALbjgeqy7o/hqdefault.jpg",
@@ -216,6 +243,7 @@
     "YoutubeID": "zALbjgeqy7o"
   },
   {
+    "Id": "3D53AEC5-E288-45DB-A264-95C78EB9ED30",
     "Title": "Games that Run Everywhere, Even the Top of the App Store",
     "Track": "Game Development",
     "Thumbnail": "http://img.youtube.com/vi/k09e39FVi6o/hqdefault.jpg",
@@ -224,6 +252,7 @@
     "YoutubeID": "k09e39FVi6o"
   },
   {
+    "Id": "6710DA2D-3006-49F1-AA8E-2C7E4BE4265B",
     "Title": "Getting FIT with Xamarin (or How I Lost Weight with C#)",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/03aucFbd2vY/hqdefault.jpg",
@@ -232,6 +261,7 @@
     "YoutubeID": "03aucFbd2vY"
   },
   {
+    "Id": "B461B5DB-EFC1-4191-8AED-2163D3DEA880",
     "Title": "Getting Started with iOS 8",
     "Track": "iOS",
     "Thumbnail": "http://img.youtube.com/vi/5v-NIHjUwD0/hqdefault.jpg",
@@ -240,6 +270,7 @@
     "YoutubeID": "5v-NIHjUwD0"
   },
   {
+    "Id": "11313BDE-C918-405A-8BDF-D8CD843A44B0",
     "Title": "Getting your Testing Process in Place",
     "Track": "Testing",
     "Thumbnail": "http://img.youtube.com/vi/q1YjW-icPz8/hqdefault.jpg",
@@ -248,6 +279,7 @@
     "YoutubeID": "q1YjW-icPz8"
   },
   {
+    "Id": "3518A4C8-5318-49BD-AC24-0BD15F105ABF",
     "Title": "Google Play Services with Xamarin",
     "Track": "Android",
     "Thumbnail": "http://img.youtube.com/vi/7IhNX4G_pqI/hqdefault.jpg",
@@ -256,6 +288,7 @@
     "YoutubeID": "7IhNX4G_pqI"
   },
   {
+    "Id": "BA112EAE-BB3E-47E0-9DB7-FC67EDEA01F4",
     "Title": "Hello CocosSharp",
     "Track": "Game Development",
     "Thumbnail": "http://img.youtube.com/vi/hj0QJlYvObk/hqdefault.jpg",
@@ -264,6 +297,7 @@
     "YoutubeID": "hj0QJlYvObk"
   },
   {
+    "Id": "5DA1FB00-B62E-445F-97C5-0E25D0CFF995",
     "Title": "Hey, You Got your Objective-C in my C#!",
     "Track": "iOS",
     "Thumbnail": "http://img.youtube.com/vi/kQmB1DU8_iA/hqdefault.jpg",
@@ -272,6 +306,7 @@
     "YoutubeID": "kQmB1DU8_iA"
   },
   {
+    "Id": "B1BEE13A-524F-4D8D-AC4F-C191E489F052",
     "Title": "iBeacons and Contextual Location Awareness in iOS and Android apps",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/YYTa_Rv5Pz4/hqdefault.jpg",
@@ -280,6 +315,7 @@
     "YoutubeID": "YYTa_Rv5Pz4"
   },
   {
+    "Id": "13AE4F6E-72E7-4A36-8335-5568CA78FE6A",
     "Title": "If You Can Ship your App in China, You Can Ship it Anywhere",
     "Track": "Mobile Best Practices",
     "Thumbnail": "http://img.youtube.com/vi/GSP-WBnJlgA/hqdefault.jpg",
@@ -288,6 +324,7 @@
     "YoutubeID": "GSP-WBnJlgA"
   },
   {
+    "Id": "4F9F639A-68CC-4B19-B23D-A34181305B9A",
     "Title": "Intro to Scene Kit",
     "Track": "Game Development",
     "Thumbnail": "http://img.youtube.com/vi/PTYhGoYvwRQ/hqdefault.jpg",
@@ -296,6 +333,7 @@
     "YoutubeID": "PTYhGoYvwRQ"
   },
   {
+    "Id": "4140A39E-9D65-48DE-AA0D-4BD2588DDC73",
     "Title": "iOS Memory Management",
     "Track": "iOS",
     "Thumbnail": "http://img.youtube.com/vi/https://i.ytimg.com/s_vi/Qn2ZqvXUuhI/2.jpg?sqp=CKSoxaIF&amp;rs=AOn4CLC6ODMkr2SDbo16V_OYYqsbYFs2NA&amp;time=1414616185982/hqdefault.jpg",
@@ -304,6 +342,7 @@
     "YoutubeID": "https://i.ytimg.com/s_vi/Qn2ZqvXUuhI/2.jpg?sqp=CKSoxaIF&amp;rs=AOn4CLC6ODMkr2SDbo16V_OYYqsbYFs2NA&amp;time=1414616185982"
   },
   {
+    "Id": "2D1E2836-E7E8-4B94-927F-50F5F8809070",
     "Title": "Keeping Apps Relevant: Deployment, Support and Management Best Practices for your Enterprise Mobile Apps",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/HgoWi8R5WFA/hqdefault.jpg",
@@ -312,6 +351,7 @@
     "YoutubeID": "HgoWi8R5WFA"
   },
   {
+    "Id": "CFC2DA82-1842-4570-926B-0E51214A3B39",
     "Title": "Lessons Learned from our First Enterprise Mobile App",
     "Track": "Enterprise",
     "Thumbnail": "http://img.youtube.com/vi/03LzvxZq9r0/hqdefault.jpg",
@@ -320,6 +360,7 @@
     "YoutubeID": "03LzvxZq9r0"
   },
   {
+    "Id": "47B4F8D4-C82D-4B34-8505-DCEDFAF35B97",
     "Title": "Let Awesome = Apps |> Seq.map F#",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/2-v4jdQJ5Wo/hqdefault.jpg",
@@ -328,6 +369,7 @@
     "YoutubeID": "2-v4jdQJ5Wo"
   },
   {
+    "Id": "681A419C-AE33-4C9E-A6D7-4B0A7AC11A29",
     "Title": "Let's Talk Tech: Xamarin Profiler",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/GK9h71vGkpQ/hqdefault.jpg",
@@ -336,6 +378,7 @@
     "YoutubeID": "GK9h71vGkpQ"
   },
   {
+    "Id": "FC72330E-1CE2-494B-A6F7-A98AA799A218",
     "Title": "Like Butter: Smooth Scrolling and Bitmap Management in Android",
     "Track": "Android",
     "Thumbnail": "http://img.youtube.com/vi/ghQAp1KUd6k/hqdefault.jpg",
@@ -344,6 +387,7 @@
     "YoutubeID": "ghQAp1KUd6k"
   },
   {
+    "Id": "EF271058-3E0A-45E3-801D-66D3492523F3",
     "Title": "Mastering Time &amp; Space: Using Animations to Bring your Mobile Apps to Life",
     "Track": "Mobile Best Practices",
     "Thumbnail": "http://img.youtube.com/vi/ikSk_ILg3d0/hqdefault.jpg",
@@ -352,6 +396,7 @@
     "YoutubeID": "ikSk_ILg3d0"
   },
   {
+    "Id": "84E98433-C098-44AD-8B96-BD40CED4ACDD",
     "Title": "Material Android Design from Concept to Implementation I",
     "Track": "Android",
     "Thumbnail": "http://img.youtube.com/vi/A1WKe08uxd4/hqdefault.jpg",
@@ -360,6 +405,7 @@
     "YoutubeID": "A1WKe08uxd4"
   },
   {
+    "Id": "1177DECF-BDC0-401A-988F-97776404DD1E",
     "Title": "Material Android Design from Concept to Implementation II",
     "Track": "Android",
     "Thumbnail": "http://img.youtube.com/vi/_q9lorDZn0Y/hqdefault.jpg",
@@ -368,6 +414,7 @@
     "YoutubeID": "_q9lorDZn0Y"
   },
   {
+    "Id": "17D47AB9-C185-4808-AF08-E2D1234F8EF6",
     "Title": "Mega Trends in Enterprise Mobility",
     "Track": "Enterprise",
     "Thumbnail": "http://img.youtube.com/vi/dv5fqQ7FrIA/hqdefault.jpg",
@@ -376,6 +423,7 @@
     "YoutubeID": "dv5fqQ7FrIA"
   },
   {
+    "Id": "D26B4A17-8F5E-4816-9D49-C9B86C72A150",
     "Title": "Mobile Security Best Practices",
     "Track": "Enterprise",
     "Thumbnail": "http://img.youtube.com/vi/oks9cASHe9w/hqdefault.jpg",
@@ -384,6 +432,7 @@
     "YoutubeID": "oks9cASHe9w"
   },
   {
+    "Id": "A858600D-D017-4EDA-AD9A-CDD4BE807AC9",
     "Title": "Sketches: A Rich and Interactive Way to Explore Xamarin",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/v9vEhwomUEY/hqdefault.jpg",
@@ -392,6 +441,7 @@
     "YoutubeID": "v9vEhwomUEY"
   },
   {
+    "Id": "19A35CE1-B9BF-4320-B7CE-317EB188CF30",
     "Title": "Target All the Platforms with this One Awesome Trick",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/Cx4jg8koeHw/hqdefault.jpg",
@@ -400,6 +450,7 @@
     "YoutubeID": "Cx4jg8koeHw"
   },
   {
+    "Id": "44D9A538-9066-4D09-A748-78D770596FD1",
     "Title": "The Future of C#",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/GD5-kaPrIrs/hqdefault.jpg",
@@ -408,6 +459,7 @@
     "YoutubeID": "GD5-kaPrIrs"
   },
   {
+    "Id": "B3503B3F-E7C2-4FD0-AC8E-991886A9C182",
     "Title": "The Home Button is not the End: Backgrounding and Multitasking in iOS",
     "Track": "iOS",
     "Thumbnail": "http://img.youtube.com/vi/gPskzEFPmqg/hqdefault.jpg",
@@ -416,6 +468,7 @@
     "YoutubeID": "gPskzEFPmqg"
   },
   {
+    "Id": "420F82EB-CECE-4A9C-9B99-EFC81FAC0EA4",
     "Title": "The Salesforce 1 Platform",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/VBlcu906XEw/hqdefault.jpg",
@@ -424,6 +477,7 @@
     "YoutubeID": "VBlcu906XEw"
   },
   {
+    "Id": "CD1CEB72-1EE1-43F7-80E9-0B12CBE6D95A",
     "Title": "Think Like a Hacker! Common Techniques Used to Exploit Mobile Apps and How to Mitigate these Risks",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/CJKkCKRYfKY/hqdefault.jpg",
@@ -432,6 +486,7 @@
     "YoutubeID": "CJKkCKRYfKY"
   },
   {
+    "Id": "B1B84EEF-E204-41C5-924B-9F2BEB86FC94",
     "Title": "Unleash your Inner Evangelist",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/Zld-0BqBScs/hqdefault.jpg",
@@ -440,6 +495,7 @@
     "YoutubeID": "Zld-0BqBScs"
   },
   {
+    "Id": "B498CDC9-27C8-4B8E-82E1-A23C4D21E9A6",
     "Title": "Use Hypermedia in your Mobile Apps and Spend Less Time Dealing with App Stores",
     "Track": "Mobile Ecosystem",
     "Thumbnail": "http://img.youtube.com/vi/LbSM8U21YkM/hqdefault.jpg",
@@ -448,6 +504,7 @@
     "YoutubeID": "LbSM8U21YkM"
   },
   {
+    "Id": "410E5E6B-5E95-4DA1-903A-9F1810532579",
     "Title": "Using Continuous Integration with Xamarin Apps",
     "Track": "Testing",
     "Thumbnail": "http://img.youtube.com/vi/Awl4vGo7Yj0/hqdefault.jpg",
@@ -456,6 +513,7 @@
     "YoutubeID": "Awl4vGo7Yj0"
   },
   {
+    "Id": "0F65FCE1-F833-41F5-B42C-91D661A6DB74",
     "Title": "UX Patterns for Cross-Platform Mobile",
     "Track": "Mobile Best Practices",
     "Thumbnail": "http://img.youtube.com/vi/IlydsL2ZmaI/hqdefault.jpg",
@@ -464,6 +522,7 @@
     "YoutubeID": "IlydsL2ZmaI"
   },
   {
+    "Id": "9789C27F-7D4F-4AB5-A9C8-A0F26CDE3C93",
     "Title": "What is New in Xamarin's Mac and iOS Stacks",
     "Track": "iOS",
     "Thumbnail": "http://img.youtube.com/vi/wOJhv1JlBuk/hqdefault.jpg",
@@ -472,6 +531,7 @@
     "YoutubeID": "wOJhv1JlBuk"
   },
   {
+    "Id": "740BCDB7-220D-4341-970E-955CC3269D57",
     "Title": "What's New in Xamarin.Android",
     "Track": "Android",
     "Thumbnail": "http://img.youtube.com/vi/Gpqc2XZIQfU/hqdefault.jpg",
@@ -480,6 +540,7 @@
     "YoutubeID": "Gpqc2XZIQfU"
   },
   {
+    "Id": "CB89DDFE-E20D-4207-866B-FAB06415F669",
     "Title": "Wordament: X-platform, the Hard Way and the Easy Way",
     "Track": "Game Development",
     "Thumbnail": "http://img.youtube.com/vi/ML7lf6prsF4/hqdefault.jpg",
@@ -488,6 +549,7 @@
     "YoutubeID": "ML7lf6prsF4"
   },
   {
+    "Id": "4BB7F1C5-05D8-4368-9918-5A4C44B1D99C",
     "Title": "Writing Mobile Apps the Github Way",
     "Track": "Mobile Best Practices",
     "Thumbnail": "http://img.youtube.com/vi/voa44OHBKME/hqdefault.jpg",
@@ -496,6 +558,7 @@
     "YoutubeID": "voa44OHBKME"
   },
   {
+    "Id": "EB438D6C-DEC8-4B4B-BA19-A8692A6C85FC",
     "Title": "Xamarin Test Cloud and Games",
     "Track": "Game Development",
     "Thumbnail": "http://img.youtube.com/vi/mnAenNaEpJk/hqdefault.jpg",
@@ -504,6 +567,7 @@
     "YoutubeID": "mnAenNaEpJk"
   },
   {
+    "Id": "8A846AA3-B6CE-4B4C-BFC1-77338F4613F6",
     "Title": "Xamarin.Forms is Even Cooler than You Think",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/79SdhVjBwh0/hqdefault.jpg",
@@ -512,6 +576,7 @@
     "YoutubeID": "79SdhVjBwh0"
   },
   {
+    "Id": "B5018872-94B1-4725-B4C6-89796430D06E",
     "Title": "XAML for Xamarin.Forms",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/x3JhCmH5yLo/hqdefault.jpg",
@@ -520,6 +585,7 @@
     "YoutubeID": "x3JhCmH5yLo"
   },
   {
+    "Id": "F58F6AF0-8698-4A8D-91AD-1A298019E969",
     "Title": "Your Comfort Zone is Getting a Lot Bigger: Xamarin for Visual Studio vNext",
     "Track": "Platform",
     "Thumbnail": "http://img.youtube.com/vi/KaAuP-rl_P8/hqdefault.jpg",
@@ -528,6 +594,7 @@
     "YoutubeID": "KaAuP-rl_P8"
   },
   {
+    "Id": "6601DF97-2077-4A53-A5B9-84523E130B88",
     "Title": "Your First Xamarin.Forms App",
     "Track": "Cross-Platform",
     "Thumbnail": "http://img.youtube.com/vi/xWyOcEpNyXQ/hqdefault.jpg",

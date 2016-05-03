@@ -111,6 +111,8 @@
     <Compile Include="Services\NetworkService.cs" />
     <Compile Include="Services\RoamingSettingsService.cs" />
     <Compile Include="Services\StorageService.cs" />
+    <Compile Include="Services\UWPBackgroundDowloader.cs" />
+    <Compile Include="Services\UWPVideoDownloaderFactory.cs" />
     <Compile Include="Services\YoutubeDownloaderService.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
     <Compile Include="Views\DownloadsPage.xaml.cs">

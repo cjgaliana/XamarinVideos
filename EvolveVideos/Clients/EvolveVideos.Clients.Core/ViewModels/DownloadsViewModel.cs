@@ -1,4 +1,5 @@
 ﻿using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Core.Services.Download;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {

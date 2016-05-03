@@ -1,6 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using EvolveVideos.Clients.Core.Models;
 using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Data.Models;
+using EvolveVideos.Clients.Core.Services.Download;
+using System.Threading.Tasks;
 
 namespace EvolveVideos.Clients.Core.ViewModels
 {
@@ -12,7 +13,7 @@ namespace EvolveVideos.Clients.Core.ViewModels
         private readonly INetworkService _networkService;
         private readonly IVideoDownloaderService _videoDownloaderService;
 
-        private EvolveSession _session;
+        private PlayerParameters _playerParameters;
         private string _videoUrl;
 
         public PlayerViewModel(
@@ -29,33 +30,33 @@ namespace EvolveVideos.Clients.Core.ViewModels
             this._videoDownloaderService = videoDownloaderService;
         }
 
-        public EvolveSession Session
-        {
-            get { return this._session; }
-            set { this.Set(() => this.Session, ref this._session, value); }
-        }
-
         public string VideoUrl
         {
             get { return this._videoUrl; }
             set { this.Set(() => this.VideoUrl, ref this._videoUrl, value); }
         }
 
+        public PlayerParameters PlayerParameters
+        {
+            get { return _playerParameters; }
+            set { this.Set(() => this.PlayerParameters, ref this._playerParameters, value); }
+        }
+
         public override async Task OnNavigateTo(object parameter)
         {
             await base.OnNavigateTo(parameter);
 
-            var session = parameter as EvolveSession;
-            if (session == null)
+            var playerParameters = parameter as PlayerParameters;
+            if (playerParameters == null)
             {
                 await this._dialogService.ShowMessageAsync("Error", "Incorrect navigation parameters");
                 this._navigationService.GoBack();
                 return;
             }
 
-            this.Session = session;
+            this.PlayerParameters = playerParameters;
 
-            var streamUri = await this._videoDownloaderService.GetDownloadVideoUrlAsync(this.Session.YoutubeID);
+            var streamUri = this.PlayerParameters.Url;
             this.VideoUrl = streamUri.AbsoluteUri;
         }
 

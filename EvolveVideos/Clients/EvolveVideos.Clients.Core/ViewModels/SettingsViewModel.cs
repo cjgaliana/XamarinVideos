@@ -1,4 +1,5 @@
 ﻿using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Core.Services.Download;
 using GalaSoft.MvvmLight.Command;
 using System;
 using System.Threading.Tasks;
@@ -22,7 +23,15 @@ namespace EvolveVideos.Clients.Core.ViewModels
             CreateCommands();
         }
 
+        private bool _autoResumeDownloads;
+
         public ICommand DeleteAllDataCommand { get; private set; }
+
+        public bool AutoResumeDownloads
+        {
+            get { return _autoResumeDownloads; }
+            set { this.Set(() => this.AutoResumeDownloads, ref this._autoResumeDownloads, value); }
+        }
 
         private void CreateCommands()
         {

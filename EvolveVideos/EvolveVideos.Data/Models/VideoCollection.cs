@@ -5,6 +5,8 @@ namespace EvolveVideos.Data.Models
 {
     public class VideoCollection
     {
+        public Guid Id { get; set; }
+
         public string Name { get; set; }
 
         public string Description { get; set; }

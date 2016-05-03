@@ -1,5 +1,6 @@
 ﻿[
   {
+    "Id" :  "AF8F2F61-C249-415C-9DF7-2712A4292BB7", 
     "Title": "Continuous Delivery for Mobile Apps: Yes We Can!",
     "Track": "Test",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/Continuous_Delivery_Karl_Krakow_Thumbnail.jpg",
@@ -8,6 +9,7 @@
     "YoutubeID": "wXgnh2Q7Uv8"
   },
   {
+    "Id": "31A406E9-19D0-43F0-86F9-692BCBE9C50A",
     "Title": "Grant Imahara at Evolve 2016",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/8_Mythbusters_Grant_Imahara_Thumbnail_1.jpg",
@@ -16,6 +18,7 @@
     "YoutubeID": "qiui_ki1OPc"
   },
   {
+    "Id": "FB47344A-B59D-4A9E-8EFC-1F0A01A10982",
     "Title": "The Future of C#",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/6_Future_of_C%23_Mads_Dustin_Thumbnail_2.jpg",
@@ -24,6 +27,7 @@
     "YoutubeID": "5k0fML72_OI"
   },
   {
+    "Id": "CFCA5536-94F6-40A8-934F-6CF62AEFC09A",
     "Title": "Optimizing App Performance with Xamarin.Forms",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/Optimizing_Performance_Jason_Smith_Thumbnail.jpg",
@@ -32,6 +36,7 @@
     "YoutubeID": "RZvdql3Ev0E"
   },
   {
+    "Id": "93F490E8-5954-4F98-A22D-0BF8E2AAE208",
     "Title": "Developing Connected Apps Using Azure and Xamarin",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/Developing_Azure_Adrian_Hall_Mike_James_Thumbnail.jpg",
@@ -40,6 +45,7 @@
     "YoutubeID": "cvVuREnVZk8"
   },
   {
+    "Id": "67F4D113-858E-4052-B78E-36A3D0F49A8D",
     "Title": "Everyone Can Create Beautiful Apps with Material Design",
     "Track": "Design",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/7_Everyone_Beautiful_James_Jereme_Template_1.jpg",
@@ -48,6 +54,7 @@
     "YoutubeID": "E3_ZjIOzVzY"
   },
   {
+    "Id": "5D47700F-BEC6-4B3A-8119-B6122A2DD7B4",
     "Title": "Building a Universal Windows App in Visual Studio",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/5_Build_Universal_Unni_Ravindra_Thumbnail_1.jpg",

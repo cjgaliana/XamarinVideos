@@ -4,6 +4,7 @@ namespace EvolveVideos.Data.Models
 {
     public class EvolveSession
     {
+        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Track { get; set; }
         public string Thumbnail { get; set; }

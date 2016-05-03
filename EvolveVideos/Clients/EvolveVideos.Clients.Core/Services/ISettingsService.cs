@@ -2,6 +2,13 @@
 
 namespace EvolveVideos.Clients.Core.Services
 {
+
+    public class SettingsKeys
+    {
+        public static string DownloaderAutoResume = "DownloaderAutoResume_key";
+    }
+
+
     public interface ISettingsService
     {
         Task SaveSetting<T>(string key, object data);

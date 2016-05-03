@@ -1,4 +1,6 @@
-﻿using EvolveVideos.Clients.Core.Services;
+﻿using EvolveVideos.Clients.Core.Models;
+using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Core.Services.Download;
 using EvolveVideos.Clients.UWP.DesignData;
 using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
@@ -12,46 +14,64 @@ namespace EvolveVideos.Clients.Core.ViewModels
     {
         private readonly IDialogService _dialogService;
         private readonly IDownloadManager _downloadManager;
+        private readonly IVideoDownloaderService _videoDownloaderService;
         private readonly INavigationService _navigationService;
+        private bool _hasDownload;
 
         private EvolveSession _session;
 
+        private IVideoDownload _videoDownload;
+
         private Uri _videoUrl;
 
-        public SessionDetailsViewModel(INavigationService navigationService, IDialogService dialogService, IDownloadManager downloadManager)
+        public SessionDetailsViewModel(INavigationService navigationService, IDialogService dialogService,
+            IDownloadManager downloadManager, IVideoDownloaderService videoDownloaderService)
         {
-            this._navigationService = navigationService;
-            this._dialogService = dialogService;
+            _navigationService = navigationService;
+            _dialogService = dialogService;
             _downloadManager = downloadManager;
+            _videoDownloaderService = videoDownloaderService;
 
-            this.CreateCommands();
+            CreateCommands();
 
-            if (this.IsInDesignMode)
+            if (IsInDesignMode)
             {
-                this.Session = DesignData.GetSession();
+                Session = DesignData.GetSession();
             }
         }
 
         public EvolveSession Session
         {
-            get { return this._session; }
-            set { this.Set(() => this.Session, ref this._session, value); }
+            get { return _session; }
+            set { Set(() => Session, ref _session, value); }
         }
 
         public Uri VideoUrl
         {
-            get { return this._videoUrl; }
-            set { this.Set(() => this.VideoUrl, ref this._videoUrl, value); }
+            get { return _videoUrl; }
+            set { Set(() => VideoUrl, ref _videoUrl, value); }
         }
 
         public ICommand PlayCommand { get; private set; }
 
         public ICommand DownloadCommand { get; private set; }
 
+        public IVideoDownload VideoDownload
+        {
+            get { return _videoDownload; }
+            set
+            {
+                Set(() => VideoDownload, ref _videoDownload, value);
+                RaisePropertyChanged(() => HasDownload);
+            }
+        }
+
+        public bool HasDownload => VideoDownload != null;
+
         private void CreateCommands()
         {
-            this.PlayCommand = new RelayCommand(this.PlayVideo);
-            this.DownloadCommand = new RelayCommand(async () => { await this.DownloadVideoAsync(); });
+            PlayCommand = new RelayCommand(async () => { await this.PlayVideoAsync(); });
+            DownloadCommand = new RelayCommand(async () => { await DownloadVideoAsync(); });
         }
 
         public override async Task OnNavigateTo(object parameter)
@@ -63,34 +83,51 @@ namespace EvolveVideos.Clients.Core.ViewModels
                 var session = parameter as EvolveSession;
                 if (session != null)
                 {
-                    this.IsBusy = true;
-                    this.Session = session;
+                    IsBusy = true;
+                    Session = session;
+
+                    VideoDownload = await _downloadManager.GetDownloadForSessionAsync(Session);
                 }
             }
             catch (Exception ex)
             {
                 // TODO: Log error
-                await this._dialogService.ShowMessageAsync("Error", "Is not possible load the item");
-                this._navigationService.GoBack();
+                await _dialogService.ShowMessageAsync("Error", "Is not possible load the item");
+                _navigationService.GoBack();
             }
         }
 
-        private void PlayVideo()
+        private async Task PlayVideoAsync()
         {
+            var parameters = new PlayerParameters
+            {
+                Title = Session.Title,
+                Url = await this._videoDownloaderService.GetDownloadVideoUrlAsync(this.Session.YoutubeID)
+            };
+
             // Play video
-            this._navigationService.NavigateTo(PageKey.PlayerPage, this.Session);
+            if (HasDownload)
+            {
+                if (VideoDownload.Status == DownloadStatus.Downloaded)
+                {
+                    parameters.Url = VideoDownload.LocalFileUrl;
+                }
+            }
+
+            _navigationService.NavigateTo(PageKey.PlayerPage, parameters);
         }
 
         private async Task DownloadVideoAsync()
         {
             try
             {
-                await this._downloadManager.QueueDownloadAsync(this.Session);
+                await _downloadManager.QueueDownloadAsync(Session);
+                VideoDownload = await _downloadManager.GetDownloadForSessionAsync(Session);
             }
             catch (Exception ex)
             {
                 // TODO: Log error
-                await this._dialogService.ShowMessageAsync("Error", "Is not possible download the video");
+                await _dialogService.ShowMessageAsync("Error", "Is not possible download the video");
             }
         }
     }

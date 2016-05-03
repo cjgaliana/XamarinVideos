@@ -1,4 +1,5 @@
 ﻿using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Core.Services.Download;
 using EvolveVideos.Clients.Core.ViewModels;
 using EvolveVideos.Clients.UWP.Services;
 using EvolveVideos.Data;
@@ -55,6 +56,7 @@ namespace EvolveVideos.Clients.UWP.ViewModels
                 .RegisterType<IStorageService, StorageService>()
                 .RegisterType<IDataService, LocalResourcesDataService>()
                 .RegisterType<IVideoDownloaderService, YoutubeDownloaderService>()
+                .RegisterType<IVideoDownloaderFactory, UWPVideoDownloaderFactory>()
                 .RegisterType<IDownloadManager, DownloadManager>(new ContainerControlledLifetimeManager());
         }
 
