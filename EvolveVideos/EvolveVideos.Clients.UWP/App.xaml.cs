@@ -1,10 +1,12 @@
 ﻿using EvolveVideos.Clients.UWP.Views;
 using System;
+using System.Diagnostics;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.HockeyApp;
 
 namespace EvolveVideos.Clients.UWP
 {
@@ -21,6 +23,11 @@ namespace EvolveVideos.Clients.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            if (!Debugger.IsAttached)
+            {
+                //HockeyClient.Current.Configure("your app id"); 
+            }
         }
 
         /// <summary>
