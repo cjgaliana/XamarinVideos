@@ -64,10 +64,12 @@ namespace EvolveVideos.Clients.Core.ViewModels
             {
                 Set(() => VideoDownload, ref _videoDownload, value);
                 RaisePropertyChanged(() => HasDownload);
+                RaisePropertyChanged(() => IsDownloading);
             }
         }
 
         public bool HasDownload => VideoDownload != null;
+        public bool IsDownloading => this.HasDownload && this.VideoDownload.Status == DownloadStatus.Completed;
 
         private void CreateCommands()
         {
