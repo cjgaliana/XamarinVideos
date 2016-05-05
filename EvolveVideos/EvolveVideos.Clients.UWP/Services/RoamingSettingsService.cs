@@ -1,7 +1,7 @@
-﻿using EvolveVideos.Clients.Core.Services;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Windows.Storage;
+using EvolveVideos.Clients.Services;
 
 namespace EvolveVideos.Clients.UWP.Services
 {

@@ -1,12 +1,12 @@
-﻿using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.ViewModels;
-using EvolveVideos.Clients.UWP.Views;
+﻿using EvolveVideos.Clients.UWP.Views;
 using System;
 using System.Collections.Generic;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.ViewModels;
 
 namespace EvolveVideos.Clients.UWP.Services
 {

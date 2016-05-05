@@ -1,5 +1,4 @@
-﻿using EvolveVideos.Clients.Core.Services.Download;
-using EvolveVideos.Data.Models;
+﻿using EvolveVideos.Data.Models;
 
 namespace EvolveVideos.Clients.Core.Models
 {

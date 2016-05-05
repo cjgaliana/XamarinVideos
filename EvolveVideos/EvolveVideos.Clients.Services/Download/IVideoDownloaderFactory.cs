@@ -1,4 +1,6 @@
-﻿namespace EvolveVideos.Clients.Core.Services.Download
+﻿using EvolveVideos.Clients.Core.Models;
+
+namespace EvolveVideos.Clients.Services.Download
 {
     public interface IVideoDownloaderFactory
     {

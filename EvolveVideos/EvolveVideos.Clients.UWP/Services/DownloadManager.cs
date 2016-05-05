@@ -1,11 +1,12 @@
-﻿using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.Services.Download;
+﻿using EvolveVideos.Clients.Core.Models;
 using EvolveVideos.Data.Models;
 using Nito.AsyncEx;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.Services.Download;
 
 namespace EvolveVideos.Clients.UWP.Services
 {

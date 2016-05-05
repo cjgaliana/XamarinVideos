@@ -1,7 +1,7 @@
-﻿using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.Services.Download;
-using EvolveVideos.Clients.Core.ViewModels;
+﻿using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.Services.Download;
 using EvolveVideos.Clients.UWP.Services;
+using EvolveVideos.Clients.ViewModels;
 using EvolveVideos.Data;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Practices.Unity;

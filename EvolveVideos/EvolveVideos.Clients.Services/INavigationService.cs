@@ -1,4 +1,4 @@
-﻿namespace EvolveVideos.Clients.Core.Services
+﻿namespace EvolveVideos.Clients.Services
 {
     public enum PageKey
     {

@@ -175,6 +175,14 @@
       <Project>{03ce1774-b61f-4611-bf03-407c00d6b568}</Project>
       <Name>EvolveVideos.Clients.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EvolveVideos.Clients.Services\EvolveVideos.Clients.Services.csproj">
+      <Project>{da1bd0b6-147d-4461-b6b8-839c410899cb}</Project>
+      <Name>EvolveVideos.Clients.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EvolveVideos.Clients.ViewModels\EvolveVideos.Clients.ViewModels.csproj">
+      <Project>{206f47f9-e3b9-4313-bbe0-20aac9d867c4}</Project>
+      <Name>EvolveVideos.Clients.ViewModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EvolveVideos.Data\EvolveVideos.Data.csproj">
       <Project>{02efd406-1f5f-4152-8766-28276132ecaf}</Project>
       <Name>EvolveVideos.Data</Name>

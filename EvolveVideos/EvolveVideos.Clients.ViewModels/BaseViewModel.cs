@@ -1,7 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using EvolveVideos.Clients.Core.Utils;
 using GalaSoft.MvvmLight;
+using System.Threading.Tasks;
 
-namespace EvolveVideos.Clients.Core.ViewModels
+namespace EvolveVideos.Clients.ViewModels
 {
     public class BaseViewModel : ViewModelBase
     {
@@ -15,12 +16,12 @@ namespace EvolveVideos.Clients.Core.ViewModels
 
         public virtual Task OnNavigateTo(object parameter)
         {
-            return Task.CompletedTask;
+            return TaskUtils.CompletedTask;
         }
 
         public virtual Task OnNavigateFrom(object parameter)
         {
-            return Task.CompletedTask;
+            return TaskUtils.CompletedTask;
         }
     }
 }

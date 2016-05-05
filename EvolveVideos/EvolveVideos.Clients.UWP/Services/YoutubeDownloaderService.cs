@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.Services.Download;
+using EvolveVideos.Clients.Services.Download;
 using VideoLibrary;
 
 namespace EvolveVideos.Clients.UWP.Services

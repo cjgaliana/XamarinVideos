@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Windows.System;
-using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Services;
 
 namespace EvolveVideos.Clients.UWP.Services
 {

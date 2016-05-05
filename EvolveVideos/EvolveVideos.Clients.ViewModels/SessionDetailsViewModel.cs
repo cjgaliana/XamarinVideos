@@ -1,14 +1,14 @@
-﻿using EvolveVideos.Clients.Core.Models;
-using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.Services.Download;
+﻿using System;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using EvolveVideos.Clients.Core.Models;
+using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.Services.Download;
 using EvolveVideos.Clients.UWP.DesignData;
 using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
-using System;
-using System.Threading.Tasks;
-using System.Windows.Input;
 
-namespace EvolveVideos.Clients.Core.ViewModels
+namespace EvolveVideos.Clients.ViewModels
 {
     public class SessionDetailsViewModel : BaseViewModel
     {

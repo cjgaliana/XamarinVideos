@@ -1,5 +1,5 @@
 ﻿using Cimbalino.Toolkit.Controls;
-using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Services;
 using EvolveVideos.Clients.UWP.Controls;
 using EvolveVideos.Clients.UWP.Services;
 using Microsoft.Practices.ServiceLocation;

@@ -3,13 +3,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using EvolveVideos.Clients.Core.Models;
-using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.Services.Download;
+using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.Services.Download;
 using EvolveVideos.Data;
-using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
 
-namespace EvolveVideos.Clients.Core.ViewModels
+namespace EvolveVideos.Clients.ViewModels
 {
     public class DownloadsViewModel : BaseViewModel
     {

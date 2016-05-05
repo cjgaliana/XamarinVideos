@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace EvolveVideos.Clients.Core.Services
+namespace EvolveVideos.Clients.Services
 {
     public interface ILauncherService
     {

@@ -1,4 +1,4 @@
-﻿using EvolveVideos.Clients.Core.Services;
+﻿using EvolveVideos.Clients.Services;
 using System;
 using System.Threading.Tasks;
 using Windows.UI.Popups;

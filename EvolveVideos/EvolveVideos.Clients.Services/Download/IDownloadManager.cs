@@ -1,8 +1,9 @@
-﻿using EvolveVideos.Data.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using EvolveVideos.Clients.Core.Models;
+using EvolveVideos.Data.Models;
 
-namespace EvolveVideos.Clients.Core.Services.Download
+namespace EvolveVideos.Clients.Services.Download
 {
     public interface IDownloadManager
     {

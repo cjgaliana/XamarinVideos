@@ -1,4 +1,5 @@
-﻿using EvolveVideos.Clients.Core.Services.Download;
+﻿using EvolveVideos.Clients.Core.Models;
+using EvolveVideos.Clients.Services.Download;
 
 namespace EvolveVideos.Clients.UWP.Services
 {

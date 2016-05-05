@@ -1,8 +1,8 @@
-﻿using EvolveVideos.Clients.Core.Services;
-using System.Threading.Tasks;
-using EvolveVideos.Clients.Core.Services.Download;
+﻿using System.Threading.Tasks;
+using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.Services.Download;
 
-namespace EvolveVideos.Clients.Core.ViewModels
+namespace EvolveVideos.Clients.ViewModels
 {
     public class SplashScreenViewModel : BaseViewModel
     {

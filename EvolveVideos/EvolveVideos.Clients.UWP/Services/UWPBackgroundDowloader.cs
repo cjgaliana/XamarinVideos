@@ -1,12 +1,12 @@
-﻿using System;
+﻿using EvolveVideos.Clients.Core.Models;
+using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using Windows.Networking.BackgroundTransfer;
 using Windows.Storage;
-using EvolveVideos.Clients.Core.Services.Download;
-using EvolveVideos.Clients.Core.ViewModels;
-using Newtonsoft.Json;
+using EvolveVideos.Clients.ViewModels;
 
 namespace EvolveVideos.Clients.UWP.Services
 {
@@ -184,7 +184,7 @@ namespace EvolveVideos.Clients.UWP.Services
             double percent = 100;
             if (download.Progress.TotalBytesToReceive > 0)
             {
-                percent = download.Progress.BytesReceived*100/download.Progress.TotalBytesToReceive;
+                percent = download.Progress.BytesReceived * 100 / download.Progress.TotalBytesToReceive;
             }
 
             Percentage = percent;

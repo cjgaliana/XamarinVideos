@@ -1,9 +1,10 @@
-﻿using EvolveVideos.Clients.Core.Models;
-using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.Services.Download;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using EvolveVideos.Clients.Core.Models;
+using EvolveVideos.Clients.Core.Utils;
+using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.Services.Download;
 
-namespace EvolveVideos.Clients.Core.ViewModels
+namespace EvolveVideos.Clients.ViewModels
 {
     public class PlayerViewModel : BaseViewModel
     {
@@ -74,7 +75,7 @@ namespace EvolveVideos.Clients.Core.ViewModels
         public Task OnMediaEndedAsync()
         {
             this._navigationService.GoBack();
-            return Task.CompletedTask;
+            return TaskUtils.CompletedTask;
         }
     }
 }

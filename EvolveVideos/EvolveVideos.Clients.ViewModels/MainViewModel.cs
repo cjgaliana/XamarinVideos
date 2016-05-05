@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Services;
 using EvolveVideos.Data;
 using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
 
-namespace EvolveVideos.Clients.Core.ViewModels
+namespace EvolveVideos.Clients.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {

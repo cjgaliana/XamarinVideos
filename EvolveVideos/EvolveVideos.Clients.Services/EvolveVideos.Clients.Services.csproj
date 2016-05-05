@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{02EFD406-1F5F-4152-8766-28276132ECAF}</ProjectGuid>
+    <ProjectGuid>{DA1BD0B6-147D-4461-B6B8-839C410899CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EvolveVideos.Data</RootNamespace>
-    <AssemblyName>EvolveVideos.Data</AssemblyName>
+    <RootNamespace>EvolveVideos.Clients.Services</RootNamespace>
+    <AssemblyName>EvolveVideos.Clients.Services</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -34,31 +34,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="IDataService.cs" />
-    <Compile Include="Models\EvolveSession.cs" />
-    <Compile Include="Models\VideoCollection.cs" />
-    <Compile Include="Models\VideoTag.cs" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Download\IDownloadManager.cs" />
+    <Compile Include="Download\IVideoDownloaderFactory.cs" />
+    <Compile Include="Download\IVideoDownloaderService.cs" />
+    <Compile Include="IDialogService.cs" />
+    <Compile Include="ILauncherService.cs" />
+    <Compile Include="INavigationService.cs" />
+    <Compile Include="INetworkService.cs" />
+    <Compile Include="ISettingsService.cs" />
+    <Compile Include="IStorageService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Evolve2015.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-    <EmbeddedResource Include="Resources\Collections.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Evolve2016.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <ProjectReference Include="..\Clients\EvolveVideos.Clients.Core\EvolveVideos.Clients.Core.csproj">
+      <Project>{03ce1774-b61f-4611-bf03-407c00d6b568}</Project>
+      <Name>EvolveVideos.Clients.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EvolveVideos.Data\EvolveVideos.Data.csproj">
+      <Project>{02efd406-1f5f-4152-8766-28276132ecaf}</Project>
+      <Name>EvolveVideos.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

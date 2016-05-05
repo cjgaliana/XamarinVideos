@@ -1,6 +1,6 @@
 ﻿using System;
 using Windows.Networking.Connectivity;
-using EvolveVideos.Clients.Core.Services;
+using EvolveVideos.Clients.Services;
 
 namespace EvolveVideos.Clients.UWP.Services
 {

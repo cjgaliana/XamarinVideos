@@ -1,11 +1,11 @@
-﻿using EvolveVideos.Clients.Core.Services;
-using EvolveVideos.Clients.Core.Services.Download;
-using GalaSoft.MvvmLight.Command;
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.Services.Download;
+using GalaSoft.MvvmLight.Command;
 
-namespace EvolveVideos.Clients.Core.ViewModels
+namespace EvolveVideos.Clients.ViewModels
 {
     public class SettingsViewModel : BaseViewModel
     {

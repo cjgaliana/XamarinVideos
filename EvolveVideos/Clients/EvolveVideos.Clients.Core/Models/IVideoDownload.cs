@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace EvolveVideos.Clients.Core.Services.Download
+namespace EvolveVideos.Clients.Core.Models
 {
     public class DownloadCompetedArgs
     {

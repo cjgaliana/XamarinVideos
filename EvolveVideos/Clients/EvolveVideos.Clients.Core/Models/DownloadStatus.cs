@@ -1,4 +1,4 @@
-﻿namespace EvolveVideos.Clients.Core.Services.Download
+﻿namespace EvolveVideos.Clients.Core.Models
 {
     public enum DownloadStatus
     {
