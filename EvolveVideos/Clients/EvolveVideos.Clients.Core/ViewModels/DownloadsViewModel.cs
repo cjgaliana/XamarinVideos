@@ -46,11 +46,12 @@ namespace EvolveVideos.Clients.Core.ViewModels
 
         private void CreateCommands()
         {
-            OpenSessionCommand = new RelayCommand<EvolveSession>(OpenSessionDetails);
+            OpenSessionCommand = new RelayCommand<DownloadSession>(OpenSessionDetails);
         }
 
-        private void OpenSessionDetails(EvolveSession session)
+        private void OpenSessionDetails(DownloadSession downloadedSession)
         {
+            var session = downloadedSession.Session;
             _navigationService.NavigateTo(PageKey.SessionDetailsPage, session);
         }
 

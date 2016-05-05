@@ -22,7 +22,7 @@ namespace EvolveVideos.Clients.UWP.Services
         public async Task<IList<IVideoDownload>> LoadDownloadsAsync()
         {
             var uwPdata = await this.LoadFile<IList<UWPBackgroundDowloader>>(StorageFileKey.DownloadsFile);
-            var data = uwPdata.Cast<IVideoDownload>().ToList();
+            var data = uwPdata?.Cast<IVideoDownload>().ToList();
             return data;
         }
 

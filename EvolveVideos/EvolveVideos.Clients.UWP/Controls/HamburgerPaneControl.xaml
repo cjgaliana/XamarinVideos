@@ -29,6 +29,12 @@
                     <FontIcon FontSize="16" Glyph="&#xE8BC;" />
                 </controls:HamburgerMenuButton.Icon>
             </controls:HamburgerMenuButton>
+
+            <controls:HamburgerMenuButton Content="Downloads" NavigationSourcePageType="views:DownloadsPage">
+                <controls:HamburgerMenuButton.Icon>
+                    <FontIcon FontSize="16" Glyph="&#xE896;" />
+                </controls:HamburgerMenuButton.Icon>
+            </controls:HamburgerMenuButton>
         </StackPanel>
 
         <controls:HamburgerMenuButton Grid.Row="1"
