@@ -9,6 +9,15 @@
     DataContext="{Binding SettingsViewModel, Source={StaticResource ViewModelLocator}}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel>
+            <ToggleSwitch
+                Header="Auto Resume downloads on app start"
+                IsOn="{Binding AutoResumeDownloads}"
+                OffContent="No"
+                OnContent="Yes" />
+            
+            <TextBlock Text="Delete all videos" />
+            <Button Content="Delete" Command="{Binding DeleteAllDataCommand}"/>
+        </StackPanel>
     </Grid>
 </Page>

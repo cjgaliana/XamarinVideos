@@ -1,7 +1,7 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 
-namespace EvolveVideos.Clients.ViewModels.Tests
+namespace EvolveVideos.Clients.Services.Tests
 {
     [TestClass]
     public class UnitTest1

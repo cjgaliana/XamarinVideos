@@ -1,7 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using EvolveVideos.Clients.Services;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Windows.Storage;
-using EvolveVideos.Clients.Services;
 
 namespace EvolveVideos.Clients.UWP.Services
 {
@@ -29,7 +29,12 @@ namespace EvolveVideos.Clients.UWP.Services
 
         public Task<T> LoadSettingAsync<T>(string key)
         {
-            T data = default(T);
+            return this.LoadSettingAsync<T>(key, default(T));
+        }
+
+        public Task<T> LoadSettingAsync<T>(string key, T defaultValue)
+        {
+            var data = defaultValue;
             var value = this._roamingSettings.Values[key];
             if (value != null)
             {

@@ -5,7 +5,19 @@ namespace EvolveVideos.Clients.Core.Models
 {
     public class DownloadCompetedArgs
     {
-        public IVideoDownload Download;
+        public IVideoDownload Download { get; set; }
+    }
+
+    public class DownloadProgressChangedArgs
+    {
+        public IVideoDownload Download { get; set; }
+        public double Progress { get; set; }
+    }
+    public class DownloadStatusChangedArgs
+    {
+        public IVideoDownload Download { get; set; }
+        public DownloadStatus Status { get; set; }
+        
     }
 
     public interface IVideoDownload
@@ -25,7 +37,10 @@ namespace EvolveVideos.Clients.Core.Models
 
         Task DeleteAsync();
 
-
         event EventHandler<DownloadCompetedArgs> DownloadCompleted;
+
+        event EventHandler<DownloadProgressChangedArgs> DownloadProgressChanged;
+
+        event EventHandler<DownloadStatusChangedArgs> DownloadStatusChanged;
     }
 }

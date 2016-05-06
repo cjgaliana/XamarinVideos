@@ -2,12 +2,10 @@
 
 namespace EvolveVideos.Clients.Services
 {
-
     public class SettingsKeys
     {
         public static string DownloaderAutoResume = "DownloaderAutoResume_key";
     }
-
 
     public interface ISettingsService
     {
@@ -17,9 +15,12 @@ namespace EvolveVideos.Clients.Services
 
         Task<T> LoadSettingAsync<T>(string key);
 
+        Task<T> LoadSettingAsync<T>(string key, T defaultValue);
+
         Task<T> LoadSettingAsync<T>();
 
         Task DeleteSettingAsync(string key);
+
         Task DeleteSettingAsync<T>();
     }
 }

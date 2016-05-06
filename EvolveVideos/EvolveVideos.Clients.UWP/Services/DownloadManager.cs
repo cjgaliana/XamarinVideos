@@ -1,21 +1,22 @@
 ﻿using EvolveVideos.Clients.Core.Models;
+using EvolveVideos.Clients.Core.Utils;
+using EvolveVideos.Clients.Services;
+using EvolveVideos.Clients.Services.Download;
 using EvolveVideos.Data.Models;
 using Nito.AsyncEx;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EvolveVideos.Clients.Services;
-using EvolveVideos.Clients.Services.Download;
 
 namespace EvolveVideos.Clients.UWP.Services
 {
     public class DownloadManager : IDownloadManager
     {
-        private readonly IVideoDownloaderService _downloaderService;
         private readonly AsyncLock _fileMutex = new AsyncLock();
-
         private readonly AsyncLock _networkMutex = new AsyncLock();
+
+        private readonly IVideoDownloaderService _downloaderService;
         private readonly INetworkService _networkService;
         private readonly ISettingsService _settingsService;
         private readonly IVideoDownloaderFactory _videoDownloaderFactory;
@@ -46,10 +47,7 @@ namespace EvolveVideos.Clients.UWP.Services
                 await videoDowload.PauseAsync();
             }
 
-            using (await _fileMutex.LockAsync())
-            {
-                await _storageService.SaveDownloadsAsync(Downloads);
-            }
+            await SaveDownloasdToStorageAsync();
         }
 
         public async Task ResumeAllDownloadsAsync()
@@ -108,10 +106,7 @@ namespace EvolveVideos.Clients.UWP.Services
                 }
             }
 
-            using (await _fileMutex.LockAsync())
-            {
-                await _storageService.SaveDownloadsAsync(Downloads);
-            }
+            await SaveDownloasdToStorageAsync();
         }
 
         public async Task DeleteAllDownloadsAsync()
@@ -122,10 +117,7 @@ namespace EvolveVideos.Clients.UWP.Services
             }
 
             Downloads.Clear();
-            using (await _fileMutex.LockAsync())
-            {
-                await _storageService.SaveDownloadsAsync(Downloads);
-            }
+            await SaveDownloasdToStorageAsync();
         }
 
         public async Task QueueDownloadAsync(EvolveSession session)
@@ -134,35 +126,54 @@ namespace EvolveVideos.Clients.UWP.Services
 
             var newDownload = this._videoDownloaderFactory.Create();
 
-            newDownload.Id = session.Id;
             newDownload.SessionId = session.Id;
             newDownload.DownloadUrl = url;
             newDownload.Status = DownloadStatus.Queue;
             newDownload.DownloadCompleted += OnDownloadCompleted;
+            newDownload.DownloadStatusChanged += OnStatusChanged;
+            newDownload.DownloadProgressChanged += OnProgressChanged;
 
-            newDownload.StartDownlodAsync();
+            newDownload.StartDownlodAsync().FireAndForget();
 
             Downloads.Add(newDownload);
 
-            using (await _fileMutex.LockAsync())
-            {
-                await _storageService.SaveDownloadsAsync(Downloads);
-            }
+            await SaveDownloasdToStorageAsync();
+        }
+
+        private async void OnProgressChanged(object sender, DownloadProgressChangedArgs e)
+        {
+            await this.UpdateDownloadsAsync(e.Download);
+        }
+
+        private async void OnStatusChanged(object sender, DownloadStatusChangedArgs e)
+        {
+            await this.UpdateDownloadsAsync(e.Download);
         }
 
         private async void OnDownloadCompleted(object sender, DownloadCompetedArgs e)
         {
-            var localDownload = this.Downloads.FirstOrDefault(x => x.Id == e.Download.Id);
+            await this.UpdateDownloadsAsync(e.Download);
+        }
+
+        private async Task UpdateDownloadsAsync(IVideoDownload download)
+        {
+            var localDownload = this.Downloads.FirstOrDefault(x => x.Id == download.Id);
             if (localDownload != null)
             {
-                localDownload.Status = e.Download.Status;
-                localDownload.LocalFileUrl = e.Download.LocalFileUrl;
-                localDownload.Percentage = e.Download.Percentage;
+                localDownload.Status = download.Status;
+                localDownload.LocalFileUrl = download.LocalFileUrl;
+                localDownload.Percentage = download.Percentage;
+                localDownload.SessionId = download.SessionId;
 
-                using (await _fileMutex.LockAsync())
-                {
-                    await _storageService.SaveDownloadsAsync(Downloads);
-                }
+                await SaveDownloasdToStorageAsync();
+            }
+        }
+
+        private async Task SaveDownloasdToStorageAsync()
+        {
+            using (await _fileMutex.LockAsync())
+            {
+                await _storageService.SaveDownloadsAsync(Downloads);
             }
         }
 
@@ -173,10 +184,7 @@ namespace EvolveVideos.Clients.UWP.Services
             {
                 await selected.DeleteAsync();
                 Downloads.Remove(selected);
-                using (await _fileMutex.LockAsync())
-                {
-                    await _storageService.SaveDownloadsAsync(Downloads);
-                }
+                await this.SaveDownloasdToStorageAsync();
             }
         }
 
@@ -186,10 +194,7 @@ namespace EvolveVideos.Clients.UWP.Services
             if (selected != null)
             {
                 await download.PauseAsync();
-                using (await _fileMutex.LockAsync())
-                {
-                    await _storageService.SaveDownloadsAsync(Downloads);
-                }
+                await this.SaveDownloasdToStorageAsync();
             }
         }
 
@@ -199,10 +204,7 @@ namespace EvolveVideos.Clients.UWP.Services
             if (selected != null)
             {
                 await download.ResumeAsync();
-                using (await _fileMutex.LockAsync())
-                {
-                    await _storageService.SaveDownloadsAsync(Downloads);
-                }
+                await this.SaveDownloasdToStorageAsync();
             }
         }
 
@@ -214,13 +216,21 @@ namespace EvolveVideos.Clients.UWP.Services
 
         public async Task InitializeAsync()
         {
-            await LoadDownloadQueueAsync();
-
-            var autoResume = await _settingsService.LoadSettingAsync<bool>(SettingsKeys.DownloaderAutoResume);
-            if (autoResume)
+            try
             {
-                await ResumeAllDownloadsAsync();
+                await LoadDownloadQueueAsync();
+
+                var autoResume = await _settingsService.LoadSettingAsync<bool>(SettingsKeys.DownloaderAutoResume, true);
+                if (autoResume)
+                {
+                    await ResumeAllDownloadsAsync();
+                }
             }
+            catch (Exception ex)
+            {
+                var a = 5;
+            }
+
         }
 
         private async Task LoadDownloadQueueAsync()
