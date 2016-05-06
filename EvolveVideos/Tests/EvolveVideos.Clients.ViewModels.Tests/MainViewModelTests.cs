@@ -1,6 +1,4 @@
-﻿
-
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace EvolveVideos.Clients.ViewModels.Tests
 {
@@ -19,7 +17,7 @@ namespace EvolveVideos.Clients.ViewModels.Tests
             Assert.AreEqual(5, Add(2, 2));
         }
 
-        int Add(int x, int y)
+        private int Add(int x, int y)
         {
             return x + y;
         }
