@@ -1,11 +1,11 @@
-﻿using System;
+﻿using EvolveVideos.Data.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using EvolveVideos.Data.Models;
-using Newtonsoft.Json;
 
 namespace EvolveVideos.Data
 {
@@ -16,16 +16,22 @@ namespace EvolveVideos.Data
         Task<List<VideoCollection>> GetVideoCollectionsAsync();
 
         Task<List<EvolveSession>> GetVideosAsync(VideoCollection collection);
+
         Task<EvolveSession> GetSessionAsync(Guid sessionId);
     }
 
     public class LocalResourcesDataService : IDataService
     {
+        private static readonly Random Rng = new Random();
+
         public async Task<List<EvolveSession>> GetLatestAsync()
         {
             var json = await LoadFileContentAsync("Evolve2016.json");
             var data = JsonConvert.DeserializeObject<List<EvolveSession>>(json);
-            return data;
+
+            var randomVideos = Shuffle(data).Take(10).ToList();
+
+            return randomVideos;
         }
 
         public async Task<List<VideoCollection>> GetVideoCollectionsAsync()
@@ -44,12 +50,12 @@ namespace EvolveVideos.Data
 
         public async Task<EvolveSession> GetSessionAsync(Guid sessionId)
         {
-            var collections = await this.GetVideoCollectionsAsync();
+            var collections = await GetVideoCollectionsAsync();
             foreach (var collection in collections)
             {
-                var videos = await this.GetVideosAsync(collection);
+                var videos = await GetVideosAsync(collection);
                 var session = videos.FirstOrDefault(x => x.Id == sessionId);
-                if (session!=null)
+                if (session != null)
                 {
                     return session;
                 }
@@ -57,6 +63,21 @@ namespace EvolveVideos.Data
 
             return null;
             // TODO: Throw Not Found exception
+        }
+
+        public IList<T> Shuffle<T>(IList<T> list)
+        {
+            var n = list.Count;
+            while (n > 1)
+            {
+                n--;
+                var k = Rng.Next(n + 1);
+                var value = list[k];
+                list[k] = list[n];
+                list[n] = value;
+            }
+
+            return list;
         }
 
         public async Task<string> LoadFileContentAsync(string filename)
