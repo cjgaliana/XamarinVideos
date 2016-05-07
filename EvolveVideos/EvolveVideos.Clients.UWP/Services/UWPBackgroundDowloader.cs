@@ -1,16 +1,13 @@
-﻿using System;
+﻿using EvolveVideos.Clients.Core.Models;
+using EvolveVideos.Clients.ViewModels;
+using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Windows.Networking.BackgroundTransfer;
 using Windows.Storage;
-using Windows.UI.Core;
-using Windows.UI.Xaml;
-using EvolveVideos.Clients.Core.Models;
-using EvolveVideos.Clients.ViewModels;
-using Newtonsoft.Json;
-using EvolveVideos.Clients.Core.Utils;
 
 namespace EvolveVideos.Clients.UWP.Services
 {
@@ -43,7 +40,7 @@ namespace EvolveVideos.Clients.UWP.Services
             set
             {
                 Set(() => Percentage, ref _percentage, value);
-                OnDownloadProgressChanged();
+                OnDownloadProgressChanged(value);
             }
         }
 
@@ -53,7 +50,7 @@ namespace EvolveVideos.Clients.UWP.Services
             set
             {
                 Set(() => Status, ref _status, value);
-                OnDownloadStatusChanged();
+                OnDownloadStatusChanged(value);
             }
         }
 
@@ -120,19 +117,39 @@ namespace EvolveVideos.Clients.UWP.Services
             {
                 return;
             }
+
+            if (Status == DownloadStatus.Paused)
+            {
+                return;
+            }
             _download.Pause();
             Status = DownloadStatus.Paused;
         }
 
         public async Task ResumeAsync()
         {
-            var existingDownload = await GetExistingDownloadAsync();
-            if (existingDownload == null)
+            try
             {
-                return;
+                if (_download != null)
+                {
+                    _download.Resume();
+                    Status = DownloadStatus.Downloading;
+                    return;
+                }
+
+                var existingDownload = await GetExistingDownloadAsync();
+                if (existingDownload == null)
+                {
+                    return;
+                }
+                await HandleDownloadAsync(false);
+                Status = DownloadStatus.Downloading;
+                existingDownload.Resume();
             }
-            _download.Resume();
-            Status = DownloadStatus.Downloading;
+            catch (Exception ex)
+            {
+                var a = 5;
+            }
         }
 
         public async Task DeleteAsync()
@@ -218,12 +235,12 @@ namespace EvolveVideos.Clients.UWP.Services
                 if (start)
                 {
                     // Start the download and attach a progress handler.
-                    await _download.StartAsync().AsTask(_cts.Token, progressCallback);
+                    _download.StartAsync().AsTask(_cts.Token, progressCallback);
                 }
                 else
                 {
                     // The download was already running when the application started, re-attach the progress handler.
-                    await _download.AttachAsync().AsTask(_cts.Token, progressCallback);
+                    _download.AttachAsync().AsTask(_cts.Token, progressCallback);
                 }
 
                 //ResponseInformation response = download.GetResponseInformation();
@@ -239,29 +256,28 @@ namespace EvolveVideos.Clients.UWP.Services
 
         private void DownloadProgress(DownloadOperation download)
         {
-            var task = Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(
-                CoreDispatcherPriority.Normal,
-                () =>
-                {
-                    double percent = 100;
-                    if (download.Progress.TotalBytesToReceive > 0)
-                    {
-                        percent = download.Progress.BytesReceived * 100 / download.Progress.TotalBytesToReceive;
-                    }
+            //var task = Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(
+            //    CoreDispatcherPriority.Normal,
+            //    () =>
+            //    {
+            double percent = 100;
+            if (download.Progress.TotalBytesToReceive > 0)
+            {
+                percent = download.Progress.BytesReceived * 100 / download.Progress.TotalBytesToReceive;
+            }
 
-                    Percentage = percent;
-                    Status = Math.Abs(Percentage - 100) < 0.01
-                        ? DownloadStatus.Completed
-                        : DownloadStatus.Downloading;
+            Percentage = percent;
+            Status = Math.Abs(Percentage - 100) < 0.1
+                ? DownloadStatus.Completed
+                : DownloadStatus.Downloading;
 
+            if (Status == DownloadStatus.Completed)
+            {
+                OnDownloadCompleted();
+            }
+            //    }).AsTask();
 
-                    if (Status == DownloadStatus.Completed)
-                    {
-                        OnDownloadCompleted();
-                    }
-                }).AsTask();
-
-            task.FireAndForget();
+            //task.FireAndForget();
         }
 
         private void OnDownloadCompleted()
@@ -273,23 +289,23 @@ namespace EvolveVideos.Clients.UWP.Services
             });
         }
 
-        private void OnDownloadStatusChanged()
+        private void OnDownloadStatusChanged(DownloadStatus status)
         {
             var handle = DownloadStatusChanged;
             handle?.Invoke(this, new DownloadStatusChangedArgs
             {
                 Download = this,
-                Status = Status
+                Status = status
             });
         }
 
-        private void OnDownloadProgressChanged()
+        private void OnDownloadProgressChanged(double percentage)
         {
             var handle = DownloadProgressChanged;
             handle?.Invoke(this, new DownloadProgressChangedArgs
             {
                 Download = this,
-                Progress = Percentage
+                Progress = percentage
             });
         }
     }

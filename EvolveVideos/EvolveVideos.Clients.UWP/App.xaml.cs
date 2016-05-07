@@ -6,7 +6,9 @@ using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using EvolveVideos.Clients.Services.Download;
 using Microsoft.HockeyApp;
+using Microsoft.Practices.ServiceLocation;
 
 namespace EvolveVideos.Clients.UWP
 {
@@ -100,10 +102,17 @@ namespace EvolveVideos.Clients.UWP
         /// </summary>
         /// <param name="sender">The source of the suspend request.</param>
         /// <param name="e">Details about the suspend request.</param>
-        private void OnSuspending(object sender, SuspendingEventArgs e)
+        private async void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
+
+            var downloadManager = ServiceLocator.Current.GetInstance<IDownloadManager>();
+            if (downloadManager!=null)
+            {
+                await downloadManager.PauseAllDownloadsAsync();
+            }
+
             deferral.Complete();
         }
     }

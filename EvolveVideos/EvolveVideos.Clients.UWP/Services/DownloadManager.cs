@@ -52,10 +52,20 @@ namespace EvolveVideos.Clients.UWP.Services
 
         public async Task ResumeAllDownloadsAsync()
         {
+            if (Downloads == null || !Downloads.Any())
+            {
+                return;
+            }
+
             var MaxConcurrentDownloads = 3;
 
             // Check Downlading
             var downloading = Downloads.Where(x => x.Status == DownloadStatus.Downloading).ToList();
+            foreach (var videoDownload in downloading)
+            {
+                // Ensure is downloading
+               await videoDownload.ResumeAsync();
+            }
 
             var availableSlots = MaxConcurrentDownloads - downloading.Count;
             if (availableSlots > 0)
@@ -160,10 +170,10 @@ namespace EvolveVideos.Clients.UWP.Services
             var localDownload = this.Downloads.FirstOrDefault(x => x.Id == download.Id);
             if (localDownload != null)
             {
-                localDownload.Status = download.Status;
-                localDownload.LocalFileUrl = download.LocalFileUrl;
-                localDownload.Percentage = download.Percentage;
-                localDownload.SessionId = download.SessionId;
+                ////localDownload.Status = download.Status;
+                //localDownload.LocalFileUrl = download.LocalFileUrl;
+                ////localDownload.Percentage = download.Percentage;
+                //localDownload.SessionId = download.SessionId;
 
                 await SaveDownloasdToStorageAsync();
             }
@@ -230,13 +240,19 @@ namespace EvolveVideos.Clients.UWP.Services
             {
                 var a = 5;
             }
-
         }
 
         private async Task LoadDownloadQueueAsync()
         {
             var localDownloads = await _storageService.LoadDownloadsAsync() ?? new List<IVideoDownload>();
             Downloads = localDownloads;
+
+            foreach (var download in Downloads)
+            {
+                download.DownloadCompleted += OnDownloadCompleted;
+                download.DownloadProgressChanged += OnProgressChanged;
+                download.DownloadStatusChanged += OnStatusChanged;
+            }
         }
 
         private async void OnNetworkStatusChanged(object sender, NetworkStatusChangedEvents e)
