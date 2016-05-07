@@ -16,6 +16,7 @@ namespace EvolveVideos.Clients.ViewModels
         private readonly IDownloadManager _downloadManager;
         private readonly IVideoDownloaderService _videoDownloaderService;
         private readonly INetworkService _networkService;
+        private readonly ILogService _logService;
         private readonly INavigationService _navigationService;
         private bool _hasDownload;
 
@@ -26,13 +27,14 @@ namespace EvolveVideos.Clients.ViewModels
         private Uri _videoUrl;
 
         public SessionDetailsViewModel(INavigationService navigationService, IDialogService dialogService,
-            IDownloadManager downloadManager, IVideoDownloaderService videoDownloaderService, INetworkService networkService)
+            IDownloadManager downloadManager, IVideoDownloaderService videoDownloaderService, INetworkService networkService, ILogService logService)
         {
             _navigationService = navigationService;
             _dialogService = dialogService;
             _downloadManager = downloadManager;
             _videoDownloaderService = videoDownloaderService;
             _networkService = networkService;
+            _logService = logService;
 
             CreateCommands();
 
@@ -135,6 +137,7 @@ namespace EvolveVideos.Clients.ViewModels
             catch (Exception ex)
             {
                 await this._dialogService.ShowMessageAsync("Error", "Is not possible to load the video URL");
+                await this._logService.LogExceptionAsync(ex);
             }
         }
 
@@ -153,17 +156,24 @@ namespace EvolveVideos.Clients.ViewModels
             }
             catch (Exception ex)
             {
-                // TODO: Log error
                 await _dialogService.ShowMessageAsync("Error", "Is not possible download the video");
+                await this._logService.LogExceptionAsync(ex);
             }
         }
 
         private async Task DeleteDownloadAsync()
         {
-            if (HasDownload)
+            try
             {
-                await this._downloadManager.DeleteDownloadAsync(this.VideoDownload);
-                this.VideoDownload = null;
+                if (HasDownload)
+                {
+                    await this._downloadManager.DeleteDownloadAsync(this.VideoDownload);
+                    this.VideoDownload = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                await this._logService.LogExceptionAsync(ex);
             }
         }
     }

@@ -12,6 +12,7 @@ namespace EvolveVideos.Clients.ViewModels
     public class VideoCollectionDetailsViewModel : BaseViewModel
     {
         private readonly IDataService _dataService;
+        private readonly ILogService _logService;
         private readonly IDialogService _dialogService;
         private readonly INavigationService _navigationService;
         private readonly IStorageService _storageService;
@@ -20,12 +21,13 @@ namespace EvolveVideos.Clients.ViewModels
         private VideoCollection _videoCollection;
 
         public VideoCollectionDetailsViewModel(INavigationService navigationService, IStorageService storageService,
-            IDialogService dialogService, IDataService dataService)
+            IDialogService dialogService, IDataService dataService, ILogService logService)
         {
             _navigationService = navigationService;
             _storageService = storageService;
             _dialogService = dialogService;
             _dataService = dataService;
+            _logService = logService;
 
             CreateCommands();
         }
@@ -81,7 +83,7 @@ namespace EvolveVideos.Clients.ViewModels
             }
             catch (Exception ex)
             {
-                // TODO: Handle exception
+                await this._logService.LogExceptionAsync(ex);
                 throw;
             }
             finally

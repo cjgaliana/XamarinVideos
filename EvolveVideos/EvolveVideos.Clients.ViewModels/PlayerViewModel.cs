@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using EvolveVideos.Clients.Core.Models;
 using EvolveVideos.Clients.Core.Utils;
 using EvolveVideos.Clients.Services;
@@ -13,6 +14,7 @@ namespace EvolveVideos.Clients.ViewModels
         private readonly INavigationService _navigationService;
         private readonly INetworkService _networkService;
         private readonly IVideoDownloaderService _videoDownloaderService;
+        private readonly ILogService _logService;
 
         private PlayerParameters _playerParameters;
         private string _videoUrl;
@@ -22,13 +24,15 @@ namespace EvolveVideos.Clients.ViewModels
             INetworkService networkService,
             IDownloadManager downloadManager,
             IDialogService dialogService,
-            IVideoDownloaderService videoDownloaderService)
+            IVideoDownloaderService videoDownloaderService,
+            ILogService logService)
         {
             this._navigationService = navigationService;
             this._networkService = networkService;
             this._downloadManager = downloadManager;
             this._dialogService = dialogService;
             this._videoDownloaderService = videoDownloaderService;
+            _logService = logService;
         }
 
         public string VideoUrl
@@ -63,6 +67,9 @@ namespace EvolveVideos.Clients.ViewModels
 
         public async Task OnMediaFailedAsync(string message = null)
         {
+
+            await this._logService.LogExceptionAsync(new Exception(message));
+
             var errorMessage = "Is not possible to play this video";
             if (!string.IsNullOrWhiteSpace(message))
             {

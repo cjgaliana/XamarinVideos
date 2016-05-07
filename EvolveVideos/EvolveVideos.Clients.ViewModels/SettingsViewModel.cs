@@ -12,18 +12,20 @@ namespace EvolveVideos.Clients.ViewModels
     {
         private readonly IDownloadManager _downloadManager;
         private readonly IDialogService _dialogService;
+        private readonly ILogService _logService;
         private readonly ISettingsService _settingsService;
         private readonly IStorageService _storageService;
 
         private bool _autoResumeDownloads;
 
         public SettingsViewModel(ISettingsService settingsService, IStorageService storageService,
-            IDownloadManager downloaderService, IDialogService dialogService)
+            IDownloadManager downloaderService, IDialogService dialogService, ILogService logService)
         {
             _settingsService = settingsService;
             _storageService = storageService;
             _downloadManager = downloaderService;
             _dialogService = dialogService;
+            _logService = logService;
 
             CreateCommands();
         }
@@ -54,7 +56,7 @@ namespace EvolveVideos.Clients.ViewModels
             }
             catch (Exception ex)
             {
-                // TODO: Show error
+               await this._logService.LogExceptionAsync(ex);
             }
             finally
             {

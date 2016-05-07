@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using EvolveVideos.Clients.Services;
+﻿using EvolveVideos.Clients.Services;
 using EvolveVideos.Data;
 using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace EvolveVideos.Clients.ViewModels
 {
