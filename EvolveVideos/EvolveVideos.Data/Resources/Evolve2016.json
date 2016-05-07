@@ -1,6 +1,6 @@
 ﻿[
   {
-    "Id": "",
+    "Id": "e662b320-f45d-4af6-99fa-d18eb19ebd6c",
     "Title": "Cloud, IoT, and Mobility in Practice: Tap into the Enterprise Evolution",
     "Track": "Design",
     "Thumbnail": "",
@@ -8,9 +8,8 @@
     "Description": "Cloud, IoT, and Mobility aren't just buzz words anymore as you learn how to help businesses transform their operations. From NFL football players to the coat you purchased online that was delivered to your door to a baby born in a hospital, learn real-life use cases of how your software, combined with the sensors, devices, and platforms from Zebra Technologies, can provide operational visibility to enable Enterprise and workflow optimization. Let Zebra open doors to the huge growth and revenue opportunities of the Enterprise market!",
     "YoutubeID": ""
   },
-
   {
-    "Id": "",
+    "Id": "cfd1885c-2b6e-443d-867c-5c608277515b",
     "Title": "Everyone Can Create Beautiful Apps with Material Design",
     "Track": "Design",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/7_Everyone_Beautiful_James_Jereme_Template_1.jpg",
@@ -19,7 +18,7 @@
     "YoutubeID": "E3_ZjIOzVzY"
   },
   {
-    "Id": "",
+    "Id": "81213b0e-d223-4d98-a0a7-81b68cd60449",
     "Title": "Xammy Awards",
     "Track": "Design",
     "Thumbnail": "",
@@ -28,7 +27,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "5dec5381-250b-4cc1-9ad7-67da2a9a87bb",
     "Title": "If You Build It: Making Apps for Humans",
     "Track": "Design",
     "Thumbnail": "",
@@ -37,7 +36,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "f89f7b10-5a2d-41f6-94c0-e24bbe7902b5",
     "Title": "Designing for Touch",
     "Track": "Design",
     "Thumbnail": "",
@@ -46,7 +45,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "f98eb622-f144-4b63-9d29-45b7562ef6a7",
     "Title": "From Sketch to App: A Design to Development Workflow",
     "Track": "Design",
     "Thumbnail": "",
@@ -55,7 +54,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "a15e2a64-41a3-4247-802d-b2e95c777555",
     "Title": "Create Stunning Apps with the Xamarin Designer for iOS",
     "Track": "Design",
     "Thumbnail": "",
@@ -64,7 +63,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "a15e2a64-41a3-4247-802d-b2e95c777555",
     "Title": "Building Cross-Platform Mapping Apps with ArcGIS Runtime",
     "Track": "Build",
     "Thumbnail": "",
@@ -73,7 +72,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "5a2c85b8-c46b-4fd0-a5c8-50716d261840",
     "Title": "Developing Connected Apps Using Azure and Xamarin",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/Developing_Azure_Adrian_Hall_Mike_James_Thumbnail.jpg",
@@ -82,7 +81,7 @@
     "YoutubeID": "cvVuREnVZk8"
   },
   {
-    "Id": "",
+    "Id": "5c019aca-e5a6-4295-a8db-3cee1997e2b0",
     "Title": "5 Soft Skills Every Software Developer Should Know",
     "Track": "Build",
     "Thumbnail": "",
@@ -91,7 +90,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "2054e55a-6b25-489c-989a-9b1b8ebb0fb1",
     "Title": "Contextual Communication in a Connected World",
     "Track": "Build",
     "Thumbnail": "",
@@ -100,7 +99,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "a81216ea-5c13-48f1-9002-f1e28357e8d2",
     "Title": "As Seen On TV … Bringing C# to the Living Room",
     "Track": "Build",
     "Thumbnail": "",
@@ -109,7 +108,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "6e9e7d69-8b11-4391-9c93-9b05a6bae278",
     "Title": "Forget About Your Database... Just Build Apps That Work",
     "Track": "Build",
     "Thumbnail": "",
@@ -118,7 +117,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "67eec293-bce4-4629-94cc-b09fe67e834b",
     "Title": "MVVM Made Simple with Xamarin.Forms and Prism",
     "Track": "Build",
     "Thumbnail": "",
@@ -127,7 +126,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "31ea1a7e-d3d4-493d-b7bd-53615a88e2c9",
     "Title": "Clicking on the Real World with iBeacon and Eddystone",
     "Track": "Build",
     "Thumbnail": "",
@@ -136,7 +135,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "ae8d8a5a-bf3e-4f72-bc3a-2f8b7c818e64",
     "Title": "Introduction to Android Marshmallow",
     "Track": "Build",
     "Thumbnail": "",
@@ -145,7 +144,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "45031f81-6165-41c8-bb1c-c21b3589ead3",
     "Title": "Optimizing App Performance with Xamarin.Forms",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/Optimizing_Performance_Jason_Smith_Thumbnail.jpg",
@@ -154,7 +153,7 @@
     "YoutubeID": "RZvdql3Ev0E"
   },
   {
-    "Id": "",
+    "Id": "34171679-d76a-41bf-be43-7624812c7310",
     "Title": "Become a Xamarin Studio Expert",
     "Track": "Build",
     "Thumbnail": "",
@@ -163,7 +162,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "a4119b94-2b64-4a5e-ab9a-468a7eaa690a",
     "Title": "Exploring the Future of Connected Devices with Philips Hue",
     "Track": "Build",
     "Thumbnail": "",
@@ -172,7 +171,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "36193ebb-58dd-42c7-bd5b-4ee8ff912380",
     "Title": "Say Hello to the Tech Behind the Death of the Card Terminal",
     "Track": "Build",
     "Thumbnail": "",
@@ -181,7 +180,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "70df8d39-8c4a-4923-b0ba-e580686fd9bb",
     "Title": "Google Fit, Android Wear, and Xamarin",
     "Track": "Build",
     "Thumbnail": "",
@@ -190,7 +189,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "d35e6972-7fcd-4cd3-b745-732b549bd11c",
     "Title": "Building a Universal Windows App in Visual Studio",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/5_Build_Universal_Unni_Ravindra_Thumbnail_1.jpg",
@@ -199,7 +198,7 @@
     "YoutubeID": "5k0fML72_OI"
   },
   {
-    "Id": "",
+    "Id": "5626d7ee-3af6-4a2a-b8b9-677b0f04da6f",
     "Title": "Understanding Implications of Build Options",
     "Track": "Build",
     "Thumbnail": "",
@@ -208,7 +207,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "289aafbd-62f7-4578-bd17-5e9172977c18",
     "Title": "The Future of C#",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/6_Future_of_C%23_Mads_Dustin_Thumbnail_2.jpg",
@@ -218,7 +217,7 @@
   },
 
   {
-    "Id": "",
+    "Id": "70eeb345-4714-4150-a8d8-a89f73e06c5b",
     "Title": "Cross-Platform Media in Xamarin",
     "Track": "Build",
     "Thumbnail": "",
@@ -227,7 +226,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "0ed9ac8c-76ef-4fbd-9682-7b8926403c4a",
     "Title": "Visual Studio 2015 and Beyond!",
     "Track": "Build",
     "Thumbnail": "",
@@ -236,7 +235,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "9d58b448-5180-4c85-bfc4-15ed209be6d1",
     "Title": "Performance Adventures",
     "Track": "Build",
     "Thumbnail": "",
@@ -245,7 +244,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "adfbb7f8-0af0-45c4-b30f-c6d06c93a784",
     "Title": "Cocos# in Xamarin.Forms",
     "Track": "Build",
     "Thumbnail": "",
@@ -254,7 +253,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "a1d410a9-1d43-4983-b935-fb8a3fd6d2f5",
     "Title": "Grant Imahara at Evolve 2016",
     "Track": "Build",
     "Thumbnail": "https://cdn1.xamarin.com/evolve-2016/session-thumbnails/8_Mythbusters_Grant_Imahara_Thumbnail_1.jpg",
@@ -263,7 +262,7 @@
     "YoutubeID": "qiui_ki1OPc"
   },
   {
-    "Id": "",
+    "Id": "afd11780-8aaa-4b81-a65c-a51e98c48540",
     "Title": "An Open Discussion About Xamarin for Visual Studio",
     "Track": "Build",
     "Thumbnail": "",
@@ -272,7 +271,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "665403a0-f8a7-4e26-b63e-a67cf4c5b144",
     "Title": "World Class Identity Management with Xamarin and Azure AD",
     "Track": "Build",
     "Thumbnail": "",
@@ -281,7 +280,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "af3b08f0-89fd-441d-a4f1-9d1c50db38b4",
     "Title": "Creating Custom Layouts in Xamarin.Forms",
     "Track": "Build",
     "Thumbnail": "",
@@ -290,7 +289,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "34133c34-6962-4623-add3-125d3cec3cf9",
     "Title": "Introduction to iOS 9",
     "Track": "Build",
     "Thumbnail": "",
@@ -299,7 +298,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "d42c2884-cd9c-49ff-b9bf-e9fe478d2b16",
     "Title": "Why Akavache is Fast: How Not to Use SQLite",
     "Track": "Build",
     "Thumbnail": "",
@@ -308,7 +307,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "793dbaa0-0187-41d2-897a-e219ee869795",
     "Title": "Mobile Search: Making your mobile apps stand out",
     "Track": "Build",
     "Thumbnail": "",
@@ -317,7 +316,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "2a535ca0-4ed8-4034-be38-671c283703cf",
     "Title": "Becoming a XAML Master",
     "Track": "Build",
     "Thumbnail": "",
@@ -326,7 +325,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "644d0a8c-b3c7-4c6e-a0dd-247b5800192b",
     "Title": "Extending Views and Adding Custom Attributes in Your Xamarin.Android App",
     "Track": "Build",
     "Thumbnail": "",
@@ -335,7 +334,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "e2aa8880-bcc4-41cc-92e5-8a7d6fa438ef",
     "Title": "The Power of Roslyn: Improving Your Productivity with Live Code Analyzers",
     "Track": "Build",
     "Thumbnail": "",
@@ -344,7 +343,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "6539cded-a4bc-4366-bb01-43935b3859cd",
     "Title": "Why You Should Be Building Better Mobile Apps with Reactive Programming",
     "Track": "Build",
     "Thumbnail": "",
@@ -353,7 +352,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "b218ea0c-be40-429f-9b3e-1374b6b569b7",
     "Title": "Enhancing Your Mobile Application with Machine Learning",
     "Track": "Build",
     "Thumbnail": "",
@@ -362,7 +361,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "ca356c02-9671-4e8e-ad09-6e619928691d",
     "Title": "Using Xamarin.Forms with F#",
     "Track": "Build",
     "Thumbnail": "",
@@ -371,7 +370,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "09e142c2-efc4-417b-88f5-74ee118cf988",
     "Title": "An In-Depth Study of the MVVM Light Databinding System",
     "Track": "Build",
     "Thumbnail": "",
@@ -380,7 +379,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "0fffed3c-d41d-4c88-8158-181dcff6dd90",
     "Title": "Async and Await, All the Things Your Mother Never Told You",
     "Track": "Build",
     "Thumbnail": "",
@@ -389,7 +388,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "1ab1a8ca-93d8-42fd-ba23-eacf0bb05a0a",
     "Title": "A Developer’s Guide to Azure IoT",
     "Track": "Integrate",
     "Thumbnail": "",
@@ -398,7 +397,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "79b8c387-776c-45e6-a967-900589afc402",
     "Title": "Your App Needs More Google Play Services",
     "Track": "Integrate",
     "Thumbnail": "",
@@ -407,7 +406,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "d32fc19d-a100-4493-a9c3-be3591601123",
     "Title": "Cross-Platform IoT Device Interactivity via Xamarin, Azure IoT, and Open Automation Software",
     "Track": "Integrate",
     "Thumbnail": "",
@@ -416,8 +415,8 @@
     "YoutubeID": ""
   },
   {
-    "Id": "Build ‘Smart’ into Your App with Microsoft Cognitive Services",
-    "Title": "",
+    "Id": "3af3a4f5-34fa-4198-895d-676ff01c49fe",
+    "Title": "Build ‘Smart’ into Your App with Microsoft Cognitive Services",
     "Track": "Integrate",
     "Thumbnail": "",
     "Author": "Allison Light",
@@ -426,7 +425,7 @@
   },
 
   {
-    "Id": "",
+    "Id": "45e15019-1398-4b2c-8aed-cbbda5b3c2a2",
     "Title": "Test Driven Xamarin Development",
     "Track": "Test",
     "Thumbnail": "",
@@ -444,7 +443,7 @@
     "YoutubeID": "wXgnh2Q7Uv8"
   },
   {
-    "Id": "",
+    "Id": "0f3fe805-4aa6-41f3-8024-9d3ead834b07",
     "Title": "Cross-Platform Unit Testing with xUnit",
     "Track": "Test",
     "Thumbnail": "",
@@ -453,7 +452,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "806d2df9-5ce5-4886-8b65-b1f2ce7f3773",
     "Title": "Instrumenting Your Mobile Monitoring Strategy",
     "Track": "Monitor",
     "Thumbnail": "",
@@ -462,7 +461,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "14da4aaf-cee1-45a8-b79f-5fb58419ad96",
     "Title": "Manage Xamarin apps with HockeyApp and Visual Studio Team Services",
     "Track": "Monitor",
     "Thumbnail": "",
@@ -471,7 +470,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "14da4aaf-cee1-45a8-b79f-5fb58419ad96",
     "Title": "Addressing the OWASP Mobile Security Threats Using Xamarin",
     "Track": "Secure",
     "Thumbnail": "",
@@ -480,7 +479,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "8e3eb89b-d825-4774-9563-9e4ad1e0a223",
     "Title": "Think Like a Hacker! Common Techniques Used to Exploit Mobile Apps and How to Mitigate Them",
     "Track": "Secure",
     "Thumbnail": "",
@@ -489,7 +488,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "58401bfc-a786-48b1-a89d-9f92945d7911",
     "Title": "App Configuration for the Enterprise",
     "Track": "Secure",
     "Thumbnail": "",
@@ -498,7 +497,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "58401bfc-a786-48b1-a89d-9f92945d7911",
     "Title": "Enterprise Mobility: Keep It Safe",
     "Track": "Secure",
     "Thumbnail": "",
@@ -507,7 +506,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "beaab487-32a7-4e3e-929a-599bf87d4d5b",
     "Title": "Is Your App Secure?",
     "Track": "Secure",
     "Thumbnail": "",
@@ -516,7 +515,7 @@
     "YoutubeID": ""
   },
   {
-    "Id": "",
+    "Id": "beaab487-32a7-4e3e-929a-599bf87d4d5b",
     "Title": "You've Built an App... Now What!?",
     "Track": "Secure",
     "Thumbnail": "",
