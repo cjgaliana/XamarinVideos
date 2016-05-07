@@ -11,17 +11,19 @@ namespace EvolveVideos.Clients.ViewModels
     public class SettingsViewModel : BaseViewModel
     {
         private readonly IDownloadManager _downloadManager;
+        private readonly IDialogService _dialogService;
         private readonly ISettingsService _settingsService;
         private readonly IStorageService _storageService;
 
         private bool _autoResumeDownloads;
 
         public SettingsViewModel(ISettingsService settingsService, IStorageService storageService,
-            IDownloadManager downloaderService)
+            IDownloadManager downloaderService, IDialogService dialogService)
         {
             _settingsService = settingsService;
             _storageService = storageService;
             _downloadManager = downloaderService;
+            _dialogService = dialogService;
 
             CreateCommands();
         }
@@ -57,6 +59,7 @@ namespace EvolveVideos.Clients.ViewModels
             finally
             {
                 IsBusy = false;
+                await this._dialogService.ShowMessageAsync("Done!", "All videos have been deleted from you device");
             }
         }
 
