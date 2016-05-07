@@ -8,6 +8,7 @@
     xmlns:converters="using:EvolveVideos.Clients.UWP.Converters"
     xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:controls="using:EvolveVideos.Clients.UWP.Controls"
 
     mc:Ignorable="d"
     DataContext="{Binding DownloadsViewModel, Source={StaticResource ViewModelLocator}}">
@@ -17,6 +18,8 @@
         <converters:ListToVisibilityConverter x:Key="ListToVisivilityConverter" />
         <converters:EmptyListToVisibilityConverter x:Key="EmptyListToVisibilityConverter" />
         <converters:ItemClickConverter x:Key="ItemClickConverter" />
+
+
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -27,23 +30,14 @@
                     <Grid>
                         <TextBlock Text="There are no downloaded videos"
                                    Visibility="{Binding CompletedSessions.Count, Converter={StaticResource IntToVisibilityConverter}, ConverterParameter=Invert}" />
-                        <GridView
+                        <controls:AdaptiveGridView
+                            MinItemHeight="150"
+                            MinItemWidth="300"
+                            ItemContainerStyle="{StaticResource AdaptiveItemContainerStyle}"
                             ItemsSource="{Binding CompletedSessions}"
                             IsItemClickEnabled="True"
+                            ItemTemplate="{StaticResource DownloadDataTemplate}"
                             Visibility="{Binding CompletedSessions.Count, Converter={StaticResource IntToVisibilityConverter}}">
-                            <GridView.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid Background="Red">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="*" />
-                                        </Grid.ColumnDefinitions>
-
-                                        <Image Source="{Binding Session.Thumbnail}" />
-                                        <TextBlock Grid.Column="1" Text="{Binding Session.Title}" />
-                                    </Grid>
-                                </DataTemplate>
-                            </GridView.ItemTemplate>
 
                             <interactivity:Interaction.Behaviors>
                                 <core:EventTriggerBehavior EventName="ItemClick">
@@ -51,38 +45,31 @@
                                                               InputConverter="{StaticResource ItemClickConverter}" />
                                 </core:EventTriggerBehavior>
                             </interactivity:Interaction.Behaviors>
-                        </GridView>
+                        </controls:AdaptiveGridView>
                     </Grid>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Queue">
                 <Grid>
                     <TextBlock Text="There are no queued videos"
-                                   Visibility="{Binding DownloadingSessions.Count, Converter={StaticResource IntToVisibilityConverter}, ConverterParameter=Invert}" />
+                               Visibility="{Binding DownloadingSessions.Count, Converter={StaticResource IntToVisibilityConverter}, ConverterParameter=Invert}" />
 
-                    <GridView ItemsSource="{Binding DownloadingSessions}"
-                                  IsItemClickEnabled="True"
-                                  Visibility="{Binding DownloadingSessions.Count, Converter={StaticResource IntToVisibilityConverter}}">
-                        <GridView.ItemTemplate>
-                            <DataTemplate>
-                                <Grid Background="Green">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition Width="*" />
-                                    </Grid.ColumnDefinitions>
+                    <controls:AdaptiveGridView
+                        MinItemHeight="150"
+                        MinItemWidth="300"
+                        ItemContainerStyle="{StaticResource AdaptiveItemContainerStyle}"
+                        ItemsSource="{Binding DownloadingSessions}"
+                        IsItemClickEnabled="True"
+                        ItemTemplate="{StaticResource DownloadDataTemplate}"
+                        Visibility="{Binding DownloadingSessions.Count, Converter={StaticResource IntToVisibilityConverter}}">
 
-                                    <Image Source="{Binding Session.Thumbnail}" />
-                                    <TextBlock Grid.Column="1" Text="{Binding Session.Title}" />
-                                </Grid>
-                            </DataTemplate>
-                        </GridView.ItemTemplate>
                         <interactivity:Interaction.Behaviors>
                             <core:EventTriggerBehavior EventName="ItemClick">
                                 <core:InvokeCommandAction Command="{Binding OpenSessionCommand, Mode=OneWay}"
-                                                              InputConverter="{StaticResource ItemClickConverter}" />
+                                                          InputConverter="{StaticResource ItemClickConverter}" />
                             </core:EventTriggerBehavior>
                         </interactivity:Interaction.Behaviors>
-                    </GridView>
+                    </controls:AdaptiveGridView>
                 </Grid>
             </PivotItem>
         </Pivot>

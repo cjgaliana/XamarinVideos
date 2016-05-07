@@ -5,32 +5,63 @@
     xmlns:controls="using:EvolveVideos.Clients.UWP.Controls">
 
     <DataTemplate x:Name="SessionDataTemplate">
-        <Border BorderThickness="2" BorderBrush="{StaticResource AccentBrush}">
-            <Grid>
-                <!--<Image Source="{Binding Thumbnail}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" />-->
-                <controls:NetworkImage 
-                    Source="{Binding Thumbnail}" 
-                    Style="{StaticResource XamarinNetworkImageStyle}"
-                    />
-                <StackPanel Background="{StaticResource ComplimentaryBrush}" VerticalAlignment="Bottom">
-                    <TextBlock Text="{Binding Title}" Style="{StaticResource HeaderItemTemplateStyle}" />
-                    <TextBlock Text="{Binding Author}"  Style="{StaticResource SubHeaderItemTemplateStyle}"  />
-                </StackPanel>
-            </Grid>
-        </Border>
+        <Grid BorderThickness="2"
+              BorderBrush="{StaticResource AccentBrush}">
+            <controls:NetworkImage
+                Source="{Binding Thumbnail}"
+                Style="{StaticResource XamarinNetworkImageStyle}" />
+            <StackPanel
+                Background="{StaticResource ComplimentaryBrush}"
+                VerticalAlignment="Bottom">
+                <TextBlock
+                    Text="{Binding Title}"
+                    Style="{StaticResource HeaderItemTemplateStyle}" />
+                <TextBlock
+                    Text="{Binding Author}"
+                    Style="{StaticResource SubHeaderItemTemplateStyle}" />
+            </StackPanel>
+        </Grid>
     </DataTemplate>
 
     <DataTemplate x:Name="CollectionDataTemplate">
-        <Border BorderThickness="2" BorderBrush="{StaticResource AccentBrush}">
-            <Grid>
-                <Image Source="ms-appx:///Assets/Images/DefaultImage.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Top" />
-                <StackPanel  VerticalAlignment="Bottom" Background="{StaticResource ComplimentaryBrush2}">
-                    <TextBlock Text="{Binding Name}" Style="{StaticResource HeaderItemTemplateStyle}" />
-                    <TextBlock Text="{Binding Description}" Style="{StaticResource SubHeaderItemTemplateStyle}" />
-                </StackPanel>
-            </Grid>
-        </Border>
+        <Grid BorderThickness="2"
+              BorderBrush="{StaticResource AccentBrush}">
+            <Image
+                Source="ms-appx:///Assets/Images/DefaultImage.png"
+                Stretch="Uniform"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <StackPanel
+                VerticalAlignment="Bottom"
+                Background="{StaticResource ComplimentaryBrush2}">
+                <TextBlock
+                    Text="{Binding Name}"
+                    Style="{StaticResource HeaderItemTemplateStyle}" />
+                <TextBlock
+                    Text="{Binding Description}"
+                    Style="{StaticResource SubHeaderItemTemplateStyle}" />
+            </StackPanel>
+        </Grid>
     </DataTemplate>
 
+    <DataTemplate x:Key="DownloadDataTemplate">
+        <Grid BorderBrush="{StaticResource AccentDarkBrush}" BorderThickness="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
+            <controls:NetworkImage
+                Source="{Binding Session.Thumbnail}"
+                Style="{StaticResource XamarinNetworkImageStyle}" />
+            <StackPanel Grid.Column="1" Margin="10">
+                <TextBlock Text="{Binding Session.Title}" TextWrapping="Wrap" />
+                <!--<StackPanel Grid.ColumnSpan="2" Margin="0,0,0,0" Orientation="Horizontal">
+                    <TextBlock TextWrapping="Wrap" Text="Download Progress: " Margin="0,0,5,0" />
+                    <TextBlock TextWrapping="Wrap" Text="{Binding Download.Percentage}" />
+                    <TextBlock TextWrapping="Wrap" Text="%" />
+                </StackPanel>-->
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
 </ResourceDictionary>
