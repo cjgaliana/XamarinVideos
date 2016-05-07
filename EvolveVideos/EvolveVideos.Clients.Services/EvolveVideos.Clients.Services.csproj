@@ -43,6 +43,7 @@
     <Compile Include="Download\IVideoDownloaderService.cs" />
     <Compile Include="IDialogService.cs" />
     <Compile Include="ILauncherService.cs" />
+    <Compile Include="ILogService.cs" />
     <Compile Include="INavigationService.cs" />
     <Compile Include="INetworkService.cs" />
     <Compile Include="ISettingsService.cs" />

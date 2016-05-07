@@ -134,7 +134,7 @@ namespace EvolveVideos.Clients.ViewModels
             }
             catch (Exception ex)
             {
-                await this._dialogService.ShowMessageAsync("Error", ex.Message);
+                await this._dialogService.ShowMessageAsync("Error", "Is not possible to load the video URL");
             }
         }
 
