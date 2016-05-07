@@ -52,7 +52,7 @@ namespace EvolveVideos.Clients.UWP.Services
 
         public async Task ResumeAllDownloadsAsync()
         {
-            if (Downloads == null || !Downloads.Any())
+            if (Downloads == null || !Downloads.Any() || !this._networkService.IsOnline)
             {
                 return;
             }

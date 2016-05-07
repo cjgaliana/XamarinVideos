@@ -1,12 +1,12 @@
-﻿using System;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using EvolveVideos.Clients.Core.Models;
+﻿using EvolveVideos.Clients.Core.Models;
 using EvolveVideos.Clients.Services;
 using EvolveVideos.Clients.Services.Download;
 using EvolveVideos.Clients.UWP.DesignData;
 using EvolveVideos.Data.Models;
 using GalaSoft.MvvmLight.Command;
+using System;
+using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace EvolveVideos.Clients.ViewModels
 {
@@ -15,6 +15,7 @@ namespace EvolveVideos.Clients.ViewModels
         private readonly IDialogService _dialogService;
         private readonly IDownloadManager _downloadManager;
         private readonly IVideoDownloaderService _videoDownloaderService;
+        private readonly INetworkService _networkService;
         private readonly INavigationService _navigationService;
         private bool _hasDownload;
 
@@ -25,12 +26,13 @@ namespace EvolveVideos.Clients.ViewModels
         private Uri _videoUrl;
 
         public SessionDetailsViewModel(INavigationService navigationService, IDialogService dialogService,
-            IDownloadManager downloadManager, IVideoDownloaderService videoDownloaderService)
+            IDownloadManager downloadManager, IVideoDownloaderService videoDownloaderService, INetworkService networkService)
         {
             _navigationService = navigationService;
             _dialogService = dialogService;
             _downloadManager = downloadManager;
             _videoDownloaderService = videoDownloaderService;
+            _networkService = networkService;
 
             CreateCommands();
 
@@ -103,28 +105,49 @@ namespace EvolveVideos.Clients.ViewModels
 
         private async Task PlayVideoAsync()
         {
-            var parameters = new PlayerParameters
+            try
             {
-                Title = Session.Title,
-                Url = await this._videoDownloaderService.GetDownloadVideoUrlAsync(this.Session.YoutubeID)
-            };
-
-            // Play video
-            if (HasDownload)
-            {
-                if (VideoDownload.Status == DownloadStatus.Completed)
+                var parameters = new PlayerParameters
                 {
-                    parameters.Url = VideoDownload.LocalFileUrl;
-                }
-            }
+                    Title = Session.Title,
+                };
 
-            _navigationService.NavigateTo(PageKey.PlayerPage, parameters);
+                // Play video
+                if (HasDownload)
+                {
+                    if (VideoDownload.Status == DownloadStatus.Completed)
+                    {
+                        parameters.Url = VideoDownload.LocalFileUrl;
+                    }
+                }
+                if (parameters.Url == null || string.IsNullOrWhiteSpace(parameters.Url.AbsoluteUri))
+                {
+                    if (!this._networkService.IsOnline)
+                    {
+                        await this._dialogService.ShowMessageAsync("No internet access", "When offline, you only can play downloaded videos");
+                        return;
+                    }
+                    parameters.Url = await this._videoDownloaderService.GetDownloadVideoUrlAsync(this.Session.YoutubeID);
+                }
+
+                _navigationService.NavigateTo(PageKey.PlayerPage, parameters);
+            }
+            catch (Exception ex)
+            {
+                await this._dialogService.ShowMessageAsync("Error", ex.Message);
+            }
         }
 
         private async Task DownloadVideoAsync()
         {
             try
             {
+                if (!this._networkService.IsOnline)
+                {
+                    await this._dialogService.ShowMessageAsync("No internet access", "A network connection is neccessary to download the video");
+                    return;
+                }
+
                 await _downloadManager.QueueDownloadAsync(Session);
                 VideoDownload = await _downloadManager.GetDownloadForSessionAsync(Session);
             }

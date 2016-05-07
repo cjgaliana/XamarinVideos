@@ -16,14 +16,20 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ScrollViewer Padding="10">
-            <StackPanel>
+        <ScrollViewer>
+            <StackPanel Margin="10, 10, 25, 10">
                 <TextBlock Text="{Binding Session.Title}" Style="{StaticResource TitleStyle}" />
                 <TextBlock Text="{Binding Session.Author}" Style="{StaticResource AuthorStyle}" />
                 <TextBlock Text="{Binding Session.Track}" Style="{StaticResource SubtitleStyle}" />
                 <controls:NetworkImage
                     Source="{Binding Session.Thumbnail}"
-                    Style="{StaticResource XamarinNetworkImageStyle}" Margin="0,5" />
+                    Style="{StaticResource XamarinNetworkImageStyle}" 
+                    Margin="0,5"
+                    Stretch="None"
+                    FallbackImageStretch="UniformToFill"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    />
                 <TextBlock Text="{Binding Session.Description}"
                            Style="{StaticResource DescriptionStyle}" Margin="0,0,0,10" />
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
@@ -32,29 +38,30 @@
                         Content="Download"
                         Command="{Binding DownloadCommand}"
                         Style="{StaticResource XamarinButton}"
-                        Visibility="{Binding HasDownload, Converter={StaticResource BooleanToVisibilityConverter}, ConverterParameter=Invert}" />
+                        Visibility="{Binding HasDownload, Converter={StaticResource BooleanToVisibilityConverter}, ConverterParameter=Invert}" Margin="0,0,5,0" />
+                    <Button Content="Delete download" Style="{StaticResource XamarinButton}" Command="{Binding DeleteCommand}"
+                    	extensions:XamlExtensions.IsVisible="{Binding HasDownload}"
+                             d:LayoutOverrides="TopPosition, BottomPosition"
+                             />
                 </StackPanel>
                 <Grid  Margin="0,0,10,10" HorizontalAlignment="Stretch" extensions:XamlExtensions.IsVisible="{Binding HasDownload}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
-                    
+
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <ProgressBar Grid.Row="0" IsIndeterminate="False" Value="{Binding VideoDownload.Percentage}" Background="{StaticResource ComplimentaryBrush}" />
+                    <ProgressBar Grid.Row="0" IsIndeterminate="False" Value="{Binding VideoDownload.Percentage}" Background="{StaticResource ComplimentaryBrush2}" Foreground="{StaticResource ComplimentaryBrush}" />
 
-                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="10,0,0,0">
                         <TextBlock Text="{Binding VideoDownload.Percentage}" />
                         <TextBlock Text="%" />
                     </StackPanel>
                 </Grid>
-                <Button Content="Delete download" Style="{StaticResource XamarinButton}" Command="{Binding DeleteCommand}"
-                             extensions:XamlExtensions.IsVisible="{Binding HasDownload}"
-                             />
             </StackPanel>
         </ScrollViewer>
     </Grid>
