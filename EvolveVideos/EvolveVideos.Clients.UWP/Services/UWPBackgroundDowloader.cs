@@ -133,7 +133,7 @@ namespace EvolveVideos.Clients.UWP.Services
                 if (_download != null)
                 {
                     _download.Resume();
-                    Status = DownloadStatus.Downloading;
+                    //Status = DownloadStatus.Downloading;
                     return;
                 }
 
@@ -143,7 +143,7 @@ namespace EvolveVideos.Clients.UWP.Services
                     return;
                 }
                 await HandleDownloadAsync(false);
-                Status = DownloadStatus.Downloading;
+                //Status = DownloadStatus.Downloading;
                 existingDownload.Resume();
             }
             catch (Exception ex)

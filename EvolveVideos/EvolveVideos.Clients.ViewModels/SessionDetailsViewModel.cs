@@ -19,6 +19,7 @@ namespace EvolveVideos.Clients.ViewModels
         private readonly ILogService _logService;
         private readonly INavigationService _navigationService;
         private bool _hasDownload;
+        private bool _isDownloaded;
 
         private EvolveSession _session;
 
@@ -69,11 +70,14 @@ namespace EvolveVideos.Clients.ViewModels
                 Set(() => VideoDownload, ref _videoDownload, value);
                 RaisePropertyChanged(() => HasDownload);
                 RaisePropertyChanged(() => IsDownloading);
+                RaisePropertyChanged(() => IsDownloaded);
             }
         }
 
         public bool HasDownload => VideoDownload != null;
-        public bool IsDownloading => this.HasDownload && this.VideoDownload.Status == DownloadStatus.Completed;
+        public bool IsDownloading => this.HasDownload && this.VideoDownload.Status != DownloadStatus.Completed;
+
+        public bool IsDownloaded => this.HasDownload && this.VideoDownload.Status == DownloadStatus.Completed;
 
         private void CreateCommands()
         {
