@@ -11,12 +11,13 @@
     xmlns:helpers="using:EvolveVideos.Clients.UWP.Helpers"
     xmlns:converters="using:EvolveVideos.Clients.UWP.Converters"
     mc:Ignorable="d"
-    DataContext="{Binding VideoCollectionDetailsViewModel,Source={StaticResource ViewModelLocator}}">
+    DataContext="{Binding VideoCollectionDetailsViewModel,Source={StaticResource ViewModelLocator}}"
+    NavigationCacheMode="Enabled">
 
     <Page.Resources>
         <converters:ItemClickConverter x:Key="ItemClickConverter" />
     </Page.Resources>
-    
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <controls:AdaptiveGridView
             ItemsSource="{Binding Sessions}"

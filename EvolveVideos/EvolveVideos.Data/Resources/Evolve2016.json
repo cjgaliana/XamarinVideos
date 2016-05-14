@@ -120,19 +120,19 @@
     "Id": "67eec293-bce4-4629-94cc-b09fe67e834b",
     "Title": "MVVM Made Simple with Xamarin.Forms and Prism",
     "Track": "Build",
-    "Thumbnail": "http://img.youtube.com/vi/ivu5xnsgArU/hqdefault.jpg",
+    "Thumbnail": "http://img.youtube.com/vi/DYRLcqG2BAY/hqdefault.jpg",
     "Author": "Brian Lagunas",
     "Description": "MVVM has become the standard for the majority of cross-platform mobile developers. Since it's introduction in 2005, there are a number of issues that have been realized due to the side effects of the separations created when using the MVVM pattern, such as \"how do I make a connection between my view and view model?\" and \"how do I communicate between view models?\" Join Brian Lagunas as he walks you through how to simplify your Xamarin.Forms apps by using all the features of Prism to implement the MVVM pattern and remove those side effects.",
-    "YoutubeID": "ivu5xnsgArU"
+    "YoutubeID": "DYRLcqG2BAY"
   },
   {
     "Id": "31ea1a7e-d3d4-493d-b7bd-53615a88e2c9",
     "Title": "Clicking on the Real World with iBeacon and Eddystone",
     "Track": "Build",
-    "Thumbnail": "http://img.youtube.com/vi/cRBEvaAE2to/hqdefault.jpg",
+    "Thumbnail": "http://img.youtube.com/vi/vQqIXKU98LI/hqdefault.jpg",
     "Author": "Jim Bennett",
     "Description": "Contextual awareness is a fast-growing trend in mobile development. In this session, Jim will take you through a quick overview of beacon technology, including Apple's iBeacons and Google's Eddystone, before diving into some code. We'll even build a simple app live on stage to demonstrate how you can detect and wake up beacons, as well as detect user proximity to beacons.",
-    "YoutubeID": "cRBEvaAE2to"
+    "YoutubeID": "vQqIXKU98LI"
   },
   {
     "Id": "ae8d8a5a-bf3e-4f72-bc3a-2f8b7c818e64",
@@ -292,10 +292,10 @@
     "Id": "34133c34-6962-4623-add3-125d3cec3cf9",
     "Title": "Introduction to iOS 9",
     "Track": "Build",
-    "Thumbnail": "http://img.youtube.com/vi/7B0QvKnyVzI/hqdefault.jpg",
+    "Thumbnail": "http://img.youtube.com/vi/DplLCIr4_ao/hqdefault.jpg",
     "Author": "Craig Dunn",
     "Description": "Join Craig for an introduction to how Xamarin.iOS works and the steps to build an iOS app from scratch, with a few comparisons to Xamarin.Forms and some tips on adding iOS 9-specific features to your apps. This talk will cover everything from the solution structure and using the UI Designer to iOS 9 / iPhone 6s features like app transport security and 3D touch.",
-    "YoutubeID": "7B0QvKnyVzI"
+    "YoutubeID": "DplLCIr4_ao"
   },
   {
     "Id": "d42c2884-cd9c-49ff-b9bf-e9fe478d2b16",
@@ -373,10 +373,10 @@
     "Id": "09e142c2-efc4-417b-88f5-74ee118cf988",
     "Title": "An In-Depth Study of the MVVM Light Databinding System",
     "Track": "Build",
-    "Thumbnail": "http://img.youtube.com/vi/tkhM53A9m3M/hqdefault.jpg",
+    "Thumbnail": "http://img.youtube.com/vi/wfXzvbHawBE/hqdefault.jpg",
     "Author": "Laurent Bugnion",
     "Description": "Living in the dark ages and still wiring up properties manually between your user interface and data source? Databinding is a technique to automatically synchronize a user interface with it's data source and can vastly simplify how your app displays and interacts with data. While databinding is available out of the box for Xamarin.Forms and Windows applications, additional components are needed in Xamarin.Android and Xamarin.iOS. In this session, learn how to leverage databinding in your cross-platform applications as you master MVVM Light databinding and the MVVM pattern.",
-    "YoutubeID": "tkhM53A9m3M"
+    "YoutubeID": "wfXzvbHawBE"
   },
   {
     "Id": "0fffed3c-d41d-4c88-8158-181dcff6dd90",
@@ -391,10 +391,10 @@
     "Id": "1ab1a8ca-93d8-42fd-ba23-eacf0bb05a0a",
     "Title": "A Developer’s Guide to Azure IoT",
     "Track": "Integrate",
-    "Thumbnail": "http://img.youtube.com/vi/tWHVog3KdN8/hqdefault.jpg",
+    "Thumbnail": "http://img.youtube.com/vi/iYajjE9rtYY/hqdefault.jpg",
     "Author": "Olivier Bloch",
     "Description": "All you ever wanted to know about how to connect IoT devices to Azure and make the most out of all the data coming from sensors leveraging smart data analytics, machine learning and other Azure goodness. We’ll introduce our open source SDKs and show you how to use them to connect devices running various OS or platforms to Azure IoT. At the end of the session you should have a good understanding of what Azure IoT Hub and Azure IoT Suite are, and how developers can use our SDKs to build tomorrow’s killer IoT solution on Azure.",
-    "YoutubeID": "tWHVog3KdN8"
+    "YoutubeID": "iYajjE9rtYY"
   },
   {
     "Id": "79b8c387-776c-45e6-a967-900589afc402",

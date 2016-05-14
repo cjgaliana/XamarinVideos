@@ -10,7 +10,8 @@
     xmlns:converters="using:EvolveVideos.Clients.UWP.Converters"
     xmlns:controls="using:EvolveVideos.Clients.UWP.Controls"
     mc:Ignorable="d"
-    DataContext="{Binding VideoCollectionsViewModel, Source={StaticResource ViewModelLocator}}">
+    DataContext="{Binding VideoCollectionsViewModel, Source={StaticResource ViewModelLocator}}"
+    NavigationCacheMode="Enabled">
 
     <Page.Resources>
         <converters:ItemClickConverter x:Key="ItemClickConverter" />
