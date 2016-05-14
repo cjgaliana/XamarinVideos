@@ -25,7 +25,8 @@
                     Source="{Binding Session.Thumbnail}"
                     Style="{StaticResource XamarinNetworkImageStyle}"
                     Margin="0,5"
-                    Stretch="None"
+                    Stretch="UniformToFill"
+                    MaxWidth="500"
                     FallbackImageStretch="UniformToFill"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center" />
