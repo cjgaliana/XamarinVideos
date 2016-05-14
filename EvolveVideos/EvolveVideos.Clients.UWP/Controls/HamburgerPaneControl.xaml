@@ -10,7 +10,7 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -37,12 +37,21 @@
             </controls:HamburgerMenuButton>
         </StackPanel>
 
-        <controls:HamburgerMenuButton Grid.Row="1"
+        <StackPanel Grid.Row="1">
+            <controls:HamburgerMenuButton
+                                  Content="Request a feature"
+                                  Tapped="OpenAppStrech">
+                <controls:HamburgerMenuButton.Icon>
+                    <FontIcon FontSize="16" Glyph="&#xE134;" />
+                </controls:HamburgerMenuButton.Icon>
+            </controls:HamburgerMenuButton>
+            <controls:HamburgerMenuButton
                                   Content="Settings"
                                   NavigationSourcePageType="views:SettingsPage">
-            <controls:HamburgerMenuButton.Icon>
-                <FontIcon FontSize="16" Glyph="&#xE713;" />
-            </controls:HamburgerMenuButton.Icon>
-        </controls:HamburgerMenuButton>
+                <controls:HamburgerMenuButton.Icon>
+                    <FontIcon FontSize="16" Glyph="&#xE713;" />
+                </controls:HamburgerMenuButton.Icon>
+            </controls:HamburgerMenuButton>
+        </StackPanel>
     </Grid>
 </UserControl>

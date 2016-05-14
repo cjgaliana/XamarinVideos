@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using EvolveVideos.Clients.Services;
+using Microsoft.Practices.ServiceLocation;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -22,6 +12,19 @@ namespace EvolveVideos.Clients.UWP.Controls
         public HamburgerPaneControl()
         {
             this.InitializeComponent();
+        }
+
+        private void HamburgerMenuButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+        }
+
+        private void OpenAppStrech(object sender, TappedRoutedEventArgs e)
+        {
+            var launcherService = ServiceLocator.Current.GetInstance<ILauncherService>();
+            if (launcherService != null)
+            {
+                launcherService.OpenWebSiteAsync("https://appstretch.com/App/35483/Videos-for-Xamarin-Evolve");
+            }
         }
     }
 }
