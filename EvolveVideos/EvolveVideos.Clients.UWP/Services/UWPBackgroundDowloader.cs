@@ -1,6 +1,5 @@
 ﻿using EvolveVideos.Clients.Core.Models;
 using EvolveVideos.Clients.ViewModels;
-using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Linq;
@@ -72,7 +71,6 @@ namespace EvolveVideos.Clients.UWP.Services
             set { Set(() => SessionId, ref _sessionId, value); }
         }
 
-        [JsonIgnore]
         public Uri LocalFileUrl
         {
             get { return _localFileUrl; }
@@ -118,7 +116,7 @@ namespace EvolveVideos.Clients.UWP.Services
                 return;
             }
 
-            if (Status == DownloadStatus.Paused)
+            if (Status == DownloadStatus.Paused || Status == DownloadStatus.Completed)
             {
                 return;
             }
@@ -130,10 +128,15 @@ namespace EvolveVideos.Clients.UWP.Services
         {
             try
             {
+                if (Status == DownloadStatus.Completed)
+                {
+                    return;
+                }
+
                 if (_download != null)
                 {
                     _download.Resume();
-                    //Status = DownloadStatus.Downloading;
+                    Status = DownloadStatus.Downloading;
                     return;
                 }
 
@@ -143,7 +146,7 @@ namespace EvolveVideos.Clients.UWP.Services
                     return;
                 }
                 await HandleDownloadAsync(false);
-                //Status = DownloadStatus.Downloading;
+                Status = DownloadStatus.Downloading;
                 existingDownload.Resume();
             }
             catch (Exception ex)

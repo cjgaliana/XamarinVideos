@@ -64,7 +64,7 @@ namespace EvolveVideos.Clients.UWP.Services
             foreach (var videoDownload in downloading)
             {
                 // Ensure is downloading
-               await videoDownload.ResumeAsync();
+                await videoDownload.ResumeAsync();
             }
 
             var availableSlots = MaxConcurrentDownloads - downloading.Count;
