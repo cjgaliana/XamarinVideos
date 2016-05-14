@@ -99,6 +99,11 @@ namespace EvolveVideos.Clients.ViewModels
                     Session = session;
 
                     VideoDownload = await _downloadManager.GetDownloadForSessionAsync(Session);
+                    if (VideoDownload!=null)
+                    {
+                        VideoDownload.DownloadCompleted += OnVideoCompleted;
+                    }
+                  
                 }
             }
             catch (Exception ex)
@@ -157,12 +162,22 @@ namespace EvolveVideos.Clients.ViewModels
 
                 await _downloadManager.QueueDownloadAsync(Session);
                 VideoDownload = await _downloadManager.GetDownloadForSessionAsync(Session);
+                if (VideoDownload != null)
+                {
+                    VideoDownload.DownloadCompleted += OnVideoCompleted;
+                }
             }
             catch (Exception ex)
             {
                 await _dialogService.ShowMessageAsync("Error", "Is not possible download the video");
                 await this._logService.LogExceptionAsync(ex);
             }
+        }
+
+        private void OnVideoCompleted(object sender, DownloadCompetedArgs e)
+        {
+            this.RaisePropertyChanged(()=>this.IsDownloaded);
+            this.RaisePropertyChanged(() => this.IsDownloading);
         }
 
         private async Task DeleteDownloadAsync()
