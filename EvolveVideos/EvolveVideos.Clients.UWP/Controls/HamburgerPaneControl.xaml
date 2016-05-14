@@ -24,7 +24,7 @@
                 </controls:HamburgerMenuButton.Icon>
             </controls:HamburgerMenuButton>
 
-            <controls:HamburgerMenuButton Content="Collections" NavigationSourcePageType="views:VideoCollectionsPage">
+            <controls:HamburgerMenuButton Content="Playlists" NavigationSourcePageType="views:VideoCollectionsPage">
                 <controls:HamburgerMenuButton.Icon>
                     <FontIcon FontSize="16" Glyph="&#xE8BC;" />
                 </controls:HamburgerMenuButton.Icon>
